@@ -70,7 +70,7 @@
   }
 }
 
-.smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
+a.tooltip-button {
     background-color: #ee6901;
     background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
     background-position: 0.7em 0.7em;
@@ -82,4 +82,20 @@
     margin: 1em 0em;
     text-shadow: none;
     display: block;
+    text-decoration: none;
+}
+
+.smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
+	text-shadow: none;
+}
+
+.smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
+	border: 1px solid #ee6901;
+	color: #ee6901 !important;
+	}
+
+a.tooltip-button:hover {
+	color: #ee6901;
+    background-color: #262729;
+    background-image: url("http://thesmallaxe.github.io/reprieve/twitter-hover.png");
 }
