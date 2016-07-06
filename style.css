@@ -16,9 +16,9 @@
 .primary .letter-container .letter-background {
   padding: 2em;
   background: white;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   line-height: 1.75;
 }
 .primary .letter-container .letter-background p {
@@ -30,6 +30,7 @@
 .highlight {
   color: black;
   background-color: #ee6901;
+  padding: 0em 3px;
 }
 
 /* Boxes */
@@ -71,11 +72,14 @@
 
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
     background-color: #ee6901;
-    background-image: url ("http://thesmallaxe.github.io/reprieve/twitter.png");
-    background-position: left;
+    background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
+    background-position: 0.7em 0.7em;
     background-repeat: no-repeat;
     color: white;
     padding: 0.5em 1em;
+    padding-left: 2.25em;
     border-radius:5px;
     margin: 1em 0em;
+    text-shadow: none;
+    display: block;
 }
