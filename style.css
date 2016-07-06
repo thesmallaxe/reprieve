@@ -5,11 +5,7 @@
 .primary .letter-container p {
   font-size: 1em;
 }
-@media only screen and (min-width: 43.75em) {
-  .primary .letter-container p, .primary .letter-container .textsize {
-    font-size: 1.38462em
-  }
-}
+
 
 /* Letter background */
 
@@ -72,12 +68,12 @@
 
 /* Share buttons */
 
-.letter-container a.tooltip-button {
+ .letter-container a.tooltip-button, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
     background-color: #ee6901;
     background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
     background-position: 0.7em 0.7em;
     background-repeat: no-repeat;
-    color: white !important;
+    color: white;
     padding: 0.5em 1em;
     padding-left: 2.25em;
     border-radius:5px;
@@ -87,7 +83,7 @@
     text-decoration: none;
 }
 
-.letter-container a.tooltip-button:hover {
+.letter-container a.tooltip-button:hover, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
 	color: #ee6901;
     background-color: #262729;
     background-image: url("http://thesmallaxe.github.io/reprieve/twitter-hover.png");
