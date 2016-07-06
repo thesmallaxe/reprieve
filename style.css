@@ -1,23 +1,81 @@
+.primary .letter-container {
+  font-size: 1.38462em;
+  line-height: 1.4;
+}
+.primary .letter-container p {
+  font-size: 1em;
+}
+@media only screen and (min-width: 43.75em) {
+  p, .textsize {
+    font-size: 1.38462em
+  }
+}
+
+/* Letter background */
+
+.primary .letter-container .letter-background {
+  padding: 2em;
+  background: white;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  line-height: 1.75;
+}
+.primary .letter-container .letter-background p {
+  line-height: 1.75;
+}
+
+/* Spans */
+
 .highlight {
-    background-color: yellow;
-    color: black;
+  color: black;
+  background-color: #ee6901;
 }
 
-.tooltip-bigger-font {
-    font-size: 16px;
+/* Boxes */
+
+.smallipop-instance.black.fatShadow {
+  background-color: #262729 !important;
+  border: none !important;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.smallipop-instance.black.fatShadow .sipContent {
+  padding: 2em !important;
+  border-radius: 0;
+  border-top: 5px solid #ee6901;
+  border-bottom: 5px solid #ee6901;
+}
+.smallipop-instance.black.fatShadow .sipContent h3 {
+  color: #ee6901;
+  font-size: 24px;
+  margin-bottom: 1em;
 }
 
-.tooltip-link {
-    color: red;
+.smallipop-instance.black.fatShadow .sipContent p {
+  margin-bottom: 1em;
 }
 
-.tooltip-link:hover {
-    color: orange;
+.smallipop-instance.black.fatShadow .sipContent blockquote {
+    padding-left: 2.5em;
+    border-left: 5px solid #ee6901;
+    margin-left: 0;
+    margin-bottom: 1em !important;
 }
-
 @media only screen and (max-width: 768px) {
-    .smallipop-instance {
-        max-width: 100% !important;
-        left: 0px !important;
-    }
+  .smallipop-instance {
+    left: 1% !important;
+    max-width: 98% !important;
+  }
+}
+
+.smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
+    background-color: #ee6901;
+    background-image: url ("http://thesmallaxe.github.io/reprieve/twitter.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius:5px;
+    margin: 1em 0em;
 }
