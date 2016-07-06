@@ -75,27 +75,28 @@ a.tooltip-button {
     background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
     background-position: 0.7em 0.7em;
     background-repeat: no-repeat;
-    color: white;
+    color: white !important;
     padding: 0.5em 1em;
     padding-left: 2.25em;
     border-radius:5px;
     margin: 1em 0em;
-    text-shadow: none;
+    text-shadow: none !important;
     display: block;
     text-decoration: none;
 }
-
-.smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
-	text-shadow: none;
-}
-
-.smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
-	border: 1px solid #ee6901;
-	color: #ee6901 !important;
-	}
 
 a.tooltip-button:hover {
 	color: #ee6901;
     background-color: #262729;
     background-image: url("http://thesmallaxe.github.io/reprieve/twitter-hover.png");
 }
+
+.smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
+	text-shadow: none;
+	border: 1px solid transparent;
+}
+
+.smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
+	border: 1px solid #ee6901;
+	color: #ee6901 !important;
+	}
