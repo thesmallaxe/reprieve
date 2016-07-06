@@ -6,7 +6,6 @@
   font-size: 1em;
 }
 
-
 /* Letter background */
 
 .primary .letter-container .letter-background {
@@ -48,16 +47,14 @@
   font-size: 24px;
   margin-bottom: 1em;
 }
-
 .smallipop-instance.black.fatShadow .sipContent p {
   margin-bottom: 1em;
 }
-
 .smallipop-instance.black.fatShadow .sipContent blockquote {
-    padding-left: 2.5em;
-    border-left: 5px solid #ee6901;
-    margin-left: 0;
-    margin-bottom: 1em !important;
+  padding-left: 2.5em;
+  border-left: 5px solid #ee6901;
+  margin-left: 0;
+  margin-bottom: 1em !important;
 }
 @media only screen and (max-width: 768px) {
   .smallipop-instance {
@@ -68,33 +65,30 @@
 
 /* Share buttons */
 
- .letter-container a.tooltip-button, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
-    background-color: #ee6901;
-    background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
-    background-position: 0.7em 0.7em;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 0.5em 1em;
-    padding-left: 2.25em;
-    border-radius:5px;
-    margin: 1em 0em;
-    text-shadow: none !important;
-    display: block;
-    text-decoration: none;
+.letter-container a.tooltip-button, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
+  background-color: #ee6901;
+  background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
+  background-position: 0.7em 0.7em;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 0.5em 1em;
+  padding-left: 2.25em;
+  border-radius: 5px;
+  margin: 1em 0em;
+  text-shadow: none !important;
+  display: block;
+  text-decoration: none;
 }
-
 .letter-container a.tooltip-button:hover, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
-	color: #ee6901;
-    background-color: #262729;
-    background-image: url("http://thesmallaxe.github.io/reprieve/twitter-hover.png");
+  color: #ee6901;
+  background-color: #262729;
+  background-image: url("http://thesmallaxe.github.io/reprieve/twitter-hover.png");
 }
-
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
-	text-shadow: none;
-	border: 1px solid transparent;
+  text-shadow: none;
+  border: 1px solid transparent;
 }
-
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
-	border: 1px solid #ee6901;
-	color: #ee6901 !important;
-	}
+  border: 1px solid #ee6901;
+  color: #ee6901 !important;
+}
