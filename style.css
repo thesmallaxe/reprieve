@@ -42,14 +42,19 @@
   border-top: 5px solid #ee6901;
   border-bottom: 5px solid #ee6901;
 }
+
+/* Box typography */
+
+.smallipop-instance.black.fatShadow .sipContent p {
+  margin-bottom: 1em;
+}
+
 .smallipop-instance.black.fatShadow .sipContent h3 {
   color: #ee6901;
   font-size: 24px;
   margin-bottom: 1em;
 }
-.smallipop-instance.black.fatShadow .sipContent p {
-  margin-bottom: 1em;
-}
+
 .smallipop-instance.black.fatShadow .sipContent blockquote {
   padding-left: 2.5em;
   border-left: 5px solid #ee6901;
