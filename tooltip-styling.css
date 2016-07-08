@@ -98,7 +98,8 @@
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
   text-shadow: none;
   border: 1px solid transparent;
-  display: block;
+  display: inline-block;
+  margin: 0;
   text-align: center;
 }
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
