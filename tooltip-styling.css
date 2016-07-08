@@ -55,6 +55,12 @@
   margin-bottom: 1em;
 }
 
+.smallipop-instance.black.fatShadow .sipContent h4 {
+  color: #ee6901;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
 .smallipop-instance.black.fatShadow .sipContent blockquote {
   padding-left: 2.5em;
   border-left: 5px solid #ee6901;
@@ -92,6 +98,8 @@
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button {
   text-shadow: none;
   border: 1px solid transparent;
+  display: block;
+  text-align: center;
 }
 .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover {
   border: 1px solid #ee6901;
