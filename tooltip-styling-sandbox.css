@@ -112,8 +112,8 @@
 /* Mobile temp fix */
 
 a.highlight {
-  text-align: none;
-  box-shadow: none;
+  text-align: none !important; 
+  box-shadow: none !important;
 }
 
 #mobile-tooltip-container {
