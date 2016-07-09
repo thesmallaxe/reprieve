@@ -89,6 +89,7 @@
   text-shadow: none !important;
   display: block;
   text-decoration: none;
+  box-shadow: none;
 }
 .letter-container a.tooltip-button:hover, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover, .mobile-tooltip a.tooltip-button:hover {
   color: #ee6901;
@@ -135,7 +136,14 @@ a.highlight {
   border-radius: 0;
   border-top: 5px solid #ee6901;
   border-bottom: 5px solid #ee6901;
+  color: white;
 
+}
+a {
+  color: #ee6901;
+}
+a:hover {
+  color: #ffffff;
 }
 }
 
