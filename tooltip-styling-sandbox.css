@@ -141,10 +141,10 @@ a.highlight {
   margin-bottom: 1em;
 
 }
-#mobile-tooltip-container .mobile-tooltip a {
+.mobile-tooltip a.return {
   color: #ee6901;
 }
-#mobile-tooltip-container .mobile-tooltip a:hover {
+.mobile-tooltip a.return:hover {
   color: #ffffff;
 }
 }
