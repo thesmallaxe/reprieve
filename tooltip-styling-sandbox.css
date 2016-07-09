@@ -66,6 +66,7 @@
   border-left: 5px solid #ee6901;
   margin-left: 0;
   margin-bottom: 1em !important;
+  color: white;
 }
 @media only screen and (max-width: 768px) {
   .smallipop-instance {
@@ -137,12 +138,13 @@ a.highlight {
   border-top: 5px solid #ee6901;
   border-bottom: 5px solid #ee6901;
   color: white;
+  margin-bottom: 1em;
 
 }
-a {
+#mobile-tooltip-container .mobile-tooltip a {
   color: #ee6901;
 }
-a:hover {
+#mobile-tooltip-container .mobile-tooltip a:hover {
   color: #ffffff;
 }
 }
