@@ -119,11 +119,12 @@ a.highlight {
 #mobile-tooltip-container {
   display: none;
 }
-
+/*
 @media only screen and (max-width: 768px) {
   .smallipop-instance {
     display: none !important;
   }
+  */
 
   #mobile-tooltip-container {
   display: block;
