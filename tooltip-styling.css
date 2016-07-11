@@ -28,14 +28,14 @@
   padding: 0em 3px;
 }
 
-.letter-container .highlight a {
+.letter-container a.highlight {
   text-decoration: none;
 }
 
-.letter-container .highlight a:hover {
+.letter-container a.highlight:hover {
   color: white;
 }
-
+ 
 /* Boxes */
 
 .smallipop-instance.black.fatShadow {
