@@ -382,52 +382,52 @@ Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) lice
       }
       return false;
     },
-    _triggerMouseover: function() {
-      var isTrigger, popup, shownId, trigger, triggerData, _base;
-      trigger = popup = $(this);
-      isTrigger = trigger.hasClass('sipInitialized');
-      if (!isTrigger) {
-        trigger = sip._getTrigger(popup.data('shown'));
-      }
-      if (!trigger.length) {
-        return;
-      }
-      triggerData = trigger.data('smallipop');
-      popup = triggerData.popupInstance.data((isTrigger ? 'triggerHovered' : 'hovered'), true);
-      sip._killTimers(popup);
-      shownId = popup.data('shown');
-      if (shownId !== triggerData.id || popup.css('opacity') === 0) {
-        if (typeof (_base = triggerData.options).onBeforeShow === "function") {
-          _base.onBeforeShow(trigger);
-        }
-        return popup.data('showDelayTimer', setTimeout(function() {
-          return sip._showPopup(trigger);
-        }, triggerData.options.popupDelay));
-      }
-    },
-    _triggerMouseout: function() {
-      var isTrigger, popup, popupData, trigger, triggerData, _base;
-      trigger = popup = $(this);
-      isTrigger = trigger.hasClass('sipInitialized');
-      if (!isTrigger) {
-        trigger = sip._getTrigger(popup.data('shown'));
-      }
-      if (!trigger.length) {
-        return;
-      }
-      triggerData = trigger.data('smallipop');
-      popup = triggerData.popupInstance.data((isTrigger ? 'triggerHovered' : 'hovered'), false);
-      sip._killTimers(popup);
-      popupData = popup.data();
-      if (!(popupData.hovered || popupData.triggerHovered)) {
-        if (typeof (_base = triggerData.options).onBeforeHide === "function") {
-          _base.onBeforeHide(trigger);
-        }
-        return popup.data('hideDelayTimer', setTimeout(function() {
-          return sip._hideSmallipop(popup);
-        }, triggerData.options.hideDelay));
-      }
-    },
+    // _triggerMouseover: function() {
+    //   var isTrigger, popup, shownId, trigger, triggerData, _base;
+    //   trigger = popup = $(this);
+    //   isTrigger = trigger.hasClass('sipInitialized');
+    //   if (!isTrigger) {
+    //     trigger = sip._getTrigger(popup.data('shown'));
+    //   }
+    //   if (!trigger.length) {
+    //     return;
+    //   }
+    //   triggerData = trigger.data('smallipop');
+    //   popup = triggerData.popupInstance.data((isTrigger ? 'triggerHovered' : 'hovered'), true);
+    //   sip._killTimers(popup);
+    //   shownId = popup.data('shown');
+    //   if (shownId !== triggerData.id || popup.css('opacity') === 0) {
+    //     if (typeof (_base = triggerData.options).onBeforeShow === "function") {
+    //       _base.onBeforeShow(trigger);
+    //     }
+    //     return popup.data('showDelayTimer', setTimeout(function() {
+    //       return sip._showPopup(trigger);
+    //     }, triggerData.options.popupDelay));
+    //   }
+    // },
+    // _triggerMouseout: function() {
+    //   var isTrigger, popup, popupData, trigger, triggerData, _base;
+    //   trigger = popup = $(this);
+    //   isTrigger = trigger.hasClass('sipInitialized');
+    //   if (!isTrigger) {
+    //     trigger = sip._getTrigger(popup.data('shown'));
+    //   }
+    //   if (!trigger.length) {
+    //     return;
+    //   }
+    //   triggerData = trigger.data('smallipop');
+    //   popup = triggerData.popupInstance.data((isTrigger ? 'triggerHovered' : 'hovered'), false);
+    //   sip._killTimers(popup);
+    //   popupData = popup.data();
+    //   if (!(popupData.hovered || popupData.triggerHovered)) {
+    //     if (typeof (_base = triggerData.options).onBeforeHide === "function") {
+    //       _base.onBeforeHide(trigger);
+    //     }
+    //     return popup.data('hideDelayTimer', setTimeout(function() {
+    //       return sip._hideSmallipop(popup);
+    //     }, triggerData.options.hideDelay));
+    //   }
+    // },
     _onWindowScroll: function(e) {
       var _this = this;
       clearTimeout(sip.scrollTimer);
@@ -732,7 +732,7 @@ Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) lice
       triggerData = self.data();
       objHint = hint || self.attr('title');
       $objInfo = $("."+options.infoClass + " #data-" + self.attr("id")).first(); // CodeNegar Edited line, original: $objInfo = $("> ." + options.infoClass + ":first", self);
-	  if ($objInfo.length) {
+    if ($objInfo.length) {
         objHint = $objInfo.clone(true, true).removeClass("" + options.infoClass);
       }
       if (objHint && !self.hasClass('sipInitialized')) {
@@ -767,6 +767,7 @@ Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) lice
         } else {
           triggerEvents['click.smallipop'] = sip._triggerMouseout;
           triggerEvents['mouseover.smallipop'] = sip._triggerMouseover;
+          console.log("Georgia: Not trigger on click")
         }
         if (triggerOptions.tourIndex) {
           tourTitle = triggerOptions.tourTitle || 'defaultTour';
