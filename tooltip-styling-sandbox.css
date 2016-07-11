@@ -111,13 +111,13 @@
 
 /* Mobile temp fix */
 
-a.highlight {
-  text-align: none !important; 
-  box-shadow: none !important;
-}
-
 #mobile-tooltip-container {
   display: none;
+}
+
+/*a.highlight {
+  text-align: none !important; 
+  box-shadow: none !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,3 +151,4 @@ a.highlight {
 }
 }
 
+*/
