@@ -121,21 +121,21 @@ a.highlight {
 }
 
 @media only screen and (max-width: 768px) {
-  /*
+  
   .smallipop-instance {
     display: none !important;
   }
-  */
+  
 
   #mobile-tooltip-container {
   display: block;
 }
 .mobile-tooltip {
-    background-color: #262729 !important;
+  background-color: #262729 !important;
   border: none !important;
   box-shadow: none;
   border-radius: 0px;
-   padding: 2em !important;
+  padding: 2em !important;
   border-radius: 0;
   border-top: 5px solid #ee6901;
   border-bottom: 5px solid #ee6901;
