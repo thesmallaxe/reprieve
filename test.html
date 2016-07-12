@@ -1,284 +1,115 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
   <title>Testing tooltip fix</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <style>
-@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 20px;
-  line-height: 1.5;
-  color: #34495e;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-h1 {
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  font-size: 32px;
-  margin-bottom: 0.5em;
-}
-h1 small {
-  display: block;
-  font-size: 24px;
-  color: #c3c3c3;
-}
-
-.wrap {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-.tooltip {
-  text-align: left;
-  display: inline-block;
-  position: relative;
-}
-.tooltip .trigger {
-  display: inline-block;
-  padding: 0.75em;
-  z-index: 1;
-  text-decoration: none;
-  color: #2980b9;
-  cursor: help;
-}
-.tooltip .trigger::before {
-  content: '';
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  transition: all 150ms ease-in-out;
-}
-.tooltip .content {
-  display: inline-block;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  padding: 1em;
-  border-radius: 6px;
-  width: 280px;
-  font-size: 14px;
-  transition: all 150ms ease-in-out;
-}
-.tooltip .trigger::before {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.9);
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip .content {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip .trigger::before {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.tooltip .content {
-  top: 100%;
-  left: 0;
-}
-.tooltip.bottom .trigger::before {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-bottom-color: rgba(0, 0, 0, 0.9);
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.bottom .content {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.bottom .trigger::before {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.tooltip.bottom .content {
-  top: 100%;
-  left: 0;
-}
-.tooltip.left .trigger::before {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-left-color: rgba(0, 0, 0, 0.9);
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.left .content {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.left .trigger::before {
-  border-right: none;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 100%;
-}
-.tooltip.left .content {
-  top: -100%;
-  right: 106%;
-  right: calc( 100% + 6px );
-}
-.tooltip.right .trigger::before {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-right-color: rgba(0, 0, 0, 0.9);
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.right .content {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.right .trigger::before {
-  border-left: none;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 100%;
-}
-.tooltip.right .content {
-  top: -100%;
-  left: 106%;
-  left: calc( 100% + 6px );
-}
-.tooltip.top .trigger::before {
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-top-color: rgba(0, 0, 0, 0.9);
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.top .content {
-  top: auto;
-  right: auto;
-  bottom: auto;
-  left: auto;
-}
-.tooltip.top .trigger::before {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.tooltip.top .content {
-  top: auto;
-  bottom: 100%;
-  left: 0;
-}
-.tooltip:hover .trigger::before {
-  opacity: 1;
-  visibility: visible;
-}
-.tooltip:hover .content {
-  opacity: 1;
-  visibility: visible;
-}
-.tooltip .trigger:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-.tooltip .trigger:hover + .content {
-  opacity: 1;
-  visibility: visible;
-}
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+  html {
+    font-family: "Source Sans Pro", arial, sans-serif;
+    height: 1000px;
+  }
+  
+  h3 {
+    color: #ee6901;
+  }
+  
+  .main {
+    width: 500px;
+  }
+  
+  .title,
+  .title2 {
+    background: yellow;
+  }
+  
+  .popup {
+    position: relative;
+  }
+  
+  .popup,
+  .popup2 {
+    padding: 1em;
+    border-radius: 0;
+    background-color: #262729;
+    border-top: 5px solid #ee6901;
+    border-bottom: 5px solid #ee6901;
+    color: white;
+    width: 320px;
+    display: none;
+    margin: 1em 0;
+  }
+  
+  .title2 {
+    display: inline;
+    position: relative;
+  }
+  
+  .popup2 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding-bottom: 100px;
+  }
+  
+  .popup:before,
+  .popup2:before {
+    bottom: auto;
+    top: -25px;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-color: transparent transparent #222 transparent;
+    position: absolute;
+    left: 50%;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    content: "";
+    display: block;
+  }
+  
+  a.close {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+  }
 </style>
 
 <body>
 
-<h1>
-  Advanced CSS Tooltip with flexible position
-  <small>Hold your tooltip open on :focus</span>
-</h1>
+  <div class="main">During my meetings, I made it clear that while progress has been made, with regular consular access now in place following his transfer to a federal prison, further steps are required. Prime Minister Hailemariam assured me that <span class="title">Mr Tsege will be allowed to access to independent legal advice</span>
+    <div class="popup">
+      <h3>1. There is no lawful conviction for a lawyer to appeal nor legal process to challenge. Andy’s kidnap was illegal, his death sentence was illegal, and his ongoing detention is illegal.</h3> Andy was tried by the Ethiopian authorities three times in absentia, meaning that he wasn’t even in the courtroom – he was thousands of miles away in London when he was sentenced to death. UN experts have clearly stated that Andy’s convictions
+      are unlawful and do not constitute a legitimate basis for his detention.<sup>[1]</sup></div> to allow him
+    <div class="title2">to consider his options under the Ethiopian legal system.
+      <div class="popup2">
+        <h3>2. The Ethiopian government has confirmed on several occasions that there is no legal process Andy can access in Ethiopia.</h3>Both the Ethiopian Prime Minister and Foreign Minister have told the UK government that “there is no appeal process” available for Andy, and that it is “not possible” for him to appeal his convictions, including his in absentia death sentence.<sup>[4]</sup>
+        <a href="" class="close">X</a>
+      </div>
+    </div>
+    We will continue to press the Ethiopians to ensure that Mr Tsege has access to the promised legal representation.</div>
 
-<ul class="wrap">
-  <li>
-    <div class="tooltip bottom">
-      <a href="#" class="trigger">Tooltip bottom</a>
-      <div class="content">
-        <p><h1>Hello</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci, laboriosam, aut ducimus facilis deserunt a ut ratione ipsum vitae eos ab ullam fugit aliquam doloribus. Rerum iste ducimus recusandae.</p>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="tooltip left">
-      <a href="#" class="trigger">Tooltip left</a>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci, laboriosam, aut ducimus facilis deserunt a ut ratione ipsum vitae eos ab ullam fugit aliquam doloribus. Rerum iste ducimus recusandae.</p>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="tooltip right">
-      <a href="#" class="trigger">Tooltip right</a>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci, laboriosam, aut ducimus facilis deserunt a ut ratione ipsum vitae eos ab ullam fugit aliquam doloribus. Rerum iste ducimus recusandae.</p>
-      </div>
-    </div>
-  </li>
-  <li>
-    <div class="tooltip top">
-      <a href="#" class="trigger">Tooltip top</a>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci, laboriosam, aut ducimus facilis deserunt a ut ratione ipsum vitae eos ab ullam fugit aliquam doloribus. Rerum iste ducimus recusandae.</p>
-      </div>
-    </div>
-  </li>
-    <li>
-    <div class="tooltip">
-      <a href="#" class="trigger">Tooltip without position</a>
-      <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident adipisci, laboriosam, aut ducimus facilis deserunt a ut ratione ipsum vitae eos ab ullam fugit aliquam doloribus. Rerum iste ducimus recusandae.</p>
-      </div>
-    </div>
-  </li>
-</ul>
+  <script>
+    $('.title').on('click', function(event) {
+      $('.popup').toggle('show');
+    });
 
+    $('.title2').on('click', function(event) {
+      $(".popup2").css('display', 'block');
+    });
+
+    $('.close').on('click', function(event) {
+      $(".popup2").css('display', 'none');
+    });
+  </script>
 </body>
+
 </html>
