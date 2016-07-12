@@ -4,6 +4,7 @@
 <head>
   <title>Testing tooltip fix</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
@@ -19,7 +20,7 @@
   }
   
   .main {
-    width: 500px;
+    width: 100%;
   }
   
   .title,
@@ -39,7 +40,8 @@
     border-top: 5px solid #ee6901;
     border-bottom: 5px solid #ee6901;
     color: white;
-    width: 320px;
+    width: 98%;
+    margin: 0 1%;
     display: none;
     margin: 1em 0;
   }
@@ -54,7 +56,7 @@
     position: absolute;
     top: 10px;
     left: 0;
-    padding-bottom: 100px;
+    padding-bottom: 2.5em;
   }
   
   .popup:before,
@@ -79,7 +81,7 @@
     right: 0.5em;
     color: white;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 24px;
   }
 </style>
 
