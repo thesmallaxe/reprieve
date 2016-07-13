@@ -1,46 +1,56 @@
 var currentscrollpos;
 
 $('.title1').on('click', function(event) {
+	if($(window).width() >= 768) {
 	$(".mobile-tooltip-2").css('display', 'none');
 	$(".mobile-tooltip-3").css('display', 'none');
 	$(".mobile-tooltip-4").css('display', 'none');
 	$(".mobile-tooltip-5").css('display', 'none');
+}
 	$('.mobile-tooltip-1').toggle('show');
 	currentscrollpos = $(window).scrollTop();
 });
 
 $('.title2').on('click', function(event) {
+	if($(window).width() >= 768) {
 	$(".mobile-tooltip-1").css('display', 'none');
 	$(".mobile-tooltip-3").css('display', 'none');
 	$(".mobile-tooltip-4").css('display', 'none');
 	$(".mobile-tooltip-5").css('display', 'none');
+	}
 	$('.mobile-tooltip-2').toggle('show');
 	currentscrollpos = $(window).scrollTop();
 });
 
 $('.title3').on('click', function(event) {
+	if($(window).width() >= 768) {
 	$(".mobile-tooltip-1").css('display', 'none');
 	$(".mobile-tooltip-2").css('display', 'none');
 	$(".mobile-tooltip-4").css('display', 'none');
 	$(".mobile-tooltip-5").css('display', 'none');
+}
 	$('.mobile-tooltip-3').toggle('show');
 	currentscrollpos = $(window).scrollTop();
 });
 
 $('.title4').on('click', function(event) {
+	if($(window).width() >= 768) {
 	$(".mobile-tooltip-1").css('display', 'none');
 	$(".mobile-tooltip-2").css('display', 'none');
 	$(".mobile-tooltip-3").css('display', 'none');
 	$(".mobile-tooltip-5").css('display', 'none');
+}
 	$('.mobile-tooltip-4').toggle('show');
 	currentscrollpos = $(window).scrollTop();
 });
 
 $('.title5').on('click', function(event) {
+	if($(window).width() >= 768) {
 	$(".mobile-tooltip-1").css('display', 'none');
 	$(".mobile-tooltip-2").css('display', 'none');
 	$(".mobile-tooltip-3").css('display', 'none');
 	$(".mobile-tooltip-4").css('display', 'none');
+}
 	$('.mobile-tooltip-5').toggle('show');
 	currentscrollpos = $(window).scrollTop();
 });
