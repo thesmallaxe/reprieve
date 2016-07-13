@@ -171,7 +171,7 @@
     margin: 1em 0;
   }
   
-  .title2 {
+/*  .title2 {
     display: inline;
     position: relative;
   }
@@ -182,7 +182,7 @@
     top: 10px;
     left: 0;
     padding-bottom: 2.5em;
-  }
+  }*/
   
   .mobile-tooltip:before {
     bottom: auto;
