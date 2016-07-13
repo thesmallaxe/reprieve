@@ -14,13 +14,7 @@ var currentscrollpos;
 $('.title1').on('click', function(event) {
     closePopUp();
     // $(".mobile-tooltip-1").addClass('poped-up');
-    $(".mobile-tooltip-1").toggle(
-        function() {
-            $(this).addClass("poped-up");
-        }, function() {
-            $(this).removeClass("poped-up");
-        }
-    );
+    $(".mobile-tooltip-1").toggleClass("poped-up");
     $('.mobile-tooltip-1').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
@@ -28,13 +22,7 @@ $('.title1').on('click', function(event) {
 $('.title2').on('click', function(event) {
     closePopUp();
     // $(".mobile-tooltip-2").addClass('poped-up');
-    $(".mobile-tooltip-2").toggle(
-        function() {
-            $(this).addClass("poped-up");
-        }, function() {
-            $(this).removeClass("poped-up");
-        }
-    );
+    $(".mobile-tooltip-2").toggleClass("poped-up");
     $('.mobile-tooltip-2').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
@@ -42,13 +30,7 @@ $('.title2').on('click', function(event) {
 $('.title3').on('click', function(event) {
     closePopUp();
     // $(".mobile-tooltip-3").addClass('poped-up');
-    $(".mobile-tooltip-3").toggle(
-        function() {
-            $(this).addClass("poped-up");
-        }, function() {
-            $(this).removeClass("poped-up");
-        }
-    );
+    $(".mobile-tooltip-3").toggleClass("poped-up");
     $('.mobile-tooltip-3').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
@@ -57,13 +39,7 @@ $('.title4').on('click', function(event) {
     closePopUp();
     // $(".mobile-tooltip-4").addClass('poped-up');
 
-    $(".mobile-tooltip-4").toggle(
-        function() {
-            $(this).addClass("poped-up");
-        }, function() {
-            $(this).removeClass("poped-up");
-        }
-    );
+    $(".mobile-tooltip-4").toggleClass("poped-up");
     $('.mobile-tooltip-4').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
@@ -71,13 +47,7 @@ $('.title4').on('click', function(event) {
 $('.title5').on('click', function(event) {
     closePopUp();
     // $(".mobile-tooltip-5").addClass('poped-up');
-    $(".mobile-tooltip-5").toggle(
-        function() {
-            $(this).addClass("poped-up");
-        }, function() {
-            $(this).removeClass("poped-up");
-        }
-    );
+    $(".mobile-tooltip-5").toggleClass("poped-up");
     $('.mobile-tooltip-5').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
