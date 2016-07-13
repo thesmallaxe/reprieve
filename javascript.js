@@ -10,10 +10,10 @@ $('.title1').on('click', function(event) {
             console.log('test2');
             // "this" points to current item in looping through all elements with
             // class="Mandatory"
-            if ($(this).css('display') == 'block') {
+            if ($(".mobile-tooltip").css('display') == 'block') {
                 //your code
                 console.log('test3');
-                $(this).css('display', 'none');
+                $(".mobile-tooltip").css('display', 'none');
             }
             $('.mobile-tooltip-1').toggle('show');
         });
