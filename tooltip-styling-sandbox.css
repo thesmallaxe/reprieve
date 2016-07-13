@@ -45,7 +45,7 @@
 
 /* Box typography */
 
-.smallipop-instance.black.fatShadow .sipContent p, .mobile-tooltip p {
+/*.smallipop-instance.black.fatShadow .sipContent p, .mobile-tooltip p {
   margin-bottom: 1em;
 }
 
@@ -73,7 +73,7 @@
     left: 1% !important;
     max-width: 98% !important;
   }
-}
+}*/
 
 /* Share buttons */
 
@@ -110,10 +110,6 @@
 }
 
 /* Mobile temp fix */
-
-#mobile-tooltip-container {
-  display: none;
-}
 
 /*a.highlight {
   text-align: none !important; 
@@ -152,3 +148,68 @@
 }
 
 */
+
+/* New styles */
+
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+  html {
+    font-family: "Source Sans Pro", arial, sans-serif;
+  }
+  
+  h3 {
+    color: #ee6901;
+  }
+  
+  .mobile-tooltip-1 {
+    position: relative;
+  }
+  
+  .mobile-tooltip {
+    padding: 1em;
+    border-radius: 0;
+    background-color: #262729;
+    border-top: 5px solid #ee6901;
+    border-bottom: 5px solid #ee6901;
+    color: white;
+    width: 98%;
+    margin: 0 1%;
+    display: none;
+    margin: 1em 0;
+  }
+  
+  .title2 {
+    display: inline;
+    position: relative;
+  }
+  
+  .mobile-tooltip-2 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding-bottom: 2.5em;
+  }
+  
+  .mobile-tooltip:before {
+    bottom: auto;
+    top: -25px;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-color: transparent transparent #222 transparent;
+    position: absolute;
+    left: 50%;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    content: "";
+    display: block;
+  }
+  
+  a.close {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }

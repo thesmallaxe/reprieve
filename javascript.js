@@ -1,6 +1,11 @@
+    $('.title').on('click', function(event) {
+      $('.popup').toggle('show');
+    });
 
-console.log("Hello 1");
-jQuery("#close-button").on('click', function () {
-	console.log("Hello 2");
-	jQuery("#smallipop1").attr("style","display: none;");
-});
+    $('.title2').on('click', function(event) {
+      $(".popup2").css('display', 'block');
+    });
+
+    $('.close').on('click', function(event) {
+      $(".popup2").css('display', 'none');
+    });
