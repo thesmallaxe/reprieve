@@ -155,8 +155,9 @@ body {
 /* New styles */
 
 
-  h3 {
+  .mobile-tooltip h3 {
     color: #ee6901;
+    margin-top: 0;
   }
 
 .highlight {
@@ -203,11 +204,15 @@ body {
     display: block;
   }
 
-  a.close {
+  .mobile-tooltip a.close {
     text-align: right;
-    color: white;
+    color: #ee6901;
     text-decoration: none;
     font-size: 24px;
     box-shadow: none !important;
     line-height: 12px;
+  }
+
+  .mobile-tooltip a.close:hover {
+    color: white;
   }
