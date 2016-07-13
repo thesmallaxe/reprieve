@@ -6,7 +6,7 @@ $('.title1').on('click', function(event) {
     if ($(".mobile-tooltip").length > 0) {
         console.log('test');
         // Do stuff with $(".Mandatory")
-        $(this).each(function() {
+        $(".mobile-tooltip").each(function() {
             console.log('test2');
             // "this" points to current item in looping through all elements with
             // class="Mandatory"
