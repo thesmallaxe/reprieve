@@ -1,9 +1,20 @@
-.primary .letter-container { 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+html {
+  font-family: "Source Sans Pro", arial, sans-serif !important;
+}
+
+.primary .letter-container {
   font-size: 1.38462em;
   line-height: 1.4;
 }
+
 .primary .letter-container p {
   font-size: 1em;
+}
+
+body {
+  font-family: "Source Sans Pro", arial, sans-serif !important;
 }
 
 /* Letter background */
@@ -16,6 +27,7 @@
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   line-height: 1.75;
 }
+
 .primary .letter-container .letter-background p {
   line-height: 1.75;
 }
@@ -26,66 +38,39 @@
   color: black;
   background-color: #ee6901;
   padding: 0em 3px;
-}
-
-.letter-container a.highlight {
-  text-decoration: none;
-}
-
-.letter-container a.highlight:hover {
-  color: white;
-}
- 
-/* Boxes */
-
-.smallipop-instance.black.fatShadow {
-  background-color: #262729 !important;
-  border: none !important;
-  box-shadow: none;
-  border-radius: 0px;
-}
-.smallipop-instance.black.fatShadow .sipContent {
-  padding: 2em !important;
-  border-radius: 0;
-  border-top: 5px solid #ee6901;
-  border-bottom: 5px solid #ee6901;
+  position: relative;
 }
 
 /* Box typography */
 
-.smallipop-instance.black.fatShadow .sipContent p, .mobile-tooltip p {
+.mobile-tooltip p {
   margin-bottom: 1em;
 }
 
-.smallipop-instance.black.fatShadow .sipContent h3, .mobile-tooltip h3 {
+.mobile-tooltip h3 {
   color: #ee6901;
   font-size: 24px;
   margin-bottom: 1em;
+  margin-top: 0 !important;
 }
 
-.smallipop-instance.black.fatShadow .sipContent h4, .mobile-tooltip h4 {
+.mobile-tooltip h4 {
   color: #ee6901;
   font-size: 20px;
   margin-bottom: 0.5em;
 }
 
-.smallipop-instance.black.fatShadow .sipContent blockquote, .mobile-tooltip blockquote {
+.mobile-tooltip blockquote {
   padding-left: 2.5em;
   border-left: 5px solid #ee6901;
-  margin-left: 0;
+  margin-left: 0 !important;
   margin-bottom: 1em !important;
   color: white;
-}
-@media only screen and (max-width: 768px) {
-  .smallipop-instance {
-    left: 1% !important;
-    max-width: 98% !important;
-  }
 }
 
 /* Share buttons */
 
-.letter-container a.tooltip-button, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button, .mobile-tooltip a.tooltip-button {
+.letter-container a.tooltip-button, .mobile-tooltip a.tooltip-button {
   background-color: #ee6901;
   background-image: url("http://thesmallaxe.github.io/reprieve/twitter.png");
   background-position: 0.7em 0.7em;
@@ -100,62 +85,77 @@
   text-decoration: none;
   box-shadow: none;
 }
-.letter-container a.tooltip-button:hover, .smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover, .mobile-tooltip a.tooltip-button:hover {
+
+.letter-container a.tooltip-button:hover, .mobile-tooltip a.tooltip-button:hover {
   color: #ee6901;
   background-color: #262729;
   background-image: url("http://thesmallaxe.github.io/reprieve/twitter-hover.png");
 }
-.smallipop-instance.black.fatShadow .sipContent a.tooltip-button, .mobile-tooltip a.tooltip-button {
+
+.mobile-tooltip a.tooltip-button {
   text-shadow: none;
   border: 1px solid transparent;
   display: inline-block;
   margin: 0;
   text-align: center;
 }
-.smallipop-instance.black.fatShadow .sipContent a.tooltip-button:hover, .mobile-tooltip a.tooltip-button:hover {
+
+.mobile-tooltip a.tooltip-button:hover {
   border: 1px solid #ee6901;
   color: #ee6901 !important;
 }
 
-/* Mobile temp fix */
+/* New Styles */
 
-#mobile-tooltip-container {
-  display: none;
+.letter-background {
+  position: relative;
 }
 
-a.highlight {
-  text-align: none !important; 
-  box-shadow: none !important;
-}
-
-@media only screen and (max-width: 768px) {
-  
-  .smallipop-instance {
-    display: none !important;
-  }
-  
-
-  #mobile-tooltip-container {
-  display: block;
-}
 .mobile-tooltip {
-  background-color: #262729 !important;
-  border: none !important;
-  box-shadow: none;
-  border-radius: 0px;
-  padding: 2em !important;
+  padding: 1em;
   border-radius: 0;
+  background-color: #262729;
   border-top: 5px solid #ee6901;
   border-bottom: 5px solid #ee6901;
   color: white;
-  margin-bottom: 1em;
-
+  width: 100%;
+  display: none;
+  position: relative;
 }
-.mobile-tooltip a.return {
+
+@media only screen and (min-width: 768px) {
+  .mobile-tooltip {
+    position: absolute;
+    z-index: 2;
+    width: 95%;
+    margin: 0% 2.5%;
+  }
+}
+
+.mobile-tooltip:before {
+  bottom: auto;
+  top: -20px;
+  margin-left: -10px;
+  border: 10px solid transparent;
+  border-color: transparent transparent #222 transparent;
+  position: absolute;
+  left: 50%;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  content: "";
+  display: block;
+}
+
+.mobile-tooltip a.close {
+  text-align: right;
   color: #ee6901;
-} 
-.mobile-tooltip a.return:hover {
-  color: #ffffff;
-}
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: none !important;
+  line-height: 12px;
 }
 
+.mobile-tooltip a.close:hover {
+  color: white;
+}
