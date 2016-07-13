@@ -5,7 +5,7 @@ function closePopUp() {
             if ($(".poped-up").css('display') == 'block') {
                 console.log('test3');
                 $(".poped-up").css('display', 'none');
-                $(".poped-up").removeClass('poped-up');
+                // $(".poped-up").removeClass('poped-up');
             }
         });
     }
