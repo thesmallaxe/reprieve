@@ -1,11 +1,11 @@
     $('.title').on('click', function(event) {
-      $('.popup').toggle('show');
+      $('.mobile-tooltip-1').toggle('show');
     });
 
     $('.title2').on('click', function(event) {
-      $(".popup2").css('display', 'block');
+      $(".mobile-tooltip-2").css('display', 'block');
     });
 
     $('.close').on('click', function(event) {
-      $(".popup2").css('display', 'none');
+      $(".mobile-tooltip-2").css('display', 'none');
     });
