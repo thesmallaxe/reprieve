@@ -6,7 +6,7 @@ $('.title1').on('click', function(event) {
     if ($(".mobile-tooltip").length > 0) {
         console.log('test');
         // Do stuff with $(".Mandatory")
-        $(".mobile-tooltip").each(function() {
+        $(this).each(function() {
             console.log('test2');
             // "this" points to current item in looping through all elements with
             // class="Mandatory"
@@ -16,7 +16,7 @@ $('.title1').on('click', function(event) {
                 $(this).css('display', 'none');
             }
             $('.mobile-tooltip-1').toggle('show');
-});
+        });
     }
 });
 
