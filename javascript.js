@@ -6,17 +6,17 @@ $('.title1').on('click', function(event) {
     if ($(".mobile-tooltip").length > 0) {
         console.log('test');
         // Do stuff with $(".Mandatory")
-        $(".mobile-tooltip").each(function() {
-            console.log('test2');
-            // "this" points to current item in looping through all elements with
-            // class="Mandatory"
-            if ($(this).css('display') == 'block') {
-                //your code
-                console.log('test3');
-                $(this).css('display', 'none');
-            }
-            $('.mobile-tooltip-1').toggle('show');
-        });
+        // $(".mobile-tooltip").each(function() {
+        console.log('test2');
+        // "this" points to current item in looping through all elements with
+        // class="Mandatory"
+        if ($(this).css('display') == 'block') {
+            //your code
+            console.log('test3');
+            $(this).css('display', 'none');
+        }
+        $('.mobile-tooltip-1').toggle('show');
+        // });
     }
 });
 
