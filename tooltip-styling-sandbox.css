@@ -163,6 +163,10 @@ body {
   position: relative;
 }
 
+.letter-background {
+  position: relative;
+}
+
   .mobile-tooltip {
     padding: 1em;
     border-radius: 0;
@@ -171,7 +175,6 @@ body {
     border-bottom: 5px solid #ee6901;
     color: white;
     width: 100%;
-    max-width: 500px;
     display: none;
     position: relative;
   }
@@ -180,7 +183,8 @@ body {
     .mobile-tooltip {
       position: absolute;
       z-index: 2;
-      left: 25%;
+      width: 95%;
+      margin: 0% 2.5%;
     }
   }
 
