@@ -48,6 +48,7 @@ $('.title5').on('click', function(event) {
 
 
 $('.close1').on('click', function(event) {
+    closePopUp();
     $(".mobile-tooltip-1").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -55,6 +56,7 @@ $('.close1').on('click', function(event) {
 });
 
 $('.close2').on('click', function(event) {
+    closePopUp();
     $(".mobile-tooltip-2").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -62,6 +64,7 @@ $('.close2').on('click', function(event) {
 });
 
 $('.close3').on('click', function(event) {
+    closePopUp();
     $(".mobile-tooltip-3").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -69,6 +72,7 @@ $('.close3').on('click', function(event) {
 });
 
 $('.close4').on('click', function(event) {
+    closePopUp();
     $(".mobile-tooltip-4").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -76,6 +80,7 @@ $('.close4').on('click', function(event) {
 });
 
 $('.close5').on('click', function(event) {
+    closePopUp();
     $(".mobile-tooltip-5").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
