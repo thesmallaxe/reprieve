@@ -14,40 +14,35 @@ var currentscrollpos;
 $('.title1').on('click', function(event) {
     closePopUp();
     $(".mobile-tooltip-1").addClass('poped-up');
-    // $('.mobile-tooltip-1').toggle('show');
-    $('mobile-tooltip-1').css('display', 'block');
+    $('.mobile-tooltip-1').show('slow');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title2').on('click', function(event) {
     closePopUp();
     $(".mobile-tooltip-2").addClass('poped-up');
-    // $('.mobile-tooltip-2').toggle('show');
-    $('mobile-tooltip-2').css('display', 'block');
+    $('.mobile-tooltip-2').show('slow');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title3').on('click', function(event) {
     closePopUp();
     $(".mobile-tooltip-3").addClass('poped-up');
-    // $('.mobile-tooltip-3').toggle('show');
-    $('mobile-tooltip-3').css('display', 'block');
+    $('.mobile-tooltip-3').show('slow');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title4').on('click', function(event) {
     closePopUp();
     $(".mobile-tooltip-4").addClass('poped-up');
-    // $('.mobile-tooltip-4').toggle('show');
-    $('mobile-tooltip-4').css('display', 'block');
+    $('.mobile-tooltip-4').show('slow');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title5').on('click', function(event) {
     closePopUp();
     $(".mobile-tooltip-5").addClass('poped-up');
-    // $('.mobile-tooltip-5').toggle('show');
-    $('mobile-tooltip-5').css('display', 'block');
+    $('.mobile-tooltip-5').show('slow');
     currentscrollpos = $(window).scrollTop();
 });
 
