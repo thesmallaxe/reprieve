@@ -3,7 +3,7 @@ var currentscrollpos;
 $('.title1').on('click', function(event) {
     // $('.mobile-tooltip-1').toggle('show');
     // currentscrollpos = $(window).scrollTop();
-    $(".mobile-tooltip").addClass('poped-up');
+
     if ($("poped-up").length > 0) {
         console.log('test');
         // Do stuff with $(".Mandatory")
@@ -19,26 +19,31 @@ $('.title1').on('click', function(event) {
 
         });
     }
+    $(".mobile-tooltip-1").addClass('poped-up');
     $('.mobile-tooltip-1').toggle('show');
 });
 
 $('.title2').on('click', function(event) {
     $('.mobile-tooltip-2').toggle('show');
+    $(".mobile-tooltip-2").addClass('poped-up');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title3').on('click', function(event) {
     $('.mobile-tooltip-3').toggle('show');
+    $(".mobile-tooltip-3").addClass('poped-up');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title4').on('click', function(event) {
     $('.mobile-tooltip-4').toggle('show');
+    $(".mobile-tooltip-4").addClass('poped-up');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title5').on('click', function(event) {
     $('.mobile-tooltip-5').toggle('show');
+    $(".mobile-tooltip-5").addClass('poped-up');
     currentscrollpos = $(window).scrollTop();
 });
 
