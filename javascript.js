@@ -4,7 +4,7 @@ $('.title1').on('click', function(event) {
     // $('.mobile-tooltip-1').toggle('show');
     // currentscrollpos = $(window).scrollTop();
 
-    if ($("poped-up").length > 0) {
+    if ($(".poped-up").length > 0) {
         console.log('test');
         // Do stuff with $(".Mandatory")
         $(this).each(function() {
