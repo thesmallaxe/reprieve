@@ -3,21 +3,22 @@ var currentscrollpos;
 $('.title1').on('click', function(event) {
     // $('.mobile-tooltip-1').toggle('show');
     // currentscrollpos = $(window).scrollTop();
-    if ($(".mobile-tooltip").length > 0) {
-        console.log('test');
-        // Do stuff with $(".Mandatory")
-        $(".mobile-tooltip").each(function() {
-            console.log('test2');
-            // "this" points to current item in looping through all elements with
-            // class="Mandatory"
-            if ($(".mobile-tooltip").css('display') == 'block') {
-                //your code
-                console.log('test3');
-                $(".mobile-tooltip").css('display', 'none');
-            }
-            $('.mobile-tooltip-1').toggle('show');
-        });
+    // if ($(".mobile-tooltip").length > 0) {
+    //     console.log('test');
+    //     // Do stuff with $(".Mandatory")
+    //     $(".mobile-tooltip").each(function() {
+    //         console.log('test2');
+    //         // "this" points to current item in looping through all elements with
+    //         // class="Mandatory"
+
+    //     });
+    // }
+    if ($(".mobile-tooltip").css('display') == 'block') {
+        //your code
+        console.log('test3');
+        $(".mobile-tooltip").css('display', 'none');
     }
+    $('.mobile-tooltip-1').toggle('show');
 });
 
 $('.title2').on('click', function(event) {
