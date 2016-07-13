@@ -6,6 +6,6 @@ $('.title2').on('click', function(event) {
 	$(".mobile-tooltip-2").css('display', 'block');
 });
 
-$('.close').on('click', function(event) {
+$('.close1').on('click', function(event) {
 	$(".mobile-tooltip-2").css('display', 'none');
 });
