@@ -3,7 +3,7 @@ function closePopUp() {
         $(this).each(function() {
             if ($(".poped-up").css('display') == 'block') {
                 $(".poped-up").css('display', 'none');
-                $(".poped-up").removeClass('poped-up');
+                // $(".poped-up").removeClass('poped-up');
             }
         });
     }
