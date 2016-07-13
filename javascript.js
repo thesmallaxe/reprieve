@@ -12,6 +12,7 @@ function closePopUp() {
 var currentscrollpos;
 
 $('.title1').on('click', function(event) {
+    closePopUp();
     $(".mobile-tooltip-1").addClass('poped-up');
     $('.mobile-tooltip-1').toggle('show');
     currentscrollpos = $(window).scrollTop();
