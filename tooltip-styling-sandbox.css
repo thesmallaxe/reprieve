@@ -171,19 +171,22 @@ body {
     border-bottom: 5px solid #ee6901;
     color: white;
     width: 100%;
+    max-width: 500px;
     display: none;
+    position: relative;
   }
 
   @media only screen and (min-width: 768px) {
     .mobile-tooltip {
       position: absolute;
       z-index: 2;
+      left: 25%;
     }
   }
 
   .mobile-tooltip:before {
     bottom: auto;
-    top: -25px;
+    top: -20px;
     margin-left: -10px;
     border: 10px solid transparent;
     border-color: transparent transparent #222 transparent;
@@ -202,4 +205,5 @@ body {
     text-decoration: none;
     font-size: 24px;
     box-shadow: none !important;
+    line-height: 12px;
   }
