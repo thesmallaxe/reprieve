@@ -1,8 +1,8 @@
 function closePopUp() {
-    if ($(".poped-up").length > 0) {
+    if ($(".mobile-tooltip").length > 0) {
         $(this).each(function() {
-            if ($(".poped-up").css('display') == 'block') {
-                $(".poped-up").css('display', 'none');
+            if ($(".mobile-tooltip").css('display') == 'block') {
+                $(".mobile-tooltip").css('display', 'none');
                 // $(".poped-up").removeClass('poped-up');
             }
         });
@@ -12,49 +12,49 @@ function closePopUp() {
 var currentscrollpos;
 
 $('.title1').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     // $(".mobile-tooltip-1").addClass('poped-up');
-    $(".mobile-tooltip-1").toggleClass("poped-up");
+    // $(".mobile-tooltip-1").toggleClass("poped-up");
     $('.mobile-tooltip-1').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title2').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     // $(".mobile-tooltip-2").addClass('poped-up');
-    $(".mobile-tooltip-2").toggleClass("poped-up");
+    // $(".mobile-tooltip-2").toggleClass("poped-up");
     $('.mobile-tooltip-2').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title3').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     // $(".mobile-tooltip-3").addClass('poped-up');
-    $(".mobile-tooltip-3").toggleClass("poped-up");
+    // $(".mobile-tooltip-3").toggleClass("poped-up");
     $('.mobile-tooltip-3').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title4').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     // $(".mobile-tooltip-4").addClass('poped-up');
 
-    $(".mobile-tooltip-4").toggleClass("poped-up");
+    // $(".mobile-tooltip-4").toggleClass("poped-up");
     $('.mobile-tooltip-4').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
 
 $('.title5').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     // $(".mobile-tooltip-5").addClass('poped-up');
-    $(".mobile-tooltip-5").toggleClass("poped-up");
+    // $(".mobile-tooltip-5").toggleClass("poped-up");
     $('.mobile-tooltip-5').toggle('show');
     currentscrollpos = $(window).scrollTop();
 });
 
 
 $('.close1').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     $(".mobile-tooltip-1").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -62,7 +62,7 @@ $('.close1').on('click', function(event) {
 });
 
 $('.close2').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     $(".mobile-tooltip-2").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -70,7 +70,7 @@ $('.close2').on('click', function(event) {
 });
 
 $('.close3').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     $(".mobile-tooltip-3").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -78,7 +78,7 @@ $('.close3').on('click', function(event) {
 });
 
 $('.close4').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     $(".mobile-tooltip-4").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
@@ -86,7 +86,7 @@ $('.close4').on('click', function(event) {
 });
 
 $('.close5').on('click', function(event) {
-    // closePopUp();
+    closePopUp();
     $(".mobile-tooltip-5").css('display', 'none');
     $("html, body").animate({
         scrollTop: currentscrollpos
