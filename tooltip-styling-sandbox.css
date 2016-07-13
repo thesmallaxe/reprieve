@@ -3,7 +3,7 @@
     font-family: "Source Sans Pro", arial, sans-serif !important;
   }
 
-.primary .letter-container { 
+.primary .letter-container {
   font-size: 1.38462em;
   line-height: 1.4;
 }
@@ -115,16 +115,16 @@ body {
 /* Mobile temp fix */
 
 /*a.highlight {
-  text-align: none !important; 
+  text-align: none !important;
   box-shadow: none !important;
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   .smallipop-instance {
     display: none !important;
   }
-  
+
 
   #mobile-tooltip-container {
   display: block;
@@ -144,7 +144,7 @@ body {
 }
 .mobile-tooltip a.return {
   color: #ee6901;
-} 
+}
 .mobile-tooltip a.return:hover {
   color: #ffffff;
 }
@@ -154,19 +154,15 @@ body {
 
 /* New styles */
 
-  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
-  html {
-    font-family: "Source Sans Pro", arial, sans-serif;
-  }
-  
+
   h3 {
     color: #ee6901;
   }
-  
-  .mobile-tooltip-1 {
-    position: relative;
-  }
-  
+
+.highlight {
+  position: relative;
+}
+
   .mobile-tooltip {
     padding: 1em;
     border-radius: 0;
@@ -174,25 +170,17 @@ body {
     border-top: 5px solid #ee6901;
     border-bottom: 5px solid #ee6901;
     color: white;
-    width: 98%;
-    margin: 0 1%;
+    width: 100%;
     display: none;
-    margin: 1em 0;
   }
-  
-/*  .title2 {
-    display: inline;
-    position: relative;
+
+  @media only screen and (min-width: 768px) {
+    .mobile-tooltip {
+      position: absolute;
+      z-index: 2;
+    }
   }
-  
-  .mobile-tooltip-2 {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    padding-bottom: 2.5em;
-  }*/
-  
+
   .mobile-tooltip:before {
     bottom: auto;
     top: -25px;
@@ -207,7 +195,7 @@ body {
     content: "";
     display: block;
   }
-  
+
   a.close {
     text-align: right;
     color: white;
