@@ -11,10 +11,10 @@ $('.title1').on('click', function(event) {
             console.log('test2');
             // "this" points to current item in looping through all elements with
             // class="Mandatory"
-            if ($(this).css('display') == 'block') {
+            if ($(".poped-up").css('display') == 'block') {
                 //your code
                 console.log('test3');
-                $(this).css('display', 'none');
+                $(".poped-up").css('display', 'none');
             }
 
         });
