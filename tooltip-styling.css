@@ -118,7 +118,8 @@ body {
   border-top: 5px solid #ee6901;
   border-bottom: 5px solid #ee6901;
   color: white;
-  width: 100%;
+  margin-left: -2em;
+  width: calc(100% + 2em);
   display: none;
   position: relative;
 }
@@ -127,8 +128,8 @@ body {
   .mobile-tooltip {
     position: absolute;
     z-index: 2;
-    width: 95%;
-    margin: 0% 2.5%;
+    margin-left: -1em;
+    width: calc(100% - 4em);
   }
 }
 

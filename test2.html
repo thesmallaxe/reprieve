@@ -1,0 +1,690 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+        <!--[if gte IE 9]><!-->
+            <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/core.css" media="screen" rel="stylesheet" type="text/css"/>
+            <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/subpages.css" media="screen" rel="stylesheet" type="text/css"/>
+        <!--<![endif]-->
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/fonts.css" media="screen" rel="stylesheet" type="text/css"/>
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/print.css" media="print" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="https://thesmallaxe.github.io/reprieve/tooltip-styling.css">
+
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic" rel="stylesheet" type="text/css">
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/apple-touch-icon.png" rel="apple-touch-icon" />
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+        <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+
+        <!--[if lte IE 7]>
+            <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/core-ie7.css" media="screen" rel="stylesheet" type="text/css"/>
+            <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/subpages-ie7.css" media="screen" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+
+        <!--[if IE 8]>
+            <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/core-ie8.css" media="screen" rel="stylesheet" type="text/css"/>
+            <link href="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/css/subpages-ie8.css" media="screen" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+
+        <script type="text/javascript" src="//use.typekit.net/ifh0msj.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+
+
+        <!--[if lt IE 9]>
+    <script type="text/javascript">
+        /**
+        * @preserve HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed (Includes print shiv)
+        */
+        (function(window,document){var version="3.7.2";var options=window.html5||{};var reSkip=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i;var saveClones=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i;var supportsHtml5Styles;var expando="_html5shiv";var expanID=0;var expandoData={};var supportsUnknownElements;(function(){try{var a=document.createElement("a");a.innerHTML="<xyz></xyz>";supportsHtml5Styles=("hidden" in a);supportsUnknownElements=a.childNodes.length==1||(function(){(document.createElement)("a");var frag=document.createDocumentFragment();return(typeof frag.cloneNode=="undefined"||typeof frag.createDocumentFragment=="undefined"||typeof frag.createElement=="undefined");}());}catch(e){supportsHtml5Styles=true;supportsUnknownElements=true;}}());function addStyleSheet(ownerDocument,cssText){var p=ownerDocument.createElement("p"),parent=ownerDocument.getElementsByTagName("head")[0]||ownerDocument.documentElement;p.innerHTML="x<style>"+cssText+"</style>";return parent.insertBefore(p.lastChild,parent.firstChild);}function getElements(){var elements=html5.elements;return typeof elements=="string"?elements.split(" "):elements;}function addElements(newElements,ownerDocument){var elements=html5.elements;if(typeof elements!="string"){elements=elements.join(" ");}if(typeof newElements!="string"){newElements=newElements.join(" ");}html5.elements=elements+" "+newElements;shivDocument(ownerDocument);}function getExpandoData(ownerDocument){var data=expandoData[ownerDocument[expando]];if(!data){data={};expanID++;ownerDocument[expando]=expanID;expandoData[expanID]=data;}return data;}function createElement(nodeName,ownerDocument,data){if(!ownerDocument){ownerDocument=document;}if(supportsUnknownElements){return ownerDocument.createElement(nodeName);}if(!data){data=getExpandoData(ownerDocument);}var node;if(data.cache[nodeName]){node=data.cache[nodeName].cloneNode();}else{if(saveClones.test(nodeName)){node=(data.cache[nodeName]=data.createElem(nodeName)).cloneNode();}else{node=data.createElem(nodeName);}}return node.canHaveChildren&&!reSkip.test(nodeName)&&!node.tagUrn?data.frag.appendChild(node):node;}function createDocumentFragment(ownerDocument,data){if(!ownerDocument){ownerDocument=document;}if(supportsUnknownElements){return ownerDocument.createDocumentFragment();}data=data||getExpandoData(ownerDocument);var clone=data.frag.cloneNode(),i=0,elems=getElements(),l=elems.length;for(;i<l;i++){clone.createElement(elems[i]);}return clone;}function shivMethods(ownerDocument,data){if(!data.cache){data.cache={};data.createElem=ownerDocument.createElement;data.createFrag=ownerDocument.createDocumentFragment;data.frag=data.createFrag();}ownerDocument.createElement=function(nodeName){if(!html5.shivMethods){return data.createElem(nodeName);}return createElement(nodeName,ownerDocument,data);};ownerDocument.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+getElements().join().replace(/[\w\-:]+/g,function(nodeName){data.createElem(nodeName);data.frag.createElement(nodeName);return'c("'+nodeName+'")';})+");return n}")(html5,data.frag);}function shivDocument(ownerDocument){if(!ownerDocument){ownerDocument=document;}var data=getExpandoData(ownerDocument);if(html5.shivCSS&&!supportsHtml5Styles&&!data.hasCSS){data.hasCSS=!!addStyleSheet(ownerDocument,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}");}if(!supportsUnknownElements){shivMethods(ownerDocument,data);}return ownerDocument;}var html5={elements:options.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:version,shivCSS:(options.shivCSS!==false),supportsUnknownElements:supportsUnknownElements,shivMethods:(options.shivMethods!==false),type:"default",shivDocument:shivDocument,createElement:createElement,createDocumentFragment:createDocumentFragment,addElements:addElements};window.html5=html5;shivDocument(document);var reMedia=/^$|\b(?:all|print)\b/;var shivNamespace="html5shiv";var supportsShivableSheets=!supportsUnknownElements&&(function(){var docEl=document.documentElement;return !(typeof document.namespaces=="undefined"||typeof document.parentWindow=="undefined"||typeof docEl.applyElement=="undefined"||typeof docEl.removeNode=="undefined"||typeof window.attachEvent=="undefined");}());function addWrappers(ownerDocument){var node,nodes=ownerDocument.getElementsByTagName("*"),index=nodes.length,reElements=RegExp("^(?:"+getElements().join("|")+")$","i"),result=[];while(index--){node=nodes[index];if(reElements.test(node.nodeName)){result.push(node.applyElement(createWrapper(node)));}}return result;}function createWrapper(element){var node,nodes=element.attributes,index=nodes.length,wrapper=element.ownerDocument.createElement(shivNamespace+":"+element.nodeName);while(index--){node=nodes[index];node.specified&&wrapper.setAttribute(node.nodeName,node.nodeValue);}wrapper.style.cssText=element.style.cssText;return wrapper;}function shivCssText(cssText){var pair,parts=cssText.split("{"),index=parts.length,reElements=RegExp("(^|[\\s,>+~])("+getElements().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),replacement="$1"+shivNamespace+"\\:$2";while(index--){pair=parts[index]=parts[index].split("}");pair[pair.length-1]=pair[pair.length-1].replace(reElements,replacement);parts[index]=pair.join("}");}return parts.join("{");}function removeWrappers(wrappers){var index=wrappers.length;while(index--){wrappers[index].removeNode();}}function shivPrint(ownerDocument){var shivedSheet,wrappers,data=getExpandoData(ownerDocument),namespaces=ownerDocument.namespaces,ownerWindow=ownerDocument.parentWindow;if(!supportsShivableSheets||ownerDocument.printShived){return ownerDocument;}if(typeof namespaces[shivNamespace]=="undefined"){namespaces.add(shivNamespace);}function removeSheet(){clearTimeout(data._removeSheetTimer);if(shivedSheet){shivedSheet.removeNode(true);}shivedSheet=null;}ownerWindow.attachEvent("onbeforeprint",function(){removeSheet();var imports,length,sheet,collection=ownerDocument.styleSheets,cssText=[],index=collection.length,sheets=Array(index);while(index--){sheets[index]=collection[index];}while((sheet=sheets.pop())){if(!sheet.disabled&&reMedia.test(sheet.media)){try{imports=sheet.imports;length=imports.length;}catch(er){length=0;}for(index=0;index<length;index++){sheets.push(imports[index]);}try{cssText.push(sheet.cssText);}catch(er){}}}cssText=shivCssText(cssText.reverse().join(""));wrappers=addWrappers(ownerDocument);shivedSheet=addStyleSheet(ownerDocument,cssText);});ownerWindow.attachEvent("onafterprint",function(){removeWrappers(wrappers);clearTimeout(data._removeSheetTimer);data._removeSheetTimer=setTimeout(removeSheet,500);});ownerDocument.printShived=true;return ownerDocument;}html5.type+=" print";html5.shivPrint=shivPrint;shivPrint(document);}(this,document));
+    </script>
+<![endif]-->        <script type="text/javascript">
+    /* Modernizr 2.8.2 (Custom Build) | MIT & BSD
+     * Build: http://modernizr.com/download/#-backgroundsize-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-load
+     */
+    ;window.Modernizr=function(a,b,c){function A(a){j.cssText=a}function B(a,b){return A(m.join(a+";")+(b||""))}function C(a,b){return typeof a===b}function D(a,b){return!!~(""+a).indexOf(b)}function E(a,b){for(var d in a){var e=a[d];if(!D(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function F(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:C(f,"function")?f.bind(d||b):f}return!1}function G(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+o.join(d+" ")+d).split(" ");return C(b,"string")||C(b,"undefined")?E(e,b):(e=(a+" "+p.join(d+" ")+d).split(" "),F(e,b,c))}var d="2.8.2",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n="Webkit Moz O ms",o=n.split(" "),p=n.toLowerCase().split(" "),q={},r={},s={},t=[],u=t.slice,v,w=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},x=function(b){var c=a.matchMedia||a.msMatchMedia;if(c)return c(b)&&c(b).matches||!1;var d;return w("@media "+b+" { #"+h+" { position: absolute; } }",function(b){d=(a.getComputedStyle?getComputedStyle(b,null):b.currentStyle)["position"]=="absolute"}),d},y={}.hasOwnProperty,z;!C(y,"undefined")&&!C(y.call,"undefined")?z=function(a,b){return y.call(a,b)}:z=function(a,b){return b in a&&C(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=u.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(u.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(u.call(arguments)))};return e}),q.backgroundsize=function(){return G("backgroundSize")};for(var H in q)z(q,H)&&(v=H.toLowerCase(),e[v]=q[H](),t.push((e[v]?"":"no-")+v));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)z(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},A(""),i=k=null,e._version=d,e._prefixes=m,e._domPrefixes=p,e._cssomPrefixes=o,e.mq=x,e.testProp=function(a){return E([a])},e.testAllProps=G,e.testStyles=w,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+t.join(" "):""),e}(this,this.document),function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))};
+</script>        		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.reprieve.org.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='codenegar-tooltip-style-css'  href='http://www.reprieve.org.uk/wp-content/plugins/content-tooltip/css/smallipop.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='codenegar-tooltip-animate-css'  href='http://www.reprieve.org.uk/wp-content/plugins/content-tooltip/css/animate.css?ver=4.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wspsc-style-css'  href='http://www.reprieve.org.uk/wp-content/plugins/wordpress-simple-paypal-shopping-cart/wp_shopping_cart_style.css?ver=4.2.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/fb-responsive-images-picturefill-2/js/picturefill.2.1.0.min.js'></script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<link rel='https://api.w.org/' href='http://www.reprieve.org.uk/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.reprieve.org.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.reprieve.org.uk/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="canonical" href="http://www.reprieve.org.uk/philip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release/" />
+<link rel='shortlink' href='http://www.reprieve.org.uk/?p=7727' />
+<link rel="alternate" type="application/json+oembed" href="http://www.reprieve.org.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.reprieve.org.uk%2Fphilip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.reprieve.org.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.reprieve.org.uk%2Fphilip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release%2F&#038;format=xml" />
+        <title>Reprieve - Philip Hammond wanted us to share his letter with you – so we did. Read the 5 reasons why Hammond got it wrong and should demand Andy Tsege’s release</title>
+        <meta name="description" content="" />
+        <meta property="og:site_name" content="Reprieve" />
+        <meta property="og:description" content="" />
+        <meta property="og:title" content="Reprieve - Philip Hammond wanted us to share his letter with you – so we did. Read the 5 reasons why Hammond got it wrong and should demand Andy Tsege’s release" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.reprieve.org.uk/philip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release/" />
+        <meta property="og:image" content="http://www.reprieve.org.uk/assets/images/og-img.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Reprieve - Philip Hammond wanted us to share his letter with you – so we did. Read the 5 reasons why Hammond got it wrong and should demand Andy Tsege’s release" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="http://www.reprieve.org.uk/assets/images/og-img.png" />
+
+    <script type="text/javascript">
+        var ajaxurl = 'http://www.reprieve.org.uk/wp-admin/admin-ajax.php';
+        var ajaxnonce = '8a9f6a3383';
+    </script>
+
+
+<!-- WP Simple Shopping Cart plugin v4.2.4 - https://www.tipsandtricks-hq.com/wordpress-simple-paypal-shopping-cart-plugin-768/ -->
+
+	<script type="text/javascript">
+	<!--
+	//
+	function ReadForm (obj1, tst)
+	{
+	    // Read the user form
+	    var i,j,pos;
+	    val_total="";val_combo="";
+
+	    for (i=0; i<obj1.length; i++)
+	    {
+	        // run entire form
+	        obj = obj1.elements[i];           // a form element
+
+	        if (obj.type == "select-one")
+	        {   // just selects
+	            if (obj.name == "quantity" ||
+	                obj.name == "amount") continue;
+		        pos = obj.selectedIndex;        // which option selected
+		        val = obj.options[pos].value;   // selected value
+		        val_combo = val_combo + " (" + val + ")";
+	        }
+	    }
+		// Now summarize everything we have processed above
+		val_total = obj1.product_tmp.value + val_combo;
+		obj1.wspsc_product.value = val_total;
+	}
+	//-->
+	</script>        <meta name="twitter:site" content="@Reprieve" />
+        <meta name="twitter:creator" content="@Reprieve" />
+
+        <script>
+        // Picture element HTML5 shiv
+        document.createElement( "picture" );
+        </script>
+
+    </head>
+
+    <body>
+        <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+           chromium.org/developers/how-tos/chrome-frame-getting-started -->
+        <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+        <a id="accesskey" accesskey="2" href="#content">Skip Content</a>
+
+        <div class="content_align">
+
+            <div id="wrapper">
+
+                <a href="/" id="logo" class="logo_base" accesskey="1"><img src="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/logo-white@2x.png" alt="Logo" class="logo" /></a>                <header id="header" role="banner">
+
+    <a href="#" id="sidebar_open" class="btn_sidebar menu">
+        <span class="btn_sidebar_title with_picto menu">Menu</span>
+        <span class="btn_sidebar_bg menu">
+            <span class="btn_sidebar_picto menu"></span>
+        </span>
+    </a>
+
+    <div class="surnav">
+                <ul class="topnav secnav">
+                        <li class="topnav_block secnav first startrow">
+                <a href="/" class="topnav_element secnav">Home</a>
+            </li>
+                        <li class="topnav_block secnav">
+                <a href="http://www.reprieve.org.uk/about/" class="topnav_element secnav">About</a>
+            </li>
+                        <li class="topnav_block secnav startrow">
+                <a href="http://www.reprieve.org.uk/press-releases/" class="topnav_element secnav">Press</a>
+            </li>
+                        <li class="topnav_block secnav last">
+                <a href="http://www.reprieve.org.uk/arabic/" class="topnav_element secnav">العربية</a>
+            </li>
+                    </ul>
+    </div> <!-- End .surnav -->
+
+    <div class="utilnav util1">
+        <div class="sitesearch" role="search">
+            <form id="sitesearch" role="form" action="http://www.reprieve.org.uk/search-results/">
+                <label for="sitesearch_query">
+                    <input type="text" id="sitesearch_query" placeholder="Search" name="keywords" accesskey="4"/>
+                </label>
+                <input type="submit" value="Go" id="sitesearch_submit" />
+            </form>
+        </div> <!-- End .sitesearch -->
+    </div> <!-- End .utilnav.util1 -->
+
+    <div class="utilnav util2">
+        <a href="http://www.reprieve.org.uk/take-action/" class="topnav_cta">Take Action <div class="topnav_cta_more">&#xF078;</div></a>
+
+        <ul class="topnav community">
+            <li class="topnav_block community first">
+                <a href="https://www.facebook.com/pages/Reprieve/107485499287?ref=ts" class="topnav_element community facebook" target="_blank">&#xF610;</a>
+            </li>
+            <li class="topnav_block community">
+                <a href="https://twitter.com/Reprieve" class="topnav_element community twitter" target="_blank">&#xF611;</a>
+            </li>
+            <li class="topnav_block community last">
+                <a href="https://www.youtube.com/user/ReprieveUK" class="topnav_element community youtube" target="_blank">&#xF630;</a>
+            </li>
+        </ul>
+    </div> <!-- End .utilnav.util2 -->
+
+    <div class="toolbar_align">
+        <nav id="nav" class="toolbar" role="navigation">
+                        <ul class="topnav prinav">
+                                <li class="topnav_block prinav first startrow">
+                    <a href="http://www.reprieve.org.uk/topic/death-penalty/" class="topnav_element prinav">Death Penalty</a>
+                </li>
+                                <li class="topnav_block prinav">
+                    <a href="http://www.reprieve.org.uk/topic/lethal-injection/" class="topnav_element prinav">Lethal Injection</a>
+                </li>
+                                <li class="topnav_block prinav startrow">
+                    <a href="http://www.reprieve.org.uk/topic/torture/" class="topnav_element prinav">Torture</a>
+                </li>
+                                <li class="topnav_block prinav">
+                    <a href="http://www.reprieve.org.uk/topic/guantanamo-bay/" class="topnav_element prinav">Guantánamo Bay</a>
+                </li>
+                                <li class="topnav_block prinav startrow">
+                    <a href="http://www.reprieve.org.uk/topic/drones/" class="topnav_element prinav">Drones</a>
+                </li>
+                                <li class="topnav_block prinav last">
+                    <a href="http://www.reprieve.org.uk/topic/secret-prisons/" class="topnav_element prinav">Secret Prisons</a>
+                </li>
+                            </ul>
+
+        </nav>
+    </div> <!-- End .toolbar_align -->
+
+</header> <!-- End #header -->
+                <div id="content" role="main">
+<div class="surcore">
+
+
+</div> <!-- End .surcore -->
+
+<div id="core">
+
+
+        <div class="maincol with_single">
+
+        <div class="primary">
+
+                <h1>Philip Hammond wanted us to share his letter with you – so we did. Read the 5 reasons why Hammond got it wrong and should demand Andy Tsege’s release</h1>
+
+
+                                <div class="letter-container">
+<p><img class="alignright wp-image-7796 size-medium" style="margin: 0 0em 1em 1em;" src="http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-300x225.jpg" width="300" height="225" srcset="http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-300x225.jpg 300w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-768x576.jpg 768w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-1024x768.jpg 1024w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-640x480.jpg 640w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-587x440.jpg 587w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-192x144.jpg 192w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2014_09_02_PUB-Tsege-and-family-616x462.jpg 616w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Andy Tsege is a British citizen, father of three children and a democracy campaigner. He called for democratic change in Ethiopia and was sentenced to death by the regime while he was living in London with his family.</p>
+<p>Two years ago he was kidnapped from an international airport and dragged to an Ethiopian secret prison. He has been held ever since under sentence of death.</p>
+<p>130,000 people have signed a petition calling on the British government to demand Andy’s release. The UN and EU have called for the same. Andy’s family, Reprieve and thousands of British people have written to the UK government.</p>
+<p><strong>Below is Foreign Secretary Philip Hammond’s response – just click <span class="highlight">each line highlighted in orange</span> to reveal the 5 reasons why he is wrong not to demand Andy’s release. If you agree, just click to tweet at Hammond – you can tweet one or all five.</strong></p>
+<p>&nbsp;</p>
+<div class="letter-background">
+<p style="text-align: right;"><img class="size-medium wp-image-7772 alignnone" style="text-align: right; display: inline; width: 200px;" src="http://www.reprieve.org.uk/wp-content/uploads/2016/07/foreignoffice-1.png" alt="foreignoffice" /></p>
+<p style="text-align: right; margin-top: 0.5em; line-height: 1.25; color: #184171;">King Charles Street<br />
+London SW1A 2AH</p>
+<p style="text-align: right; margin-top: 0.5em; line-height: 1.25; color: #184171;"><strong>Secretary of State</strong></p>
+<p>16 June 2016</p>
+<p style="line-height: 1.25;">Ms Maya Foa<br />
+Director, Death Penalty Team<br />
+Reprieve,<br />
+PO Box 72054<br />
+London<br />
+EC3P 3BZ</p>
+<p>Dear Ms Foa,</p>
+<p>I am writing in regards to the various letters and emails referencing Reprieve that the Foreign and Commonwealth Office has received from members of the public concerning the case of British national, Andargachew Tsege, currently detained in Ethiopia.</p>
+<p><a name="number1return"></a></p>
+<p style="display: inline;">Please be assured that the British Government takes Mr Tsege&#8217;s welfare very seriously. I raised his case with both the Ethiopian Prime Minister and Foreign Minister during my visit to Ethiopia on 1 June 2016. During my meetings, I made it clear that while progress has been made, with regular consular access now in place following his transfer to a federal prison, further steps are required. Prime Minister Hailemariam assured me that <span class="highlight title1">Mr Tsege will be allowed to access to independent legal advice</span></p>
+<div class="mobile-tooltip mobile-tooltip-1">
+<p style="text-align: right; margin: 0;"><a class="close close1">✖</a></p>
+<h3><strong>1. There is no lawful conviction for a lawyer to appeal nor legal process to challenge. Andy’s kidnap was illegal, his death sentence was illegal, and his ongoing detention is illegal.</strong></h3>
+<p>Andy was tried by the Ethiopian authorities three times in absentia, meaning that he wasn’t even in the courtroom – he was thousands of miles away in London when he was sentenced to death. UN experts have clearly stated that Andy’s convictions are unlawful and do not constitute a legitimate basis for his detention. <sup>[1]</sup></p>
+<p>If the Ethiopian authorities wanted to follow legal process, they would have requested Andy&#8217;s extradition from the UK. Instead they gave him an unlawful death sentence and then kidnapped him when he was transiting though an international airport. <sup>[2]</sup></p>
+<p>Andy was never formally notified of the proceedings. He was never given the opportunity to get a lawyer or present a defence. He was never given the details of the charges against him.</p>
+<blockquote><p><em>“Lacking in basic elements of due process” <sup>[5]</sup> , and a form of “political retaliation”.<sup>[6]</sup></em><br />
+– US diplomats describing Andy’s widely criticised 2009 death sentence</p></blockquote>
+<p>&nbsp;</p>
+<div style="text-align: center;">
+<h4>Do you agree? Tweet Philip Hammond!</h4>
+<p>Kidnapped Brit&#8217;s death sentence was unlawful ‘political retaliation’ @PHammondMP demand release now #FreeAndyTsege bit.ly/freeandytsege</p>
+<p><a class="tooltip-button" href="https://twitter.com/home?status=Kidnapped%20Brit's%20death%20sentence%20was%20unlawful%20%E2%80%98political%20retaliation%E2%80%99%20%40PHammondMP%20demand%20release%20now%20%23FreeAndyTsege%20bit.ly/freeandytsege">Tweet this now!</a></p>
+</div>
+<p style="text-align: right;"><a class="close close1">✖</a></p>
+</div>
+<p style="display: inline;">to allow him to <span class="highlight title2">consider his options under the Ethiopian legal system.</span></p>
+<div class="mobile-tooltip mobile-tooltip-2">
+<p style="text-align: right; margin: 0;"><a class="close close2">✖</a></p>
+<h3><strong>2. The Ethiopian government has confirmed on several occasions that there is no legal process Andy can access in Ethiopia.</strong></h3>
+<p>Both the Ethiopian Prime Minister and Foreign Minister have told the UK government that “there is no appeal process” available for Andy, and that it is “not possible” for him to appeal his convictions, including his in absentia death sentence.<sup>[4]</sup></p>
+<blockquote><p>“We have not been shown any evidence [against Mr. Tsege] that would stand up in a UK court”.<br />
+– British diplomatic telegram in July 2014</p></blockquote>
+<blockquote><p>There is no “need” for Mr. Tsege to have access to a lawyer, because “the legal process relating to his sentences in absentia was complete”. <sup>[3]</sup><br />
+– Ethiopian Foreign Minister’s comment to the British Ambassador in May 2015</p></blockquote>
+<div style="text-align: center;">
+<h4>Do you agree? Tweet Philip Hammond!</h4>
+<p>Justice not possible in Ethiopia for kidnapped democracy campaigner #freeandytsege @PHammondMP knows this @reprieve bit.ly/freeandytsege</p>
+<p><a class="tooltip-button" href="https://twitter.com/home?status=Justice%20not%20possible%20in%20Ethiopia%20for%20kidnapped%20democracy%20campaigner%20%23freeandytsege%20%40PHammondMP%20knows%20this%20%40reprieve%20bit.ly/freeandytsege">Tweet this now!</a></p>
+</div>
+<p style="text-align: right;"><a class="close close2">✖</a></p>
+</div>
+<p style="display: inline;">We will continue to press the Ethiopians to ensure that Mr Tsege has access to the promised legal representation.</p>
+<p><a name="number2return"></a></p>
+<p style="display: inline;"><span class="highlight title3">I am aware of the suggestion that the UK Government should directly call for Mr Tsege’s release</span>.</p>
+<div class="mobile-tooltip mobile-tooltip-3">
+<p style="text-align: right; margin: 0;"><a class="close close3">✖</a></p>
+<h3><strong>3. The UK should request Andy&#8217;s release from unlawful captivity. 130,000 people have signed a petition calling on the UK government to do so, and thousands more have written to their MPs.</strong></h3>
+<p>Andy is a victim of crime, not a criminal. He was kidnapped by the Ethiopian government and illegally rendered to a country he fled as a political refugee. For over a year, he was held in solitary confinement at a secret location. He is now in legal limbo in a Federal Prison – he has no prisoner number and the authorities continue to deny that he is in their custody at all.</p>
+<p>The UN Working Group on Arbitrary Detention <sup>[7]</sup>, the European Parliament<sup>[8]</sup> and thousands of British people have called for Andy’s release. The only appropriate response to these grave human rights abuses is for the British government to do the same.</p>
+<div style="text-align: center;">
+<h4>Do you agree? Tweet Philip Hammond!</h4>
+<p>130,000 signed the petition to free Andy Tsege. Listen up @PHammondMP &amp; demand release now #freeandytsege @reprieve bit.ly/freeandytsege</p>
+<p><a class="tooltip-button" href="https://twitter.com/home?status=130,000%20signed%20the%20petition%20to%20free%20Andy%20Tsege.%20Listen%20up%20%40PHammondMP%20%26%20demand%20release%20now%20%23freeandytsege%20%40reprieve%20bit.ly/freeandytsege">Tweet this now!</a></p>
+</div>
+<p style="text-align: right;"><a class="close close3">✖</a></p>
+</div>
+<p style="display: inline;"><span class="highlight title4">Britain does not interfere in the legal systems of other countries by challenging convictions</span>,</p>
+<div class="mobile-tooltip mobile-tooltip-4">
+<p style="text-align: right; margin: 0;"><a class="close close4">✖</a></p>
+<h3><strong>4. Requesting the release of a British citizen held illegally is not ‘interfering’. It is simply not true that the UK does not request the release of citizens illegally detained in other countries.</strong></h3>
+<p>The British Government has intervened many times to demand the release of British (or other) nationals. The UK requested the release of every Brit detained at Guantánamo Bay. Philip Hammond himself secured the release of British national Karl Andree from Saudi Arabia in 2015 during a visit to that country.<sup>[9]</sup></p>
+<div style="text-align: center;">
+<h4>Do you agree? Tweet Philip Hammond!</h4>
+<p>Requesting release of Brits held illegally is not interfering, it’s justice. @PHammondMP #freeandytsege @reprieve bit.ly/freeandytsege</p>
+<p><a class="tooltip-button" href="https://twitter.com/home?status=Requesting%20release%20of%20Brits%20held%20illegally%20is%20not%20interfering,%20it%E2%80%99s%20justice.%20%40PHammondMP%20%23freeandytsege%20%40reprieve%20bit.ly/freeandytsege">Tweet this now!</a></p>
+</div>
+<p style="text-align: right;"><a class="close close4">✖</a></p>
+</div>
+<p style="display: inline;">any more than we would accept interference in our judicial system, although we do lobby strongly and consistently against the application of the death penalty, and against the carrying out of such sentences when they are imposed. Our consular priority at this time is to ensure Mr Tsege&#8217;s well-being and access to legal advice, and to ensure that the death sentence is not carried out.</p>
+<p><a name="number3return"></a></p>
+<p style="display: inline;">During my visit, a senior Foreign Office official travelling with me was, at my request, given access to Mr Tsege in prison. This was the tenth visit to Mr Tsege by British Government officials. Following that visit, <span class="highlight title5">I am satisfied that he is not being ill-treated</span></p>
+<div class="mobile-tooltip mobile-tooltip-5">
+<p style="text-align: right; margin: 0;"><a class="close close5">✖</a></p>
+<h3><strong>5. Experts agree that Andy has been tortured.</strong></h3>
+<p>The UK Foreign and Commonwealth Office has stated that it is “addressing what are prima facie signs of mistreatment” in Andy’s case.</p>
+<p>In March 2016, the UN Special Rapporteur on Torture concluded that Ethiopia had violated the Convention Against Torture in “subjecting Mr. Tsege to torture, ill-treatment, prolonged solitary confinement and incommunicado detention”.<sup>[10]</sup></p>
+<p>The Convention Against Torture, to which the UK and Ethiopia are both signatories, obliges the UK government to investigate all allegations of torture. No evidence been shown to support Philip Hammond’s conclusion that Andy is not being “ill-treated”.</p>
+<blockquote><p>“Reliable evidence […] of physical abuse and mistreatment” in Andy’s case.<sup>[11]</sup><br />
+– UN’s Working Group on Arbitrary Detention</p></blockquote>
+<div style="text-align: center;">
+<h4>Do you agree? Tweet Philip Hammond!</h4>
+<p>Andy Tsege has been tortured @PHammondMP listen to the experts. You must demand release now #freeandytsege @reprieve bit.ly/freeandytsege</p>
+<p><a class="tooltip-button" href="https://twitter.com/home?status=Andy%20Tsege%20has%20been%20tortured%20%40PHammondMP%20listen%20to%20the%20experts.%20You%20must%20demand%20release%20now%20%23freeandytsege%20%40reprieve%20bit.ly/freeandytsege">Tweet this now!</a></p>
+</div>
+<p style="text-align: right; margin: 0;"><a class="close close5">✖</a></p>
+</div>
+<p style="display: inline; margin-bottom: 1em;">and that he is receiving regular visits from family members in Ethiopia.</p>
+<p>Please be assured that Mr Tsege’s case remains a priority for the British Government. We will continue to support Mr Tsege and his family.</p>
+<p>I would be grateful if you could share this letter with any interested parties, including via the Reprieve website.</p>
+<p><img class="alignnone size-medium wp-image-7779 aligncenter" src="http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-300x92.png" alt="signature-vector" width="300" height="92" srcset="http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-300x92.png 300w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-768x235.png 768w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-1024x314.png 1024w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-640x196.png 640w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-587x180.png 587w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-192x59.png 192w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector-616x189.png 616w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/signature-vector.png 1096w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p style="text-align: center;"><strong>The Rt Hon Philip Hammond MP</strong></p>
+</div>
+</div>
+<p style="text-align: center;"><a href="http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_06_21_PRIV-Letter-from-FCO-MP-Hammond-on-Mr-Tseges-case.pdf">Click here to download the original letter</a> or <a href="http://www.reprieve.org.uk/wp-content/uploads/2016/07/Letter-from-Maya-Foa-Reprieve-to-Philip-Hammond.pdf">click here to download our full response</a>.</p>
+<div class="twitter-column" style="text-align: center;">
+<h2 style="color: #ee6901;">How you can take action</h2>
+<p>Enough if enough – there can be no justice for Andy Tsege in Ethiopia, and the British government must demand his immediate release. Tweet at Philip Hammond to make sure he listens.</p>
+<p><a class="tooltip-button" href="https://twitter.com/home?status=Kidnapped%20Brit's%20death%20sentence%20was%20unlawful%20%E2%80%98political%20retaliation%E2%80%99%20%40PHammondMP%20demand%20release%20now%20%23freeandytsege%20bit.ly/freeandytsege">Tweet Philip Hammond to #FreeAndyTsege Now</a></p>
+<h2 style="color: #ee6901;">See who else is tweeting about Andy</h2>
+<p><a class="twitter-timeline" href="https://twitter.com/hashtag/FreeAndyTsege" data-widget-id="750364126870986752">#FreeAndyTsege Tweets</a><br />
+<script>// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script></p>
+</div>
+<p>&nbsp;</p>
+<h3 style="color: #ee6901; text-align: center;">Learn more about Andy&#8217;s case</h3>
+<p>Andy Tsege is British citizen, father of three children and a prominent democracy campaigner. He loudly opposed the Ethiopian regime, even speaking out about its poor human rights record in front of US Congress and the EU’s Committee on Human Rights.</p>
+<p>In an act described as ‘political retaliation’, the regime sentenced Andy to death in 2009, but he was safely living in London with his family at the time.</p>
+<p><img class="alignright wp-image-7797 size-medium" src="http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-300x201.jpg" width="300" height="201" srcset="http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-300x201.jpg 300w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-768x514.jpg 768w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-1024x685.jpg 1024w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-640x428.jpg 640w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-587x393.jpg 587w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-192x129.jpg 192w, http://www.reprieve.org.uk/wp-content/uploads/2016/07/2016_02_09_PUB-Tsege-kids-delivering-petition-5-616x412.jpg 616w" sizes="(max-width: 300px) 100vw, 300px" />Two years ago the authorities kidnapped Andy from an international airport. He was dragged to an Ethiopian secret prison as part of a brutal crackdown on opposition activists to face his in absentia death sentence. Since then, Andy has been paraded on Ethiopian TV looking ill and showing signs of torture – he was shown ‘confessing’ to various crimes, with screaming clearly audible in the background.</p>
+<p>130,000 people have signed a petition calling on the British government to demand Andy’s release. Andy’s family and thousands of British people have also written to their MPs and to the government.</p>
+<p>&nbsp;</p>
+<div style="font-size: 12px;">
+<p><em>Notes:</em></p>
+<p><sup>1</sup> Opinion adopted by the UN Human Rights Council Working Group on Arbitrary Detention at its 72nd meeting, 20-29 April 2015. In March 2016, the UN Special Rapporteur similarly concluded that Ethiopia had violated the Convention Against Torture in sentencing Mr Tsege to death “without due process”. Report of UN Special Rapporteur on Torture to Human Rights Council (March 2016), para 148.</p>
+<p><sup>2</sup> It is the UK Government’s policy neither to confirm nor deny the existence of extradition requests, however, as far as Reprieve or Mr Tsege’s family are aware, no such request was ever made for Mr Tsege’s extradition from the UK to Ethiopia. Certainly, no such request was ever granted.</p>
+<p><sup>3</sup> Email from the British Ambassador to Ethiopia dated 20 May 2015 summarising a meeting between the Ambassador and the Ethiopian Foreign Minister, Dr Tedros, on 19 May 2015, disclosed to Ms. Hailemariam on 29 January 2016 pursuant to a Subject Access Request under the Data Protection Act 1998.</p>
+<p><sup>4</sup> Note of a meeting between the Secretary of State for International Development and the Prime Minister of Ethiopia, 16 July 2015, disclosed to Ms Hailemariam on 29 January 2016 pursuant to a Subject Access Request under the Data Protection Act 1998; Note of a meeting with the Foreign Minister of Ethiopia, Dr Tedros, 21 July 2015, disclosed to Ms Hailemariam on 29 January 2016 pursuant to a Subject Access Request under the Data Protection Act 1998.</p>
+<p><sup>5</sup> ‘Scenesetter for Codel Meeks visit to Ethiopia: February 16-17, 2010’, cable from US Embassy Addis Ababa, 8 February 2010, published by Wikileaks: https://wikileaks.org/plusd/cables/10ADDISABABA244_a.html</p>
+<p><sup>6</sup> ‘Attempted coup or opposition round-up’, cable from US Embassy Addis Ababa, 27 April 2009; published by Wikileaks: https://wikileaks.org/plusd/cables/09ADDISABABA975_a.html</p>
+<p><sup>7</sup> Opinion adopted by the UN Human Rights Council Working Group on Arbitrary Detention at its 72nd meeting, 20-29 April 2015.</p>
+<p><sup>8</sup> European Parliament resolution on the situation in Ethiopia (2016/2520(RSP), adopted 20 January 2016.</p>
+<p><sup>9</sup> Foreign Secretary, Philip Hammond MP’s statement on the return of Karl Andree to the UK, 11 November 2015. https://www.gov.uk/government/news/foreign-secretary-statement-on-the-return-of-karl-andree-to-the-uk</p>
+<p><sup>10</sup> Report of UN Special Rapporteur on Torture to Human Rights Council (March 2016), para 148.</p>
+<p><sup>11</sup> Opinion adopted by the UN Human Rights Council Working Group on Arbitrary Detention at its 72nd meeting, 20-29 April 2015.</p>
+</div>
+
+    </div> <!-- End .primary -->
+
+
+
+
+    <div class="social_base">
+        <ul class="social">
+            <li class="social_block startrow3 first">
+                <a href="http://twitter.com/share?url=http%3A%2F%2Fwww.reprieve.org.uk%2F%2Fphilip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release%2F" class="social_element twitter" target="_blank">&#xF611;</a>
+            </li>
+            <li class="social_block">
+                <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.reprieve.org.uk%2F%2Fphilip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release%2F" class="social_element facebook" target="_blank">&#xF610;</a>
+            </li>
+            <li class="social_block">
+                <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.reprieve.org.uk%2F%2Fphilip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release%2F" class="social_element googleplus" target="_blank">&#xF613;</a>
+            </li>
+            <li class="social_block startrow3 last">
+                <a href="mailto:?subject=Philip+Hammond+wanted+us+to+share+his+letter+with+you+%E2%80%93+so+we+did.+Read+the+5+reasons+why+Hammond+got+it+wrong+and+should+demand+Andy+Tsege%E2%80%99s+release&amp;body=http%3A%2F%2Fwww.reprieve.org.uk%2F%2Fphilip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release%2F" class="social_element email" target="_blank">&#x2709;</a>
+            </li>
+        </ul>
+    </div> <!-- End .social_base -->
+
+
+        </div> <!-- End #maincol -->
+
+
+</div> <!-- End #core -->
+
+<div class="subcore">
+    <aside class="connected">
+        <div class="connected_align">
+
+            <ul class="connected_feed">
+
+
+
+                    <li class="connected_feed_block first startrow">
+                        <h2 class="connected_feed_title"><a href="https://reprieve.bsd.net/page/contribute/donatenow" class="connected_feed_title_wl">Donate now</a></h2>
+                        <a href="https://reprieve.bsd.net/page/contribute/donatenow" class="connected_feed_arrow">&rarr;</a>
+                    </li>
+
+
+
+                    <li class="connected_feed_block">
+                        <h2 class="connected_feed_title"><a href="https://reprieve.bsd.net/page/s/join" class="connected_feed_title_wl">Join our mailing list</a></h2>
+                        <a href="https://reprieve.bsd.net/page/s/join" class="connected_feed_arrow">&rarr;</a>
+                    </li>
+
+
+
+                    <li class="connected_feed_block startrow">
+                        <h2 class="connected_feed_title"><a href="/take-action/" class="connected_feed_title_wl">Take action</a></h2>
+                        <a href="/take-action/" class="connected_feed_arrow">&rarr;</a>
+                    </li>
+
+
+            </ul>
+
+        </div> <!-- End .connected_align -->
+    </aside>
+</div>
+                </div> <!-- End #content -->
+
+            </div> <!-- End #wrapper -->
+
+            <div id="footer" class="footer_align">
+
+    <footer class="footer" role="contentinfo">
+
+        <nav class="fnav" role="navigation">
+            <div class="fnav_align">
+
+                <a href="#" class="fnav_return">
+                    <div class="fnav_return_btn"><div class="fnav_return_picto">&#xf0a2;</div></div>
+                    <div class="fnav_return_summary">Back to top</div>
+                </a>
+
+                <div class="fnav_primary">
+
+                    <a href="/" class="fnav_logo" accesskey="1"><img src="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/images/logo-black@2x.png" alt="Logo" class="logo" /></a>
+
+                                        <ul class="fnav_primary_feed block1 first">
+                                                <li class="fnav_primary_feed_block first startrow">
+                            <a href="http://www.reprieve.org.uk/topic/death-penalty/" class="fnav_primary_feed_element">Death Penalty</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block">
+                            <a href="http://www.reprieve.org.uk/topic/lethal-injection/" class="fnav_primary_feed_element">Lethal Injection</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block startrow">
+                            <a href="http://www.reprieve.org.uk/topic/torture/" class="fnav_primary_feed_element">Torture</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block">
+                            <a href="http://www.reprieve.org.uk/topic/guantanamo-bay/" class="fnav_primary_feed_element">Guantánamo Bay</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block startrow">
+                            <a href="http://www.reprieve.org.uk/topic/drones/" class="fnav_primary_feed_element">Drones</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block last">
+                            <a href="http://www.reprieve.org.uk/topic/secret-prisons/" class="fnav_primary_feed_element">Secret Prisons</a>
+                        </li>
+                                            </ul>
+
+                                        <ul class="fnav_primary_feed block2">
+
+                                                <li class="fnav_primary_feed_block first">
+                            <a href="/" class="fnav_primary_feed_element">Home</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block">
+                            <a href="http://www.reprieve.org.uk/about/" class="fnav_primary_feed_element">About</a>
+                        </li>
+                                                <li class="fnav_primary_feed_block">
+                            <a href="http://www.reprieve.org.uk/press-releases/" class="fnav_primary_feed_element">Press</a>
+                        </li>
+
+                        <li class="fnav_primary_feed_block last">
+                            <a href="https://reprieve.bsd.net/page/s/join" class="fnav_primary_feed_element" target="_blank">Newsletter</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="fnav_primary_feed block3 last">
+                        <li class="fnav_primary_feed_block first">
+                            <p class="fnav_primary_feed_element">Reprieve</p>
+                        </li>
+                        <li class="fnav_primary_feed_block">
+                            <p class="fnav_primary_feed_element">PO Box 72054</p>
+                        </li>
+                        <li class="fnav_primary_feed_block">
+                            <p class="fnav_primary_feed_element">London EC3P 3BZ</p>
+                        </li>
+                        <li class="fnav_primary_feed_block gutter">
+                            <p class="fnav_primary_feed_element">020 7553 8140</p>
+                        </li>
+                        <li class="fnav_primary_feed_block">
+                            <p class="fnav_primary_feed_element"></p>
+                        </li>
+                        <li class="fnav_primary_feed_block">
+                            <a href="mailto:info@reprieve.org.uk" class="fnav_primary_feed_element">info@reprieve.org.uk</a>
+                        </li>
+                        <li class="fnav_primary_feed_block gutter last">
+                            <a href="https://www.facebook.com/pages/Reprieve/107485499287?ref=ts" class="social_element facebook" target="_blank">&#xF610;</a>
+                            <a href="https://twitter.com/Reprieve" class="social_element twitter" target="_blank">&#xF611;</a>
+                            <a href="https://www.youtube.com/user/ReprieveUK" class="social_element youtube" target="_blank">&#xF630;</a>
+                        </li>
+                    </ul>
+
+                </div> <!-- End .fnav_primary -->
+
+            </div> <!-- End .fnav_align -->
+        </nav>
+
+        <div class="fnav_sub">
+            <ul class="fnav_sub_primary">
+                <li class="fnav_sub_primary_block first">
+                    <a href="http://www.reprieve.org.uk/sitemap/" class="fnav_sub_element">Sitemap</a>
+                </li>
+                <li class="fnav_sub_primary_block">
+                    <a href="http://www.reprieve.org.uk/accessibility/" class="fnav_sub_element">Accessibility</a>
+                </li>
+                <li class="fnav_sub_primary_block">
+                    <a href="http://www.reprieve.org.uk/privacy/" class="fnav_sub_element">Privacy</a>
+                </li>
+                <li class="fnav_sub_primary_block">
+                    <a href="http://www.reprieve.org/" rel="external" class="fnav_sub_element" target="_blank">USA</a>
+                </li>
+                <li class="fnav_sub_primary_block">
+                    <a href="http://www.reprieve.org.au/" rel="external" class="fnav_sub_element" target="_blank">Australia</a>
+                </li>
+                <li class="fnav_sub_primary_block last">
+                    <a href="http://www.reprieve.nl/" rel="external" class="fnav_sub_element" target="_blank">Netherlands</a>
+                </li>
+            </ul>
+
+            <div class="fnav_sub_secondary">
+                <p class="fnav_sub_element">&copy; 2016 Reprieve. Registered charity (No. 1114900). <a href="http://www.fatbeehive.com/charity-web-design.php" target="_blank" class="fnav_sub_element_wl">Charity web design</a> by Fat Beehive</p>
+            </div> <!-- End .fnav_sub_secondary -->
+
+        </div> <!-- End .fnav_sub -->
+
+    </footer> <!-- End .footer -->
+
+</div> <!-- End .footer_align -->
+        </div> <!-- End .content_align -->
+
+        <aside id="sidebar" class="nav_sidebar">
+    <a href="#" class="btn_sidebar close">&times;</a>
+    <div class="sidebar_search" role="search">
+    <form id="sidebarsearch" role="form" action="http://www.reprieve.org.uk/search-results/">
+        <label for="sidebarsearch_query">
+            <input type="text" id="sidebarsearch_query" placeholder="Search" name="keywords" class="sidebar_input" />
+        </label>
+        <input type="submit" value="Search" id="sidebarsearch_submit" class="sidebar_submit" />
+    </form>
+</div> <!-- End .sidebar_search -->
+
+<ul class="nav_sidebar_primary">
+
+                <li class="nav_sidebar_primary_block first">
+            <a href="http://www.reprieve.org.uk/topic/death-penalty/" class="nav_sidebar_primary_element">Death Penalty</a>
+        </li>
+            <li class="nav_sidebar_primary_block">
+            <a href="http://www.reprieve.org.uk/topic/lethal-injection/" class="nav_sidebar_primary_element">Lethal Injection</a>
+        </li>
+            <li class="nav_sidebar_primary_block">
+            <a href="http://www.reprieve.org.uk/topic/torture/" class="nav_sidebar_primary_element">Torture</a>
+        </li>
+            <li class="nav_sidebar_primary_block">
+            <a href="http://www.reprieve.org.uk/topic/guantanamo-bay/" class="nav_sidebar_primary_element">Guantánamo Bay</a>
+        </li>
+            <li class="nav_sidebar_primary_block">
+            <a href="http://www.reprieve.org.uk/topic/drones/" class="nav_sidebar_primary_element">Drones</a>
+        </li>
+            <li class="nav_sidebar_primary_block last">
+            <a href="http://www.reprieve.org.uk/topic/secret-prisons/" class="nav_sidebar_primary_element">Secret Prisons</a>
+        </li>
+
+</ul></aside>        <script type="text/javascript" src="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/js/libs/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/js/jquery.fitvids.min.js"></script>
+<script type="text/javascript">
+    var button = $('.btn_sidebar'),
+        content = $('#content'),
+        footer = $('#footer'),
+        header = $('#header'),
+        logo = $('#logo'),
+        resizeTimer,
+        sidebar = $('#sidebar'),
+        sidebar_open = $('#sidebar_open'),
+        $this = $(this ),
+        $window = $(window );
+
+    $(document ).ready( function() {
+        button.on('click', function( e ) {
+            e.preventDefault();
+            content.toggleClass('sidebar_active');
+            footer.toggleClass('sidebar_active');
+            header.toggleClass('sidebar_active');
+            logo.toggleClass('sidebar_active');
+            sidebar_open.toggleClass('sidebar_active');
+            sidebar.toggleClass('active');
+        });
+
+        function on_resize(c,t){onresize=function(){clearTimeout(t);t=setTimeout(c,100)};return c};
+
+        on_resize(function() {
+            if ( $window.width() > 980 ) {
+                content.removeClass('sidebar_active');
+                footer.removeClass('sidebar_active');
+                header.removeClass('sidebar_active');
+                logo.removeClass('sidebar_active');
+                sidebar_open.removeClass('sidebar_active');
+                sidebar.removeClass('active');
+            }
+            $('#content').fitVids();
+        })();
+
+        //init fitvids
+        $('#content').fitVids();
+
+    });
+</script>
+
+
+        <link rel='stylesheet' id='basecss-css'  href='http://www.reprieve.org.uk/wp-content/plugins/eu-cookie-law/css/style.css?ver=4.5.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/content-tooltip/js/smallipop.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/content-tooltip/js/easing.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/content-tooltip/js/script.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/reprieve-topics/ajax-active-cases.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/reprieve-topics/jquery-nearest.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+  <script src="http://thesmallaxe.github.io/reprieve/tooltip.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var eucookielaw_data = {"euCookieSet":null,"autoBlock":"0","expireTimer":"30","scrollConsent":"0","networkShareURL":"","isCookiePage":"","isRefererWebsite":"","deleteCookieUrl":"http:\/\/www.reprieve.org.uk\/philip-hammond-wanted-us-to-share-his-letter-with-you-see-5-reasons-why-he-is-wrong-not-to-demand-andy-tseges-release\/?nocookie=1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.reprieve.org.uk/wp-content/plugins/eu-cookie-law/js/scripts.js?ver=4.5.2'></script>
+
+    </body>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-9602547-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" src="http://www.reprieve.org.uk/wp-content/themes/reprieve/assets/js/jquery.universal-analytics.track.min.js"></script>
+
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using apc
+Page Caching using apc
+Object Caching 774/830 objects using apc
+
+ Served from: www.reprieve.org.uk @ 2016-07-14 08:08:03 by W3 Total Cache -->
