@@ -80,3 +80,5 @@ $('.close5').on('click', function(event) {
 	$(".mobile-tooltip-5").css('display', 'none');
 	$("html, body").animate({ scrollTop: currentscrollpos }, 0);
 });
+
+$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>')
