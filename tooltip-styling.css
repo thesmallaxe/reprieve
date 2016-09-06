@@ -285,3 +285,11 @@ a.intro_caption_cta {
     line-height: 61px;
     }
 }
+
+.intro_caption_cta:hover {
+    background-color: #bf5012;
+}
+
+.intro_caption_cta:hover .hero-arrow {
+    background-color: #e35e14;
+}
