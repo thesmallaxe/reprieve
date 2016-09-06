@@ -185,6 +185,10 @@ body {
 }
 
 .intro_caption_title {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: transparent;
 }
 
@@ -194,21 +198,29 @@ a.intro_caption_cta {
     padding: .5rem !important;
     line-height: normal;
     width: auto;
-    margin: 0 24px 24px;
+    margin: 0 1rem 1rem;
     display: inline-block;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.75rem;
     position: relative;
     border: 0;
     padding-right: calc(1rem + 30px) !important;
 }
+
+@media only screen and (min-width: 480px) {
+   a.intro_caption_cta {
+    font-size: 1rem;
+   }
+}
+
+
 
 @media only screen and (min-width: 980px) {
     a.intro_caption_cta {
         padding: 1rem !important;
         line-height: normal;
         width: auto;
-        margin: 0 24px 24px;
+        margin: 0 1rem 1rem;
         display: inline-block;
         border-radius: 2px;
         font-size: 1.5rem;
@@ -227,7 +239,7 @@ a.intro_caption_cta {
 .hero-arrow {
     background-color: #bf5012;
     height: 100%;
-    line-height: 35px;
+    line-height: normal;
     position: absolute;
     right: 0;
     text-align: center;
@@ -247,8 +259,13 @@ a.intro_caption_cta {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 980px) {
-  .hero-arrow {
-    line-height: 61px;
-  }
+.hero-arrow span {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    line-height: normal;
+    display: block;
 }
+
+
