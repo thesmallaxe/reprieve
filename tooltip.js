@@ -82,3 +82,4 @@ $('.close5').on('click', function(event) {
 });
 
 $('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>')
+$('nav .topnav_block:nth-of-type(5) a').text('Drone Strikes');
