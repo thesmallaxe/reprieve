@@ -298,3 +298,64 @@ a.intro_caption_cta {
 .section_header.fullwide {
     margin-right: 0 !important;
 }
+
+a.share-button {
+    color: #fff !important;
+    background: #e35e14;
+    /* background-image: url(https://s.bsd.net/reprieve/main/page/-/facebook-icon-white.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: left; */
+    /* background-position-y: 50%; */
+    /* border: 1px solid #bf5012; */
+    /* -webkit-box-shadow: 0 3px 0 0 #bf5012; */
+    /* box-shadow: 0 3px 0 0 #bf5012; */
+    -moz-border-radius: 3px;
+    /* -webkit-border-radius: 3px; */
+    border-radius: 3px;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.share-button.facebook-share {
+    background: #3b5998;
+    background-image: url(https://s.bsd.net/reprieve/main/page/-/facebook-icon-white.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 50%;
+    padding-left: 50px;
+}
+
+a.share-button.twitter-share {
+    background: #4099FF;
+    background-image: url(https://s.bsd.net/reprieve/main/page/-/twitter-icon-white.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-x: 12.5px;
+    background-position-y: 50%;
+    padding-left: 50px;
+}
+
+a.share-button.twitter-share:hover {
+    background: #e35e14;
+    background-image: url(https://s.bsd.net/reprieve/main/page/-/twitter-icon-white.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-x: 12.5px;
+    background-position-y: 50%;
+    padding-left: 50px;
+}
+
+a.share-button.facebook-share:hover {
+    background: #e35e14;
+    background-image: url(https://s.bsd.net/reprieve/main/page/-/facebook-icon-white.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 50%;
+    padding-left: 50px;
+}
