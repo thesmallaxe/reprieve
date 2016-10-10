@@ -2,7 +2,7 @@ $('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><
 $('nav .topnav_block:nth-of-type(5) a').text('Drone Strikes');
 
 if (document.getElementById("mental-health")) {
-			 $(".section_header").addClass("fullWide");
+			 $(".section_header").addClass("fullwide");
 	 }
 
 var currentscrollpos;
