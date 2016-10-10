@@ -265,7 +265,7 @@ a.intro_caption_cta {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     display: block;
-    
+
 }
 
 /* for iPhone */
@@ -292,4 +292,9 @@ a.intro_caption_cta {
 
 .intro_caption_cta:hover .hero-arrow {
     background-color: #e35e14;
+}
+
+
+header.section_header.fullwide {
+    margin-right: 0 !important;
 }

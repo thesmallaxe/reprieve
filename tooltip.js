@@ -1,3 +1,10 @@
+$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>');
+$('nav .topnav_block:nth-of-type(5) a').text('Drone Strikes');
+
+if (document.getElementById("mental-health")) {
+			 $(".section_header").addClass("fullWide");
+	 }
+
 var currentscrollpos;
 
 $('.title1').on('click', function(event) {
@@ -80,6 +87,3 @@ $('.close5').on('click', function(event) {
 	$(".mobile-tooltip-5").css('display', 'none');
 	$("html, body").animate({ scrollTop: currentscrollpos }, 0);
 });
-
-$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>');
-$('nav .topnav_block:nth-of-type(5) a').text('Drone Strikes');
