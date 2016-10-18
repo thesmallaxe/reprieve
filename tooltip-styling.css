@@ -359,3 +359,7 @@ a.share-button.facebook-share:hover {
     background-position-y: 50%;
     padding-left: 50px;
 }
+
+.maincol.with_single.full-col {
+    width: 100% !important;
+}
