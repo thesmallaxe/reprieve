@@ -6,8 +6,10 @@ if (document.getElementById("mental-health")) {
 			 $(".social_base").before("<div id='before-container'></div>");
 			 $("#before").appendTo("#before-container");
 	 }
-
-
+	 
+	 if (document.getElementById("letter-background")) {
+			 $(".maincol.with_single").addClass(".full-col");
+	 }
 
 var currentscrollpos;
 
