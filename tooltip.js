@@ -8,7 +8,8 @@ if (document.getElementById("mental-health")) {
 	 }
 	 
 	 if (document.getElementById("letter-background")) {
-			 $(".maincol.with_single").addClass("full-col");
+			$(".maincol.with_single").addClass("full-col");
+		 	$(".surcore").css('display', 'none');
 	 }
 
 var currentscrollpos;
