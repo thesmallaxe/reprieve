@@ -389,3 +389,19 @@ a.letter-cta:hover {
     color: #ee6901;
     text-decoration: none;
 }
+
+.action-box {
+    background-color: transparent;
+    border: 5px solid #ee6901;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.action-box h2 {
+    margin: 0;
+    line-height: normal;
+}
+
+.action-box p {
+    text-align: center;
+}
