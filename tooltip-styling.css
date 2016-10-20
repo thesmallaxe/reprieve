@@ -363,3 +363,29 @@ a.share-button.facebook-share:hover {
 .maincol.with_single.full-col {
     width: 100% !important;
 }
+
+a.letter-cta {
+    background-color: #ee6901;
+   background-position: 0.7em 0.7em;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1rem 3rem;
+   border-radius: 5px;
+    margin: 1em 0em;
+    text-shadow: none !important;
+   text-decoration: none;
+    box-shadow: none;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    box-sizing: border-box;
+    border: 1px solid #ee6901;
+}
+
+a.letter-cta:hover {
+    background-color: transparent;
+    border: 1px solid #ee6901;
+    color: #ee6901;
+    text-decoration: none;
+}
