@@ -502,7 +502,7 @@ a.lastwordsdonate {
 }
 a.lastwordsdonate:hover {
     background: white;
-    color: #e35e14;
+    color: #e35e14 !important;
     border: 3px solid white;
 }
 
@@ -565,7 +565,7 @@ a.lastwordsdonate:hover {
 
 .joinandshare a.join:hover {
     background: #e35e14;
-    color: white;
+    color: white !important;
     border-color: #e35e14;
 }
 .joinandshare a.join {
