@@ -505,3 +505,66 @@ a.lastwordsdonate:hover {
     color: #e35e14;
     border: 3px solid white;
 }
+
+.joinandshare {
+    /* border: 3px solid #e35e14; */
+    /* background: #252728; */
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    /* color: white; */
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+.joinandshare h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.joinandshare a {
+    color: white;
+    padding: 1.5rem 2rem;
+    border: 3px solid white;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0rem 0.5rem;
+    border-radius: 2px;
+    font-weight: bold;
+    min-width: 350px;
+    margin-bottom: 1rem;
+}
+
+.joinandshare a:hover {
+    background: white;
+    color: #e35e14;
+}
+
+.joinandshare a.twitter {
+    background: #4099FF;
+    border-color: #4099FF;
+}
+
+.joinandshare a.facebook {
+    background: #3b5998;
+    border-color: #3b5998;
+}
+
+.joinandshare a.twitter:hover {
+    background: #e35e14;
+    color: white;
+    border-color: #e35e14;
+}
+
+.joinandshare a.facebook:hover {
+    background: #e35e14;
+    color: white;
+    border-color: #e35e14;
+}
+
+.joinandshare a.join:hover {
+    background: #e35e14;
+    color: white;
+    border-color: #e35e14;
+}
