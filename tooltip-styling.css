@@ -439,7 +439,7 @@ h1.lastwords-heading {
 #core.lastwords-core {
     width: 60%;
 }
-  .lastwords-container {
+  .lastwords-container.render {
     display: flex;
   }
 .case-col {
