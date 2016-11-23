@@ -405,3 +405,88 @@ a.letter-cta:hover {
 .action-box p {
     text-align: center;
 }
+
+.maincol.with_single.lastwords-fullwide {
+    width: 100%;
+}
+
+h1.lastwords-heading {
+      text-align: center;
+    margin-bottom: 1rem !important;
+    font-size: 60px;
+    background: #252728;
+    padding: 1rem;
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+div#core.lastwords-core {
+    width: 60%;
+}
+.case-col {
+    flex: 1;
+    margin-right: 1rem;
+    background: #252728;
+    color: white;
+    padding: 1rem;
+}
+
+.case-col.case-3 {
+    margin-right: 0;
+}
+
+
+.case-container {
+    display: flex;
+    width: 100%;
+}
+
+.help-donate {
+    width: 20%;
+    margin-left: 2.5%;
+    clear: right;
+    float: right;
+    border: 3px solid #e35e14;
+    background: #e35e14;
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    color: white;
+}
+
+.lastwordsvid {
+    width: 77.5%;
+    float: left;
+    margin-bottom: 1rem;
+}
+
+a.lastwordsdonate {
+    color: white;
+    border: 3px solid white !Important;
+}
+a.lastwordsdonate:hover {
+    background: white;
+    color: #e35e14;
+    border: 3px solid white;
+}
+}
+
+
+
+.case-col h2 {
+    margin-top: 1rem;
+    color: #e35e14;
+}
+
+a.lastwordsdonate {
+    border: 3px solid #e35e14;
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.75rem;
+    line-height: normal;
+    box-sizing: border-box;
+    margin: 1rem 0rem;
+    font-weight: bold;
+}
