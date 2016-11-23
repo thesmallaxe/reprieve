@@ -469,15 +469,7 @@ h1.lastwords-heading {
     float: left;
   }
 
-a.lastwordsdonate {
-    color: white;
-    border: 3px solid white !Important;
-}
-a.lastwordsdonate:hover {
-    background: white;
-    color: #e35e14;
-    border: 3px solid white;
-}
+
 }
 
 
@@ -498,4 +490,14 @@ a.lastwordsdonate {
     box-sizing: border-box;
     margin: 1rem 0rem;
     font-weight: bold;
+}
+
+a.lastwordsdonate {
+    color: white;
+    border: 3px solid white !Important;
+}
+a.lastwordsdonate:hover {
+    background: white;
+    color: #e35e14;
+    border: 3px solid white;
 }
