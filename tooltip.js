@@ -17,6 +17,7 @@ if (document.getElementById("lastwordsvid")) {
 			 $("#core").addClass("lastwords-core");
        $(".help-donate").addClass("render");
        $(".lastwordsvid").addClass("render");
+	   $(".surcore").hide();
 			 $(".primary h1").addClass("lastwords-heading");
 	 }
 
