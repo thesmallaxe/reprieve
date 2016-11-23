@@ -568,3 +568,7 @@ a.lastwordsdonate:hover {
     color: white;
     border-color: #e35e14;
 }
+.joinandshare a.join {
+    color: #e35e14;
+    border-color: #e35e14;
+}
