@@ -419,9 +419,23 @@ h1.lastwords-heading {
     color: white;
 }
 
+.help-donate {
+    border: 3px solid #e35e14;
+    background: #e35e14;
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    color: white;
+    margin-bottom: 1rem;
+  text-align: center;
+}
+  
 
-@media only screen and (min-width: 768px) {
-div#core.lastwords-core {
+.lastwordsvid {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1224px) {
+#core.lastwords-core {
     width: 60%;
 }
 .case-col {
@@ -442,26 +456,13 @@ div#core.lastwords-core {
     width: 100%;
 }
 
-.help-donate {
-    border: 3px solid #e35e14;
-    background: #e35e14;
-    box-sizing: border-box;
-    padding: 3rem 1rem;
-    color: white;
-    margin-bottom: 1rem;
-  text-align: center;
-}
-  
+
   .help-donate.render {
       width: 20%;
     margin-left: 2.5%;
     clear: right;
     float: right;
   }
-
-.lastwordsvid {
-    margin-bottom: 1rem;
-}
   
   .lastwordsvid.render {
     width: 77.5%;
