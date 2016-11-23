@@ -15,6 +15,7 @@ if (document.getElementById("mental-health")) {
 if (document.getElementById("lastwordsvid")) {
 			 $(".maincol.with_single").addClass("lastwords-fullwide");
 			 $("#core").addClass("lastwords-core");
+	$(".lastwords-container").addClass("render");
        $(".help-donate").addClass("render");
        $(".lastwordsvid").addClass("render");
 	   $(".surcore").hide();
