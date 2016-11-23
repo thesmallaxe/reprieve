@@ -488,7 +488,7 @@ a.lastwordsdonate {
     padding: 1rem 1.5rem;
     display: inline-block;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 1.75rem;
     line-height: normal;
     box-sizing: border-box;
@@ -497,7 +497,7 @@ a.lastwordsdonate {
 }
 
 a.lastwordsdonate {
-    color: white;
+    color: white !important;
     border: 3px solid white !Important;
 }
 a.lastwordsdonate:hover {
