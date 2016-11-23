@@ -443,22 +443,29 @@ div#core.lastwords-core {
 }
 
 .help-donate {
-    width: 20%;
-    margin-left: 2.5%;
-    clear: right;
-    float: right;
     border: 3px solid #e35e14;
     background: #e35e14;
     box-sizing: border-box;
     padding: 3rem 1rem;
     color: white;
-}
-
-.lastwordsvid {
-    width: 77.5%;
-    float: left;
     margin-bottom: 1rem;
 }
+  
+  .help-donation.render {
+      width: 20%;
+    margin-left: 2.5%;
+    clear: right;
+    float: right;
+  }
+
+.lastwordsvid {
+    margin-bottom: 1rem;
+}
+  
+  .lastwordsvid.render {
+    width: 77.5%;
+    float: left;
+  }
 
 a.lastwordsdonate {
     color: white;
