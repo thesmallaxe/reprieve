@@ -572,3 +572,8 @@ a.lastwordsdonate:hover {
     color: #e35e14 !Important;
     border-color: #e35e14;
 }
+
+#greetings img {
+    float: left;
+    margin: 1rem;
+}
