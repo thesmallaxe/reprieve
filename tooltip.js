@@ -18,7 +18,7 @@ if (document.getElementById("mental-health")) {
 			$(".maincol.with_single").addClass("full-col");
 		 	$(".surcore").css('display', 'none');
 			$(".primary h1").addClass("greetings-heading");
-	  $(".primary .portrait_img").addClass("greeting-stretch");
+	 		$(".primary .portrait_img").addClass("greeting-stretch");
 	 }
 
 if (document.getElementById("lastwordsvid")) {
