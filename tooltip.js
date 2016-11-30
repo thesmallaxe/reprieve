@@ -12,6 +12,11 @@ if (document.getElementById("mental-health")) {
 		 	$(".surcore").css('display', 'none');
 	 }
 
+ if (document.getElementById("greetings")) {
+			$(".maincol.with_single").addClass("full-col");
+		 	$(".surcore").css('display', 'none');
+	 }
+
 if (document.getElementById("lastwordsvid")) {
 			 $(".maincol.with_single").addClass("lastwords-fullwide");
 			 $("#core").addClass("lastwords-core");
