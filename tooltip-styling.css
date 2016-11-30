@@ -599,3 +599,7 @@ h1.greetings-heading {
 .greeting-img p {
     font-weight: bold;
 }
+
+.primary .portrait_img.greeting-stretch {
+  width: 100%;
+}
