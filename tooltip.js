@@ -10,12 +10,15 @@ if (document.getElementById("mental-health")) {
 	 if (document.getElementById("letter-background")) {
 			$(".maincol.with_single").addClass("full-col");
 		 	$(".surcore").css('display', 'none');
+		
+		 
 	 }
 
  if (document.getElementById("greetings")) {
 			$(".maincol.with_single").addClass("full-col");
 		 	$(".surcore").css('display', 'none');
 			$(".primary h1").addClass("greetings-heading");
+	  $(".primary .portrait_img").addClass("greeting-stretch");
 	 }
 
 if (document.getElementById("lastwordsvid")) {
