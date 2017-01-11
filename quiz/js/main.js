@@ -239,7 +239,7 @@
 	}
 
 	function updateDonateLink(email , fname){
-		$('#donate-btn').attr('href','https://reprieve.bsd.net/page/contribute/donatenow?email='+email+"&firstname="+fname);
+		$('#donate-btn').attr('href','https://reprieve.bsd.net/page/contribute/Guantanamo-Anniversary-Donate?email='+email+"&firstname="+fname);
 	}
 
 	//Validate email in Javascript
