@@ -1,0 +1,26 @@
+//Hiding the submitted answers from the user in BSD Form
+#bsd-field-custom-892 {
+  display: none;
+}
+
+#issues {
+  p, h1, label {
+    color: $black;
+  }
+}
+
+#sitesearch_query {
+	padding : 5px;
+}
+//Input search override
+@media only screen and (min-width: 61.25em) {
+  #sitesearch_query {
+    height: 32px;
+    width: 85px;
+  }
+}
+
+//Override #content padding
+#content {
+  padding-top: 0;
+}

@@ -1,0 +1,373 @@
+form {
+  &, input, select, textarea, tr, td {
+    @include span(12 of 12);
+  }
+
+  table {
+    tr {
+      @include breakpoint($tablet) {
+        @include span(6 of 12);
+
+        /*&:nth-child(6) {
+          margin-bottom: 65px;
+        }
+
+        &:nth-child(9) {
+          margin-top: -95px;        
+        }*/
+      }
+
+
+      #required_note {
+        span {
+          color: $black;
+        }
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: none;
+      }
+
+      tr, td, &:nth-child(8), &:nth-child(9) {
+        @include span(12 of 12);
+      }
+
+      &:nth-child(8),
+      &:nth-child(9) {
+        &, .input {
+          text-align: center;
+        }
+      }
+
+      &:nth-child(10) {
+        input[type='radio'] {
+          position: absolute;
+          visibility: hidden;
+          overflow: hidden;
+          width: 0;
+          height: 0;
+
+          + label {
+            @include span(4 of 12);
+
+            overflow: hidden;
+            height: 80px;
+            cursor: pointer;
+            margin-bottom: 15px;
+
+            @include transition(all 0.2s ease);
+
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: $white !important;
+            border-radius: 5px;
+            background-color: $orange;
+            border: 2px solid $orange;
+            font-size: 1.5em;
+            line-height: 80px;
+
+            &:focus {
+              outline: none;
+            }
+
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+          }
+
+          + label:hover,
+          &:checked + label {
+            background-color: $white;
+            border: 2px solid $orange;
+            color: $orange !important;
+          }
+        }
+      }
+    }
+  }
+
+  .label {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 10px;
+    height: 48px;
+    margin-bottom: 15px;
+    border: 1px solid $light-gray;
+    font-size: 1em;
+  }
+
+  select {
+    background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat $white right 10px center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+  }
+
+  #bsd-field-email_opt_in {
+    @include span(12 of 12);
+
+    margin-bottom: 25px;
+
+    input {
+      width: auto;
+      height: auto;
+      margin: 4px 10px 0 0;
+    }
+
+    label {
+      float: left;
+    }
+  }
+
+  #bsd-field-submit-btn {
+    .input {
+      @include span(12 of 12);
+    }
+  }
+
+  input[type="submit"] {
+    float: none;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: $orange;
+    border: 2px solid $orange;
+    color: $white;
+  }
+}
+
+.answer-options {
+  /* Radio button styling */
+  input[type="radio"] {
+    display: none;
+
+    + span {
+      float: left;
+      width: 20px;
+      height: 20px;
+      margin: 2px 12px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 2px solid $black;
+      border-radius: 3px;
+
+      &:before {
+        @include transition(all 0.4s linear);
+
+        @include transform(scale(0.5));
+
+        opacity: 0;
+        content: '';
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        color: $black;
+        float: left;
+        margin-top: -5px;
+        margin-left: -1px;
+      }
+    }
+  }
+
+  /* The correct answer get the the correct icon
+  and the wrong answer will get the cross icon */
+  .js-wrong-answer,
+  .js-correct-answer {
+    input[type="radio"] {
+      &:checked + span {
+        &:before {
+          opacity: 1;
+
+          @include transform(scale(1));
+
+          font-size: 1.3em;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .js-wrong-answer {
+    input[type="radio"] {
+      &:checked + span {
+        &:before {
+          content: '\f00d';
+          margin-top: -4px;
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+
+  .js-correct-answer {
+    input[type="radio"] {
+      &:checked + span {
+        &:before {
+          content: '\f00c';
+        }
+      }
+    }
+  }
+}
+
+.intro-block {
+  position: relative;
+  z-index: 0;
+  margin-top: 25px;
+
+  input,
+  span,
+  label {
+    display: block;
+    padding: 5px;
+    font-size: 22px;
+  }
+
+  input {
+    &:focus {
+      outline: 0;
+    }
+
+    &[type="submit"] {
+      @include transition(opacity 0.2s ease, background 0.2s ease);
+
+      display: block;
+      opacity: 0;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: $whisper;
+      }
+
+      &:active {
+        background: $nobel;
+      }
+    }
+
+    /* Question */
+    &.question {
+      font-size: 1.5em;
+      font-weight: 300;
+      border-radius: 2px;
+      margin: 0;
+      border: none;
+      width: 100%;
+      background: rgba(0, 0, 0, 0);
+      overflow-x: hidden;
+
+      @include transition(padding-top 0.2s ease, margin-top 0.2s ease);
+
+      @include breakpoint($tablet) {
+        font-size: 2em;
+      }
+
+
+      /* Hack to make "rows" attribute apply in Firefox. */
+
+      /* Underline and Placeholder */
+
+      + label {
+        display: block;
+        position: relative;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+        width: 20%;
+        border-top: 1px solid red;
+        height: 0px;
+
+        @include transition(width 0.4s ease);
+
+        > span {
+          font-weight: 300;
+          margin: 0;
+          position: absolute;
+          color: $suva-gray;
+          font-size: 1.5em;
+          top: -50px;
+          left: 0px;
+          z-index: -1;
+
+          @include transition(top 0.2s ease, font-size 0.2s ease, color 0.2s ease);
+
+          @include breakpoint($tablet) {
+            font-size: 2em;
+          }
+        }
+      }
+
+      &:focus + label {
+        width: 100%;
+      }
+
+      &:focus,
+      &:valid,
+      &.active:invalid {
+        padding-top: 35px;
+
+        + label > span {
+          top: -85px;
+          font-size: 22px;
+          color: $night-rider;
+        }
+      }
+
+      &:valid {
+        + label {
+          border-color: $green;
+        }
+
+        ~ input[type="submit"] {
+          -webkit-animation: appear 1s forwards;
+          animation: appear 1s forwards;
+        }
+      }
+
+      &:invalid {
+        color: $red;
+        box-shadow: none;
+
+        ~ input[type="submit"] {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @-webkit-keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes appear {
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/************* BSD form styles *************/
+#bsd-field-email,
+#bsd-field-firstname {
+  .error {
+    color: $red;
+
+    @include span(12 of 12);
+  }
+}

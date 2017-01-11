@@ -1,0 +1,649 @@
+<!-- initialising JQuery -->
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<!-- <script src="https://storage.googleapis.com/fa-assets/jquery.scrollTo.min.js"></script> -->
+<!-- Adding JS file from Github -->
+<!-- <script src="https://thesmallaxe.github.io/reprieve-quiz/js/main.js"></script> -->
+<!-- Adding CSS file from github -->
+<!-- <link rel="stylesheet" type="text/css" href="https://thesmallaxe.github.io/reprieve-quiz/css/styles.css"> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Reprieve Book Quiz</title>
+    <meta property="og:title" content="15 years of injustice at Guantánamo Bay.">
+    <meta property="og:description" content="Reprieve Book Quiz Description">
+    <!-- Need to add the metatag for image with a link in content -->
+    <!-- <meta property="og:image" content=""> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+    <!-- adding the Style sheet separately -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"></link>
+    <link rel="stylesheet" href="css/styles.css" type="text/css"></link>
+    
+    <!-- TODO add the reprieve icon here on href -->
+    <!-- <link rel="icon" href=""> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://storage.googleapis.com/fa-assets/jquery.scrollTo.min.js"></script>
+    <!-- adding JS file -->
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- Initialse FB Share -->
+    <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+    appId      : '1775120922751810',
+    xfbml      : true,
+    version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+    };
+    (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--- ############## Introduction one ################## -->
+    <div class="slide-container js-intro-container">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper intro-title">
+            <h1>The Innocent Man by John Grisham has been banned in Guantanamo Bay. It’s a book that deals with controversial themes such as whether we should keep innocent people in prison for years without a trial. The Rule of Law by Lord Bingham has also been banned.</h1>
+            <h1>This week, to mark 15 years of injustice at Guantanamo, you can test your knowledge of the books that have been banned in the world’s most notorious prison. Top prize for the winner is a coffee mug from the Guantanamo gift shop, bought by one of our lawyers on their next visit.</h1>
+            <h1>Just enter your name to begin our short quiz of 10 questions.</h1>
+          </div>
+          <div class="intro-block">
+            <input type="text" id="introname" class="text form-control question" pattern="^[( )a-zA-Z]+$" required autocomplete="off">
+            <label for="nme"><span>What's your name?</span></label>
+            <!-- <p class="missing-firstname" style="display:none;">Please enter your name</p> -->
+            <input type="submit" class="js-start-quiz-button next-button" value="Take the Quiz">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- ############## Question one ################## -->
+    <div class="slide-container js-question-container js-first-question js-hide full-height">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>1. Which of these famous children’s books has not been banned in Guantanamo bay?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q1op1" class="js-button ans-option" data-ans="Puss in Boots" data-question="1">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q1" id="q1op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Puss in Boots
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q1op2" class="js-button ans-option js-correct-answer" data-ans="Harry Potter" data-question="1">
+                <div class="ans-image-wrapper">
+                  
+                </div>
+                <input type="radio" name="q1" id="q1op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Harry Potter
+              </label>
+              <!--- ############## Option three ################## -->
+              <label for="q1op3" class="js-button ans-option" data-ans="Cindrella" data-question="1">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q1" id="q1op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Cinderella
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q1op4" class="js-button ans-option" data-ans="Jack and the Beanstalk" data-question="1">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q1" id="q1op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Jack and the Beanstalk
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Arabic copies of Harry Potter (which features a hellish Island prison of its very own) are very popular amongst detainees. Ironically, Harry Potter novels often top US Library’s “Most Banned Books” list.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question two ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>2. Which Martin Amis book has been banned from Guantanamo Bay?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q2op1" class="js-button ans-option js-correct-answer" data-ans="The Second Plane" data-question="2">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q2" id="q2op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The Second Plane
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q2op2" class="js-button ans-option" data-ans="London Fields" data-question="2">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q2" id="q2op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                London Fields
+              </label>
+              <!--- ############## Option three ################## -->
+              <label for="q2op3" class="js-button ans-option" data-ans="Dead Babies" data-question="2">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q2" id="q2op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Dead Babies
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q2op4" class="js-button ans-option" data-ans="The Moronic Inferno: And Other Visits to America" data-question="2">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q2" id="q2op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The Moronic Inferno: And Other Visits to America
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Martin Amis signed a copy of The Second Plane for Shaker Aamer, but the book was not allowed into the prison.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question three ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>3. Which of the following has been banned in Guantanamo?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q3op1" class="js-button ans-option" data-ans="The magazine ‘Swimming Times’" data-question="3">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q3" id="q3op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The magazine ‘Swimming Times’
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q3op2" class="js-button ans-option js-correct-answer" data-ans="‘1984’- George Orwell" data-question="3">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q3" id="q3op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘1984’- George Orwell
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q3op3" class="js-button ans-option js-correct-answer" data-ans="The magazine ‘Runner’s World’" data-question="3">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q3" id="q3op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The magazine ‘Runner’s World’
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q3op4" class="js-button ans-option" data-ans="The self-help manual ‘Don’t Be Sad’" data-question="3">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q3" id="q3op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The self-help manual ‘Don’t Be Sad’
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Guantanamo is a landlocked base surrounded by the second largest minefield in the world. “Runner’s World” was somehow judged more dangerous than “Swimming Times”.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question four ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>4. Which of Wilfred Owen’s poems has been banned twice?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q4op1" class="js-button ans-option js-correct-answer" data-ans="Futility" data-question="4">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q4" id="q4op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Futility
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q4op2" class="js-button ans-option" data-ans="Anthem for Doomed Youth" data-question="4">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q4" id="q4op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Anthem for Doomed Youth
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q4op3" class="js-button ans-option" data-ans="Insensibility" data-question="4">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q4" id="q4op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Insensibility
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q4op4" class="js-button ans-option" data-ans="The End" data-question="4">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q4" id="q4op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The End
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Despite being a noted anti-war poet, Wilfred Owen’s work has been repeatedly banned from Guantanamo.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question five ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>5. Which of the following topics are considered ‘restricted’?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q5op1" class="js-button ans-option js-correct-answer" data-ans="Travel Offers" data-question="5">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q5" id="q5op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Travel Offers
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q5op2" class="js-button ans-option" data-ans="Politics" data-question="5">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q5" id="q5op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Politics
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q5op3" class="js-button ans-option" data-ans="Religion" data-question="5">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q5" id="q5op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Religion
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q5op4" class="js-button ans-option" data-ans="Chemistry" data-question="5">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q5" id="q5op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Chemistry
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Along with military topics and depictions of graphic violence, travel offers are banned from Guantanamo.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question six ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>6. Who of the following haven't had one of his works banned at Guantanamo Bay?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q6op1" class="js-button ans-option" data-ans="John Grisham" data-question="6">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q6" id="q6op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                John Grisham
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q6op2" class="js-button ans-option" data-ans="Russell Brand" data-question="6">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q6" id="q6op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Russell Brand
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q6op3" class="js-button ans-option" data-ans="George Orwell" data-question="6">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q6" id="q6op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                George Orwell
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q6op4" class="js-button ans-option js-correct-answer" data-ans="Jeremy Paxman" data-question="6">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q6" id="q6op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Jeremy Paxman
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Former Guantánamo inmate Moazzam Begg once showed Jeremy Paxman the rubber stamp inside the cover of his copy. Russell Brand’s Booky Wook Two was banned for reasons unknown.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question seven ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>7. Which of the following books were unbanned from Guantanamo?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q7op1" class="js-button ans-option js-correct-answer" data-ans="‘The Innocent Man’ – John Grisham" data-question="7">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q7" id="q7op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘The Innocent Man’ – John Grisham
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q7op2" class="js-button ans-option" data-ans="‘Crime and Punishment’ – Fyodor Dostoyevsky" data-question="7">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q7" id="q7op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘Crime and Punishment’ – Fyodor Dostoyevsky
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q7op3" class="js-button ans-option" data-ans="‘Presumed Innocent’ – Scott Turow’s" data-question="7">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q7" id="q7op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘Presumed Innocent’ – Scott Turow’s
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q7op4" class="js-button ans-option" data-ans="‘The Rule of Law’ - Lord Thomas Bingham" data-question="7">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q7" id="q7op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘The Rule of Law’ - Lord Thomas Bingham
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">The Innocent Man was unbanned from Guantanamo after author John Grisham wrote an article criticising the decision in the New York Times.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question eight ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>8. Which of the following of Shakespeare's plays has been banned?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q8op1" class="js-button ans-option js-correct-answer" data-ans="The Merchant of Venice" data-question="8">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q8" id="q8op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                The Merchant of Venice
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q8op2" class="js-button ans-option" data-ans="Hamlet" data-question="8">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q8" id="q8op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Hamlet
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q8op3" class="js-button ans-option" data-ans="King Lear" data-question="8">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q8" id="q8op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                King Lear
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q8op4" class="js-button ans-option" data-ans="Romeo and Juliet" data-question="8">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q8" id="q8op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Romeo and Juliet
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">Perhaps the themes of injustice hit too close for home for Guantanamo authorities, who banned The Merchant of Venice in</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question nine ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>9. Which of the following has been banned?</h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q9op1" class="js-button ans-option" data-ans="‘Long Walk to Freedom’- Nelson Mandela" data-question="9">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q9" id="q9op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘Long Walk to Freedom’- Nelson Mandela
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q9op2" class="js-button ans-option" data-ans="‘Dreams of My Father’- Barack Obama" data-question="9">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q9" id="q9op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘Dreams of My Father’- Barack Obama
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q9op3" class="js-button ans-option" data-ans="A Long Way Gone: Memoirs of a Boy Soldier’- Ishmael Beah" data-question="9">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q9" id="q9op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                A Long Way Gone: Memoirs of a Boy Soldier’- Ishmael Beah
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q9op4" class="js-button ans-option js-correct-answer" data-ans="‘Uncle Tom’s Cabin’- Harriet Beecher Stowe" data-question="9">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q9" id="q9op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                ‘Uncle Tom’s Cabin’- Harriet Beecher Stowe
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">The anti-slavery novel by Harriet Beecher Stowe was apparently too controversial for the Guantanamo authorities. Several Barack Obama books are in the Guantanamo library but are supposedly not popular with the detainees.</p>
+            <button class="js-next-button next-button">Next Question</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- ############## Question ten ################## -->
+    <div class="slide-container js-question-container js-hide">
+      <div class="container">
+        <div class="question-slide-wrapper box">
+          <div class="question-title-wrapper">
+            <h1>10. How many of the books of Clive Stafford Smith (Reprieve’s founder) have been banned?
+            </h1>
+          </div>
+          <div class="answer-wrapper js-answer-wrapper">
+            <div class="answer-options">
+              <!--- ############## Option one ################## -->
+              <label for="q10op1" class="js-button ans-option" data-ans="None" data-question="10">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q10" id="q10op1" class="input-hidden" />
+                <span class="radio-btn"></span>
+                None
+              </label>
+              <!--- ############## Option two ################## -->
+              <label for="q10op2" class="js-button ans-option" data-ans="One" data-question="10">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q10" id="q10op2" class="input-hidden" />
+                <span class="radio-btn"></span>
+                One
+              </label>
+              <!--- ############## Question three ################## -->
+              <label for="q10op3" class="js-button ans-option" data-ans="Two" data-question="10">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q10" id="q10op3" class="input-hidden" />
+                <span class="radio-btn"></span>
+                Two
+              </label>
+              <!--- ############## Option four ################## -->
+              <label for="q10op4" class="js-button ans-option js-correct-answer" data-ans="All of them" data-question="10">
+                <div class="ans-image-wrapper">
+                </div>
+                <input type="radio" name="q10" id="q10op4" class="input-hidden" />
+                <span class="radio-btn"></span>
+                All of them
+              </label>
+            </div>
+          </div>
+          <div class="js-show-answer js-hide-answer answer-block">
+            <p class="js-ans-message ans-message"></p>
+            <p class="ans-info">In a rare act of kindness by the Guantanamo authorities, all books by Clive are banned at Guantanamo.</p>
+            <button class="js-score-button next-button">View my Score</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- ############## Final Score ################## -->
+    <div class="slide-container js-final-score-container js-hide">
+      <div class="container">
+        <div class="share-message">
+          <div class="score-wrapper">
+            <p class="ans-info">Hi <span id="fname"></span>, You have got <span id="myscore"></span> out of <span id="totalscore"></span> correct. <span id="resultmessage"></span></p>
+          </div>
+          <div class="social-share">
+            <p>January 11th 2017 will mark 15 years of injustice at Guantánamo Bay. The US authorities have held a total of 779 prisoners in this notorious detention facility, including at least 15 children. Only 9 detainees have ever been convicted of any crime. Now, 55 detainees remain, and we will continue to fight for them until Guantánamo is closed for good. The list of banned books is a reminder of the absurd and unjust world of Guantánamo.</p>
+            <p>Now – share your score on social media.</p>
+            <!-- FaceBook Share -->
+            <div id="facebookShareLink" class="share-link fb-share">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </div>
+            <!-- twitter Share -->
+            <div id="twitterShareLink" class="share-link twitter-share">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="signup-form">
+          <h1>Submit your answers to enter the prize draw.</h1>
+          <p>Top prize for the winner is a coffee mug from the Guantanamo gift shop, bought by one of our lawyers on their next visit. Other prizes will also be given to selected participants</p>
+        </div>
+        
+        <!--- ############## Apply the form here ################## -->
+        <form name="signup" class="bsd-signup-61" action="/page/s/what-are-the-books-banned-in-camp-guantanamo" method="post" id="signup">
+          <table id="signuptable"><tbody><tr><td>
+            <table width="100%"><tbody><tr><td valign="top">
+              <div class="fieldset" id="bsd-field-email">
+                <div class="label"><label class="field">Email<span class="required">*</span></label></div>
+                <div class="input"><input type="email" class="text" size="48" id="email" name="email"></div></div>
+              </td></tr></tbody></table></td></tr><tr><td><table width="100%"><tbody><tr><td valign="top">
+              <div class="fieldset" id="bsd-field-firstname">
+                <div class="label"><label class="field">First Name</label></div>
+                <div class="input"><input size="16" id="firstname" name="firstname" type="text"></div></div>
+                </td></tr></tbody></table></td></tr><tr><td><table width="100%"></table></td></tr><tr><td><table width="100%"></table></td></tr><tr><td><table width="100%"></table></td></tr><tr><td><table width="100%"><tbody><tr><td valign="top">
+                <div class="fieldset" id="bsd-field-custom-892">
+                  <div class="label"><label class="field">Submitted Answers<span class="required">*</span></label></div>
+                  <div class="input"><textarea rows="5" cols="50" id="custom-892" name="custom-892"></textarea></div></div>
+                </td></tr></tbody></table></td></tr><tr><td><table width="100%"><tbody><tr><td valign="top">
+                <div class="fieldset" id="bsd-field-email_opt_in">
+                  <div class="label"><label class="field"></label></div>
+                  <div class="input"><input id="email_opt_in" name="email_opt_in" type="checkbox" value="1" checked="checked"><label for="email_opt_in">Send me updates</label></div></div>
+                  </td></tr></tbody></table></td></tr><tr><td><div style="display: none"><label for="best-contact-time">Please leave this field blank:</label> <input id="best-contact-time" name="best-contact-time" type="text"></div><table width="100%"><tbody><tr><td valign="top">
+                  <div class="fieldset" id="bsd-field-submit-btn">
+                    <div class="label"><label class="field"></label></div>
+                    <div class="input"><input name="submit-btn" value="Submit" type="submit"></div></div>
+                    </td></tr></tbody></table></td></tr><tr><td><table width="100%"><tbody><tr><td id="required_note"><span class="required">*</span><span style="font-size: 80%;"> denotes required field</span></td></tr><input name="country" type="hidden" value="GB"><input name="redirect_url" type="hidden" value=""><input id="_guid" name="_guid" type="hidden" value=""></tbody></table></td>
+                  </tr></tbody></table></form>
+                </div>
+              </div>
+            </div>
+          </body>
+        </html>

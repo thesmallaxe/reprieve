@@ -1,0 +1,777 @@
+/* ------------------------------------------
+  IMPORTS
+--------------------------------------------- */
+/* ------------------------------------------
+  FONT VARIABLES
+--------------------------------------------- */
+/* ------------------------------------------
+  COLOUR VARIABLES
+--------------------------------------------- */
+/* ------------------------------------------
+  BASE FONT STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+  COMPASS PLUGINS
+--------------------------------------------- */
+/* ------------------------------------------
+  PARTIAL SCSS
+--------------------------------------------- */
+/* -----------------------------------------------
+  MEDIA QUERIES
+-------------------------------------------------- */
+/*************** Common instructions ****************/
+/* -----------------------------------------------
+  TYPOGRAPHY
+-------------------------------------------------- */
+/* line 7, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 1.65em;
+  line-height: 1.5em;
+}
+@media (min-width: 768px) {
+  /* line 7, ../sass/partials/_typography.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+/* line 16, ../sass/partials/_typography.scss */
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+/* line 22, ../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0.75em 0 0.525em;
+}
+
+/* Set the font-size and line-height while keeping a proper vertical rhythm. */
+/* line 28, ../sass/partials/_typography.scss */
+html {
+  /* This means 16px */
+  font-size: 100%;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  /* line 28, ../sass/partials/_typography.scss */
+  html {
+    /* This means 18px */
+    font-size: 112.5%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 28, ../sass/partials/_typography.scss */
+  html {
+    /* This means 20px */
+    font-size: 125%;
+  }
+}
+
+/* line 45, ../sass/partials/_typography.scss */
+body {
+  font: 16px/24px "effra", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+/* btn colour variabels */
+/* Common Colours */
+/* ------------------------------------------
+  Functions & Mixins
+--------------------------------------------- */
+/* ------------------------------------------
+  HEADER
+--------------------------------------------- */
+/* ------------------------------------------
+  FOOTER
+--------------------------------------------- */
+/* line 2, ../sass/partials/_forms.scss */
+form, form input, form select, form textarea, form tr, form td {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  /* line 7, ../sass/partials/_forms.scss */
+  form table tr {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+        /*&:nth-child(6) {
+          margin-bottom: 65px;
+        }
+
+        &:nth-child(9) {
+          margin-top: -95px;        
+        }*/
+  }
+}
+/* line 22, ../sass/partials/_forms.scss */
+form table tr #required_note span {
+  color: #000000;
+}
+/* line 27, ../sass/partials/_forms.scss */
+form table tr:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 31, ../sass/partials/_forms.scss */
+form table tr:nth-child(3), form table tr:nth-child(4), form table tr:nth-child(5), form table tr:nth-child(6) {
+  display: none;
+}
+/* line 38, ../sass/partials/_forms.scss */
+form table tr tr, form table tr td, form table tr:nth-child(8), form table tr:nth-child(9) {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 44, ../sass/partials/_forms.scss */
+form table tr:nth-child(8), form table tr:nth-child(8) .input, form table tr:nth-child(9), form table tr:nth-child(9) .input {
+  text-align: center;
+}
+/* line 50, ../sass/partials/_forms.scss */
+form table tr:nth-child(10) input[type='radio'] {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+/* line 57, ../sass/partials/_forms.scss */
+form table tr:nth-child(10) input[type='radio'] + label {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  overflow: hidden;
+  height: 80px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  background-color: #E35E14;
+  border: 2px solid #E35E14;
+  font-size: 1.5em;
+  line-height: 80px;
+}
+/* line 77, ../sass/partials/_forms.scss */
+form table tr:nth-child(10) input[type='radio'] + label:focus {
+  outline: none;
+}
+/* line 81, ../sass/partials/_forms.scss */
+form table tr:nth-child(10) input[type='radio'] + label:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 86, ../sass/partials/_forms.scss */
+form table tr:nth-child(10) input[type='radio'] + label:hover, form table tr:nth-child(10) input[type='radio']:checked + label {
+  background-color: #FFFFFF;
+  border: 2px solid #E35E14;
+  color: #E35E14 !important;
+}
+/* line 97, ../sass/partials/_forms.scss */
+form .label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+/* line 102, ../sass/partials/_forms.scss */
+form input,
+form select,
+form button {
+  padding: 10px;
+  height: 48px;
+  margin-bottom: 15px;
+  border: 1px solid #D8D8D8;
+  font-size: 1em;
+}
+/* line 112, ../sass/partials/_forms.scss */
+form select {
+  background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat #FFFFFF right 10px center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+}
+/* line 120, ../sass/partials/_forms.scss */
+form #bsd-field-email_opt_in {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+/* line 125, ../sass/partials/_forms.scss */
+form #bsd-field-email_opt_in input {
+  width: auto;
+  height: auto;
+  margin: 4px 10px 0 0;
+}
+/* line 131, ../sass/partials/_forms.scss */
+form #bsd-field-email_opt_in label {
+  float: left;
+}
+/* line 137, ../sass/partials/_forms.scss */
+form #bsd-field-submit-btn .input {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 142, ../sass/partials/_forms.scss */
+form input[type="submit"] {
+  float: none;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #E35E14;
+  border: 2px solid #E35E14;
+  color: #FFFFFF;
+}
+
+/* line 152, ../sass/partials/_forms.scss */
+.answer-options {
+  /* Radio button styling */
+  /* The correct answer get the the correct icon
+  and the wrong answer will get the cross icon */
+}
+/* line 154, ../sass/partials/_forms.scss */
+.answer-options input[type="radio"] {
+  display: none;
+}
+/* line 157, ../sass/partials/_forms.scss */
+.answer-options input[type="radio"] + span {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 2px 12px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+/* line 167, ../sass/partials/_forms.scss */
+.answer-options input[type="radio"] + span:before {
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+  content: '';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #000000;
+  float: left;
+  margin-top: -5px;
+  margin-left: -1px;
+}
+/* line 192, ../sass/partials/_forms.scss */
+.answer-options .js-wrong-answer input[type="radio"]:checked + span:before,
+.answer-options .js-correct-answer input[type="radio"]:checked + span:before {
+  opacity: 1;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  font-size: 1.3em;
+  color: #000000;
+}
+/* line 207, ../sass/partials/_forms.scss */
+.answer-options .js-wrong-answer input[type="radio"]:checked + span:before {
+  content: '\f00d';
+  margin-top: -4px;
+  margin-left: -1px;
+}
+/* line 219, ../sass/partials/_forms.scss */
+.answer-options .js-correct-answer input[type="radio"]:checked + span:before {
+  content: '\f00c';
+}
+
+/* line 227, ../sass/partials/_forms.scss */
+.intro-block {
+  position: relative;
+  z-index: 0;
+  margin-top: 25px;
+}
+/* line 232, ../sass/partials/_forms.scss */
+.intro-block input,
+.intro-block span,
+.intro-block label {
+  display: block;
+  padding: 5px;
+  font-size: 22px;
+}
+/* line 240, ../sass/partials/_forms.scss */
+.intro-block input {
+  /* Question */
+}
+/* line 241, ../sass/partials/_forms.scss */
+.intro-block input:focus {
+  outline: 0;
+}
+/* line 245, ../sass/partials/_forms.scss */
+.intro-block input[type="submit"] {
+  -moz-transition: opacity 0.2s ease, background 0.2s ease;
+  -o-transition: opacity 0.2s ease, background 0.2s ease;
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+/* line 253, ../sass/partials/_forms.scss */
+.intro-block input[type="submit"]:hover {
+  background: #EEEEEE;
+}
+/* line 257, ../sass/partials/_forms.scss */
+.intro-block input[type="submit"]:active {
+  background: #999999;
+}
+/* line 263, ../sass/partials/_forms.scss */
+.intro-block input.question {
+  font-size: 1.5em;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: transparent;
+  overflow-x: hidden;
+  -moz-transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  -o-transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  -webkit-transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  /* Hack to make "rows" attribute apply in Firefox. */
+  /* Underline and Placeholder */
+}
+@media (min-width: 768px) {
+  /* line 263, ../sass/partials/_forms.scss */
+  .intro-block input.question {
+    font-size: 2em;
+  }
+}
+/* line 284, ../sass/partials/_forms.scss */
+.intro-block input.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  border-top: 1px solid red;
+  height: 0px;
+  -moz-transition: width 0.4s ease;
+  -o-transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+/* line 296, ../sass/partials/_forms.scss */
+.intro-block input.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 1.5em;
+  top: -50px;
+  left: 0px;
+  z-index: -1;
+  -moz-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  -o-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+@media (min-width: 768px) {
+  /* line 296, ../sass/partials/_forms.scss */
+  .intro-block input.question + label > span {
+    font-size: 2em;
+  }
+}
+/* line 314, ../sass/partials/_forms.scss */
+.intro-block input.question:focus + label {
+  width: 100%;
+}
+/* line 318, ../sass/partials/_forms.scss */
+.intro-block input.question:focus, .intro-block input.question:valid, .intro-block input.question.active:invalid {
+  padding-top: 35px;
+}
+/* line 323, ../sass/partials/_forms.scss */
+.intro-block input.question:focus + label > span, .intro-block input.question:valid + label > span, .intro-block input.question.active:invalid + label > span {
+  top: -85px;
+  font-size: 22px;
+  color: #333333;
+}
+/* line 331, ../sass/partials/_forms.scss */
+.intro-block input.question:valid + label {
+  border-color: #008000;
+}
+/* line 335, ../sass/partials/_forms.scss */
+.intro-block input.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+/* line 341, ../sass/partials/_forms.scss */
+.intro-block input.question:invalid {
+  color: #FF0000;
+  box-shadow: none;
+}
+/* line 345, ../sass/partials/_forms.scss */
+.intro-block input.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+/************* BSD form styles *************/
+/* line 368, ../sass/partials/_forms.scss */
+#bsd-field-email .error,
+#bsd-field-firstname .error {
+  color: #FF0000;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* -----------------------------------------------
+  FONTS
+-------------------------------------------------- */
+/* line 2, ../sass/partials/_hacks.scss */
+#bsd-field-custom-892 {
+  display: none;
+}
+
+/* line 7, ../sass/partials/_hacks.scss */
+#issues p, #issues h1, #issues label {
+  color: #000000;
+}
+
+/* line 12, ../sass/partials/_hacks.scss */
+#sitesearch_query {
+  padding: 5px;
+}
+
+@media only screen and (min-width: 61.25em) {
+  /* line 17, ../sass/partials/_hacks.scss */
+  #sitesearch_query {
+    height: 32px;
+    width: 85px;
+  }
+}
+/* line 24, ../sass/partials/_hacks.scss */
+#content {
+  padding-top: 0;
+}
+
+/* ------------------------------------------
+  SUSY SETTINGS
+--------------------------------------------- */
+/* line 21, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------
+  GENERAL
+--------------------------------------------- */
+/* line 9, ../sass/styles.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #F2F0ED;
+}
+
+/* line 15, ../sass/styles.scss */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+/* line 12, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 15, ../sass/styles.scss */
+  .container {
+    padding: 0 200px;
+  }
+}
+
+/**************** Intro Section Styles ****************/
+/* line 28, ../sass/styles.scss */
+.js-intro-container .intro-title h1 {
+  font-size: 1.5em;
+}
+
+/******************* Answer styling *******************/
+/* line 35, ../sass/styles.scss */
+.answer-wrapper,
+.answer-options {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 40, ../sass/styles.scss */
+.answer-wrapper {
+  position: relative;
+}
+
+/* line 44, ../sass/styles.scss */
+.ans-option {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 9px;
+  background: #E0E0E0;
+  border: 1px solid #D8D8D8;
+  text-align: left;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 52, ../sass/styles.scss */
+.ans-option:last-child {
+  margin-bottom: 0;
+}
+/* line 58, ../sass/styles.scss */
+.ans-option input {
+  float: left;
+}
+/* line 62, ../sass/styles.scss */
+.ans-option img {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 67, ../sass/styles.scss */
+.ans-option:hover img {
+  transform: scale(1.2);
+}
+
+/* line 75, ../sass/styles.scss */
+.ans-image-wrapper {
+  overflow: hidden;
+}
+/* line 78, ../sass/styles.scss */
+.ans-image-wrapper img {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  /* line 78, ../sass/styles.scss */
+  .ans-image-wrapper img {
+    height: 216px;
+    width: 384px;
+  }
+}
+
+/* line 91, ../sass/styles.scss */
+.question-title-wrapper {
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  /* line 91, ../sass/styles.scss */
+  .question-title-wrapper {
+    padding: 15px 0;
+  }
+}
+
+/************** Question container Styling **************/
+/* line 100, ../sass/styles.scss */
+.slide-container {
+  margin: 40px 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 106, ../sass/styles.scss */
+.box {
+  position: relative;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 112, ../sass/styles.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+/* line 121, ../sass/styles.scss */
+.answer-block,
+.thankyou-message {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  border: 4px solid #E35E14;
+  background-color: #FEFEFE;
+  margin-top: 40px;
+}
+
+/* line 133, ../sass/styles.scss */
+.answer-block .js-wrong, .answer-block .js-wrong i {
+  color: #FF7775;
+}
+/* line 139, ../sass/styles.scss */
+.answer-block .js-right, .answer-block .js-right i {
+  color: #88F078;
+}
+/* line 146, ../sass/styles.scss */
+.answer-block .js-wrong i,
+.answer-block .js-right i {
+  margin-right: 5px;
+}
+
+/* line 152, ../sass/styles.scss */
+.ans-message {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+/* line 157, ../sass/styles.scss */
+.ans-info {
+  font-size: 1.25em;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* line 163, ../sass/styles.scss */
+.js-hide, .js-hide-answer {
+  display: none;
+}
+
+/* line 167, ../sass/styles.scss */
+.next-button {
+  background-color: #E35E14;
+  border: 2px solid #E35E14;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  margin: 25px auto 0;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none !important;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  /* line 167, ../sass/styles.scss */
+  .next-button {
+    padding: 15px 0;
+    width: 250px;
+  }
+}
+/* line 187, ../sass/styles.scss */
+.next-button:hover, .next-button:focus {
+  cursor: pointer;
+  outline: none;
+  background: #FFFFFF;
+  color: #E35E14;
+  text-decoration: none;
+  border: 2px solid #BF5012;
+}
+
+/**************** Share page *****************/
+/* line 199, ../sass/styles.scss */
+.score-wrapper,
+.social-share {
+  text-align: center;
+}
+
+/* line 204, ../sass/styles.scss */
+.share-link {
+  display: inline-block;
+  font-size: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* line 211, ../sass/styles.scss */
+.share-message {
+  background: #E0E0E0;
+  border: 4px solid #8F8F8F;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+/* line 217, ../sass/styles.scss */
+.share-message .fb-share {
+  color: #3b5998;
+}
+/* line 221, ../sass/styles.scss */
+.share-message .twitter-share {
+  color: #0084b4;
+}
+/* line 225, ../sass/styles.scss */
+.share-message .fb-share,
+.share-message .twitter-share {
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+/* line 232, ../sass/styles.scss */
+.share-message .fb-share:hover,
+.share-message .twitter-share:hover {
+  opacity: 0.7;
+}
+
+/****************** Hot fix ******************/
+/* line 239, ../sass/styles.scss */
+.signup-form {
+  color: #000000;
+}
+
+/************* Thank you message *************/
+/* line 245, ../sass/styles.scss */
+.thankyou-message h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0;
+}
+/* line 250, ../sass/styles.scss */
+.thankyou-message h1 span {
+  font-size: 1.75em;
+}

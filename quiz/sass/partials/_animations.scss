@@ -1,0 +1,32 @@
+/* -----------------------------------------------
+  CSS ANIMATIONS
+-------------------------------------------------- */
+.intro-block {
+  &:before {
+    content: "";
+    background: $red;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 1px;
+    height: 42px;
+
+    @include animation(blink 1s step-end infinite);
+  }
+
+  &.no-before {
+    &:before {
+      content: none;
+    }
+  }
+}
+
+@include keyframes(blink) {
+  from, to {
+    background: transparent;
+  }
+
+  50% {
+    background: $red;
+  }
+}

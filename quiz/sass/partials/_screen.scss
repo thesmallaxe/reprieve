@@ -1,0 +1,33 @@
+/* -----------------------------------------------
+  MEDIA QUERIES
+-------------------------------------------------- */
+
+/*************** Common instructions ****************/
+//Small Mobile = max width 479px
+//General Mobile = max width 767px
+//Tablet Vertical = min width 768px max-width 991px
+//Tablet Horizontal = min width 992px max-width 1199px
+//Desktop = min width 1200px
+
+//Assign a max-width
+//@include breakpoint(max-width $screen-sm-min);
+
+//Assign a min-width
+//@include breakpoint($tablet);
+
+//Between two device sizes
+//@include breakpoint($screen-md-min $screen-lg-min)
+
+$screen-xxs-max: 480px;
+$screen-sm-min: 768px;
+$screen-xs-max: $screen-sm-min - 1;
+$screen-md-min: 992px;
+$screen-sm-max: $screen-md-min - 1;
+$screen-lg-min: 1200px;
+$screen-md-max: $screen-lg-min - 1;
+
+
+$mobile-large : 480px;
+$tablet : 768px;
+$desktop : 992px;
+$desktoplarge : 1200px;

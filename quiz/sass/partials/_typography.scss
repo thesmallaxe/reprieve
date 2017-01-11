@@ -1,0 +1,47 @@
+/* -----------------------------------------------
+  TYPOGRAPHY
+-------------------------------------------------- */
+$h1-font-size: 2 * $base-font-size;
+$p-font-size: 1 * $base-font-size;
+
+h1 {
+  font-size: 1.65em;
+  line-height: 1.5em;
+
+  @include breakpoint($tablet) {
+    @include adjust-font-size-to($h1-font-size);
+  }
+}
+
+p {
+  @include adjust-font-size-to($p-font-size);
+
+  margin-bottom: rhythm(0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: rhythm(0.5) 0 rhythm(0.35);
+}
+
+/* Set the font-size and line-height while keeping a proper vertical rhythm. */
+html {
+  /* This means 16px */
+  font-size: 100%;
+  line-height: $base-line-height;
+
+  @include breakpoint($screen-sm-min) {
+    /* This means 18px */
+    font-size: 112.5%;
+  }
+
+
+  @include breakpoint($screen-lg-min) {
+    /* This means 20px */
+    font-size: 125%;
+  }
+}
+
+body {
+  font: #{$base-font-size}/#{$base-line-height} "effra", "Helvetica Neue", helvetica, arial, sans-serif;
+}
