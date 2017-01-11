@@ -6,8 +6,10 @@
 
 	//Doucment ready function where events gets binded in
 	$( document ).ready(function() {
-			//Focus the link
-			document.getElementById("introname").focus();
+			//Focus input only on Desktop
+			if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 				document.getElementById("introname").focus();
+			}
 
 	    initialiseButtonClicks();
 	    //Function which calls the name and email and passes to the donation page
