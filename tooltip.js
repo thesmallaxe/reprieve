@@ -164,3 +164,25 @@ $('.close7').on('click', function(event) {
 	$(".mobile-tooltip-7").css('display', 'none');
 	$("html, body").animate({ scrollTop: currentscrollpos }, 0);
 });
+//
+$(function() {
+  $(".give-monthly-tab").click(function() { 
+    $(".tab").removeClass("picked-tab");
+    $(this).addClass("picked-tab");
+    $(".main").removeClass("picked-main");
+    $(".main").removeClass("unpicked-main");
+    $(".give-monthly-main").addClass("picked-main");
+    $(".give-now-main").addClass("unpicked-main");
+  });
+});
+
+$(function() {
+  $(".give-now-tab").click(function() { 
+    $(".tab").removeClass("picked-tab");
+    $(this).addClass("picked-tab");
+    $(".main").removeClass("picked-main");
+    $(".main").removeClass("unpicked-main");
+    $(".give-now-main").addClass("picked-main");
+    $(".give-monthly-main").addClass("unpicked-main");
+  });
+});
