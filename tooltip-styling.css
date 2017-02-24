@@ -609,7 +609,7 @@ body {
 }
 
 .donation-container {
-  width: 700px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -622,11 +622,11 @@ body {
 }
 
 .unpicked-tab {
-  background: white;
+  background: #F0F0F0;
 }
 
 .picked-tab {
-  background: #F0F0F0;
+  background: white;
   color: #e35e14;
 }
 
@@ -647,7 +647,7 @@ body {
 }
 
 .pay {
-  width: 33%;
+  width: 100%;
   float: left;
   margin-top: 0.5rem;
 }
@@ -675,9 +675,19 @@ body {
   margin: -1rem;
 }
 .donate-link {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
   background-color:#e35e14;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  display: block;
+}
+
+@media only screen and (min-width: 480px) {
+  .pay {
+  width: 33%;
+  }
+  .donate-link {
+    display:inline;
+  }
 }
