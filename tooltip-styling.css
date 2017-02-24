@@ -603,3 +603,81 @@ h1.greetings-heading {
 .primary .portrait_img.greeting-stretch {
   width: 100%;
 }
+
+body {
+  font-family: "Arial", Sans-serif;
+}
+
+.donation-container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.tab {
+  width: 50%;
+  float: left;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.unpicked-tab {
+  background: white;
+}
+
+.picked-tab {
+  background: #F0F0F0;
+  color: #e35e14;
+}
+
+.main-donate {
+  clear: both;
+  background-color: blue;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.unpicked-main {
+  display: none;
+  background: white;
+}
+
+.picked-main {
+  background: #F0F0F0
+}
+
+.pay {
+  width: 33%;
+  float: left;
+  margin-top: 0.5rem;
+}
+
+.pay:hover {
+  cursor: pointer;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main:before, .main:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.other {
+  background: #EAEADE;
+  clear: both;
+  display: block;
+  padding: 2rem;
+  margin: -1rem;
+}
+.donate-link {
+  text-decoration: none;
+  color: white;
+  background-color:#e35e14;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
