@@ -639,11 +639,11 @@ body {
 
 .unpicked-main {
   display: none;
-  background: white;
+  background:  #F0F0F0;
 }
 
 .picked-main {
-  background: #F0F0F0
+  background: white
 }
 
 .pay {
