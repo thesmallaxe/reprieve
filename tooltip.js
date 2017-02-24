@@ -169,8 +169,8 @@ $(function() {
   $(".give-monthly-tab").click(function() { 
     $(".tab").removeClass("picked-tab");
     $(this).addClass("picked-tab");
-    $(".main").removeClass("picked-main");
-    $(".main").removeClass("unpicked-main");
+    $(".main-donate").removeClass("picked-main");
+    $(".main-donate").removeClass("unpicked-main");
     $(".give-monthly-main").addClass("picked-main");
     $(".give-now-main").addClass("unpicked-main");
   });
@@ -180,8 +180,8 @@ $(function() {
   $(".give-now-tab").click(function() { 
     $(".tab").removeClass("picked-tab");
     $(this).addClass("picked-tab");
-    $(".main").removeClass("picked-main");
-    $(".main").removeClass("unpicked-main");
+    $(".main-donate").removeClass("picked-main");
+    $(".main-donate").removeClass("unpicked-main");
     $(".give-now-main").addClass("picked-main");
     $(".give-monthly-main").addClass("unpicked-main");
   });
