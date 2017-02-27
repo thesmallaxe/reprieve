@@ -691,3 +691,54 @@ body {
     display:inline;
   }
 }
+
+.other {
+    background: #1f2122;
+    color: white;
+    font-size: 1.25rem;
+}
+
+a.donate-link {
+    display: inline-block;
+    text-align: center;
+}
+
+.other a.donate-link {
+    display: inline-block;
+}
+
+
+
+.pay {
+    background: #f2f0ed;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+.other {
+    margin: 0 -2rem;
+}
+.main-donate {
+    padding: 2rem 2rem 0rem 2rem;
+    }
+
+@media only screen and (min-width: 480px) {
+
+    .pay.pay-3 {
+        margin-right: 0;
+    }
+    .pay {
+        width: calc(33% - 2%);
+        margin-right: 3%;
+    }
+    }
+
+p.number {
+    line-height: normal !important;
+    margin: 0 !important;
+    font-size: 60px;
+}
