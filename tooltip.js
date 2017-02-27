@@ -165,6 +165,11 @@ $('.close7').on('click', function(event) {
 	$("html, body").animate({ scrollTop: currentscrollpos }, 0);
 });
 //
+
+ if (document.getElementById("donation-container")) {
+			$(".maincol.with_single").addClass("full-col");	 
+	 }
+
 $(function() {
   $(".give-monthly-tab").click(function() { 
     $(".tab").removeClass("picked-tab");
