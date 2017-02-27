@@ -169,6 +169,7 @@ $('.close7').on('click', function(event) {
  if (document.getElementById("donation-container")) {
 			$(".maincol.with_single").addClass("full-col");	 
 	 		$(".primary h1").addClass("donation-heading");
+	 		$(".surcore").css('display', 'none');
 	 }
 
 $(function() {
