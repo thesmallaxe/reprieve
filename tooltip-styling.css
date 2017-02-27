@@ -611,6 +611,7 @@ body {
 .donation-container {
   width: 100%;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .tab {
@@ -750,7 +751,7 @@ h1.donation-heading {
     text-transform: initial;
     border-bottom: 5px solid #e35e14;
     display: inline-block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 48px;
 }
 
