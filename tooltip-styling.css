@@ -742,3 +742,24 @@ p.number {
     margin: 0 !important;
     font-size: 60px;
 }
+p.description {
+    margin: 0 !important;
+}
+
+h1.donation-heading {
+    text-transform: initial;
+    border-bottom: 5px solid #e35e14;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 48px;
+}
+
+h2.donation-heading {
+    text-transform: initial;
+    border-bottom: 5px solid #e35e14;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 32px;
+    line-height: normal;
+}
