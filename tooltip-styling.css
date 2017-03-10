@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 
+body#home .sect_intro_deats_heading {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+body#home p.sect_intro_deats_copy {
+    padding-top: 0;
+    color: white;
+}
+
 html {
   font-family: "Source Sans Pro", arial, sans-serif !important;
 }
