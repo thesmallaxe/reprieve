@@ -3,7 +3,8 @@ a:focus, a:hover {
 }
 
 .fnav_sub_primary a.fnav_sub_element:hover {
-    color: #cbc3b7;
+    /*color: #cbc3b7;*/
+    color: #e35e14;
 }
 
 a.topnav_element:hover,a.topnav_element:focus {
@@ -55,12 +56,12 @@ div.bsd-speakout .bsd-speakout-show-formfield { margin:20px 0; }
 #contribution td input:hover, #signup td input:hover, #contribution td input:focus, #signup td input:focus {
  border:2px solid #e35e14;
 }
- 
-#contribution td.contribheader, #contribution #pa_status { border-bottom:0; padding-bottom:10px; } 
+
+#contribution td.contribheader, #contribution #pa_status { border-bottom:0; padding-bottom:10px; }
 
 #contribution label, #contribution .fieldlabel { padding: 0 0 18px 0; }
 
-#bsd-contribution-card-type input { 
+#bsd-contribution-card-type input {
     margin-top: 4px;
 }
 
@@ -222,7 +223,7 @@ div.bsd-speakout .bsd-speakout-show-formfield { margin:20px 0; }
       #totaliser {
         margin: 20px auto;
         text-align: center;
-        width: 30%; 
+        width: 30%;
       }
 
       #totaliser h2 {
@@ -249,7 +250,7 @@ div.bsd-speakout .bsd-speakout-show-formfield { margin:20px 0; }
 }
 
 
-  
+
       #totaliser h2 #counter {       }
 
 #required_note { position: absolute;
@@ -277,7 +278,7 @@ div.bsd-speakout .bsd-speakout-show-formfield { margin:20px 0; }
         margin: 0 auto;
         max-width: 600px;
       }
-      
+
       #contribution table,
       #contribution table tbody,
       #contribution table tr,
@@ -287,54 +288,54 @@ div.bsd-speakout .bsd-speakout-show-formfield { margin:20px 0; }
 
     body    #contribution td.contribheader {
       border-bottom: none;
-      padding-bottom: 20px;    
+      padding-bottom: 20px;
  font-size: 24px;
     font-weight: normal!important;
     }
-    
+
 body #amt_other_text { padding:0!important; }
     #contribution .contribcolumn {
       width: 100%!important;
     }
-    
+
     #contribution td input {
     border: solid 2px #ceccc9;
       font-size: 16px;
       padding: 10px 15px;
       width: 95%;
     }
-    
+
     #contribution td #phone {
       margin-bottom: 40px;
     }
-    
+
     #bsd-amounts-cont {
       padding-bottom: 40px;
       min-height: 100px;
     }
-    
+
     #bsd-amounts-cont td td {
       display: block;
       float: left;
       height: 40px;
       width: 20%;
     }
-    
+
     #bsd-amounts-cont input {
-      margin-right: 10px;  
+      margin-right: 10px;
       width: auto!important;
     }
-    
+
     #bsd-contribution-card-type .cc_type_cd {
       float: left;
       margin-right: 10px;
       width: auto;
     }
-    
+
     #bsd-contribution-card-type .cc_type_cd_label {
       float: left;
     }
-    
+
     #processbutton {
       background-color: #e35e14;
       border: none!important;
@@ -345,7 +346,7 @@ body #amt_other_text { padding:0!important; }
       -moz-border-radius: 2px;
       border-radius: 2px;
     }
-    
+
     select {
       background-color: #fff;
       background-image: url('https://s.bsd.net/reprieve/main/page/-/images/select-arrow.png');
@@ -363,7 +364,7 @@ body #amt_other_text { padding:0!important; }
       -webkit-appearance: none;
       -webkit-border-radius: 0px;
     }
-    
+
     select#country {
       background-position: 95% 50%;
       float: none;
@@ -371,7 +372,7 @@ body #amt_other_text { padding:0!important; }
       margin-bottom: 0px;
       width: 100%;
     }
-    
+
     .bsd-dynamic-toggle-section-paymentinfo {
       overflow: hidden;
     }
@@ -387,7 +388,7 @@ body #amt_other_text { padding:0!important; }
       }
 
       td.contribcolumn > table > tbody > tr > td {
-         display: block; 
+         display: block;
         margin-bottom: 0 !important;
       }
 
@@ -494,7 +495,7 @@ body #amt_other_text { padding:0!important; }
       }
 
       @media only screen and (max-width: 768px) {
-   
+
         .issues_align {
           padding: 0 5%;
         }
@@ -678,7 +679,12 @@ margin: 3rem 0;
     height: auto !important;
 }
 
-.fnav_sub:before, .fnav_sub:after {
+.fnav_sub:before {
+    content: "";
+    display: table;
+}
+
+.fnav_sub:after {
     content: "";
     clear: both;
     display: table;
