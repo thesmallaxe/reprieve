@@ -15,6 +15,10 @@ html {
   font-family: "Source Sans Pro", arial, sans-serif !important;
 }
 
+picture.primary_img.portrait_img.tshirt-hide {
+    display: none;
+}
+
 .primary .letter-container {
   font-size: 1.38462em;
   line-height: 1.4;
