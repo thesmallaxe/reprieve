@@ -17,6 +17,10 @@ if (document.getElementById("mental-health")) {
 		 
 	 }
 
+if (document.getElementById("tshirt-image")) {
+			 $(".primary .portrait_img").addClass("tshirt-hide");
+	 }
+
  if (document.getElementById("greetings")) {
 			$(".maincol.with_single").addClass("full-col");
 		 	$(".surcore").css('display', 'none');
