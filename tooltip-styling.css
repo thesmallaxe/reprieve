@@ -779,3 +779,17 @@ h2.donation-heading {
     font-size: 32px;
     line-height: normal;
 }
+.donation-tab:before,.donation-tab:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.donation-tab {
+    background: white;
+}
+
+.tab.picked-tab {
+    background: white;
+    color: #e35e14;
+}
