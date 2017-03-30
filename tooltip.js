@@ -197,3 +197,25 @@ $(function() {
     $(".give-monthly-main").addClass("unpicked-main");
   });
 });
+
+$('.give-now .other input').change(function(){
+  var var1 = $(this).val();
+  $(".give-now .other .donate-link").attr("href","https://reprieve.bsd.net/page/contribute/donatenow?default_amt=" + var1)
+});
+
+$('.give-monthly .other input').change(function(){
+  var var2 = $(this).val();
+  $(".give-monthly .other .donate-link").attr("href","https://secure.edirectdebit.com/Reprieve/Donate2/Desktop-Form-Page/?default_amt=" + var2)
+});
+
+
+
+
+
+
+
+
+
+
+
+
