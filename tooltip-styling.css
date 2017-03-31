@@ -797,3 +797,34 @@ h2.donation-heading {
 .tab, .unpicked-tab {
     background: #f2f0ed;
 }
+
+@media only screen and (min-width: 61.25em) {
+.donatePost {
+    width: calc(50% - 3rem);
+    /* margin-right: 2rem; */
+    float: left;
+    margin: 2rem 0;
+    margin-right: 3rem;
+}
+
+.donatePhone {
+    width: calc(50%);
+    /* margin-left: 1rem; */
+    margin-top: 2rem;
+    float: left;
+    clear: right;
+}
+}
+
+.yourMoney {
+    clear: both;
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0rem;
+    display: block;
+}
+
+img.websitePie {
+    width: 150px;
+    float: right;
+}
