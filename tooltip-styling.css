@@ -836,3 +836,52 @@ img.websitePie {
     width: 150px;
     float: right;
 }
+
+table#signuptable {
+    background: none;
+    border-color: transparent;
+    width: 100%;
+}
+
+#signuptable td {
+    background: transparent;
+    border: 0;
+    padding: 0 0 0.5rem 0;
+}
+
+#signuptable input[type=text], #signuptable input[type=email], #signuptable select {
+    width: 100%;
+    background: transparent;
+    height: 50px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: solid 3px #ceccc9;
+    border-radius: 0;
+    padding: 10px;
+}
+
+#signuptable input[type=text]:focus, #signuptable input[type=email]:focus, #signuptable select:focus, #signuptable input[type=text]:hover, #signuptable input[type=email]:hover, #signuptable select:hover {
+    border-color: #e35e14;
+}
+
+#signup input[type="submit"] {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+form#signup {
+    /* background: white; */
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+    box-sizing: border-box;
+    border: 5px solid #e35e14;
+}
+
+.section_subtitle {
+    border-bottom: 5px solid #e35e14;
+    display: inline-block;
+}
