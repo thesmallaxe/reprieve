@@ -666,6 +666,7 @@ body {
   width: 100%;
   float: left;
   margin-top: 0.5rem;
+  position: relative;
 }
 
 .pay:hover {
@@ -715,8 +716,14 @@ body {
 }
 
 a.donate-link {
-    display: inline-block;
+       display: inline-block;
     text-align: center;
+    position: absolute;
+    font-size: 1.38462em;
+    line-height: 1.4;
+    bottom: 25px;
+    min-width: 200px;
+    box-sizing: border-box;
 }
 
 .other a.donate-link {
