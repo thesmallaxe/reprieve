@@ -885,3 +885,31 @@ form#signup {
     border-bottom: 5px solid #e35e14;
     display: inline-block;
 }
+
+.fundraising-box {
+    /* text-align: center; */
+    background: #e35e14;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 2rem 0;
+}
+
+.fundraising-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.fundraising-box h2 {
+    font-size: 32px;
+    color: white;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    display: inline-block;
+    border-bottom: 5px solid white;
+}
+
+.fundraising-box p {
+    font-size: 20px;
+    color: black;
+}
