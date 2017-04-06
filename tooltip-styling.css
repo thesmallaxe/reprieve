@@ -939,3 +939,24 @@ form#signup {
 #signup textarea:focus, #signup textarea:hover {
     border-color: #e35e14;
 }
+
+#signup h2.section_subtitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.form_item_submit:focus, .primary input[type='submit']:focus, .form_item_submit:hover, .primary input[type='submit']:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 43.75em) {
+h1 {
+    font-size: 3rem;
+}
+}
+
+h1 {
+        border-bottom: 5px solid #e35e14;
+    display: inline-block;
+
+}
