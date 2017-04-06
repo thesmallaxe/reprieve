@@ -922,3 +922,20 @@ form#signup {
 .surcore {
     margin-bottom: 1rem !important;
 }
+
+#signup textarea {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    background: transparent;
+    /* height: 50px; */
+    box-sizing: border-box;
+    box-shadow: none;
+    border: solid 3px #ceccc9;
+    border-radius: 0;
+    padding: 10px;
+}
+
+#signup textarea:focus, #signup textarea:hover {
+    border-color: #e35e14;
+}
