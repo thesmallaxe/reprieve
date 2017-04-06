@@ -913,3 +913,12 @@ form#signup {
     font-size: 20px;
     color: black;
 }
+
+
+.maincol.with_single {
+    width: auto !important;
+}
+
+.surcore {
+    margin-bottom: 1rem !important;
+}
