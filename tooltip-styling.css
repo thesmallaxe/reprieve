@@ -960,3 +960,238 @@ h1 {
     display: inline-block;
 
 }
+
+
+body {
+  background-color: #f2f0ed;
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#takeactionpage h1.main {
+  display: inline-block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+   border-bottom: 5px solid #e35e14;
+
+  
+}
+
+#takeactionpage h2.main {
+  clear: both;
+  display: inline-block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-bottom: 5px solid #e35e14;
+}
+#takeactionpage p {
+  margin-bottom: 1rem;
+}
+#takeactionpage .action-box-container {
+    clear: both;
+    width: 100%;
+    display: block;
+}
+
+#takeactionpage .action-box-container:before, #takeactionpage .action-box-container:after {
+    clear: both;
+  content: "";
+    display: table;
+}
+#takeactionpage .action-box {
+  max-width: 320px;
+  min-height: 250px;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  float: left;
+  -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out; 
+transition: all 1s ease-in-out;
+}
+#takeactionpage .action-box:hover {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out; 
+transition: all 1s ease-in-out;
+
+}
+
+#takeactionpage .action-box.other-box {
+  width: 100%;
+  margin-bottom: 1rem;
+  min-height: 0px;
+}
+
+@media only screen and (min-width: 43.75em) {
+
+#takeactionpage .action-box.other-box {
+  width: calc(30% - 3rem);
+  margin-right: 1rem;
+  min-height: 225px;
+}
+  
+}
+
+#takeactionpage .action-box.other-box h1 {
+  font-size: 1.5rem;
+}
+
+#takeactionpage .join-list {
+  margin-right: 0 !important;
+}
+
+#takeactionpage .ibrahim {
+  background-color: black;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("http://www.reprieve.org.uk/wp-content/uploads/2014/08/2014_08_15_PUB-Ibrahim-Halawa.jpg");
+  background-position: center;
+  background-size: cover;
+    -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out; 
+transition: all 1s ease-in-out;
+
+}
+
+#takeactionpage .ibrahim:hover {
+    -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out; 
+transition: all 1s ease-in-out;
+}
+
+#takeactionpage .andy {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url("http://www.reprieve.org.uk/wp-content/uploads/2015/03/2015_03_26-PUB-Andy-Tsege-Family-616x385.jpg");
+      background-position: center;
+  background-size: cover;
+}
+#takeactionpage .andy:hover {
+}
+
+#takeactionpage .mohammed {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url('http://www.reprieve.org.uk/wp-content/uploads/2016/09/mohamed-kids-e1475160790736.jpg');
+      background-position: center;
+  background-size: cover;
+}
+#takeactionpage .mohammed:hover {
+}
+
+#takeactionpage .action-box p {
+  margin-bottom: 4rem;
+  font-size: 18px;
+}
+
+#takeactionpage .action-box h1 {
+    margin-top: 0;
+  letter-spacing: -1.5px;
+}
+
+#takeactionpage .action-button {
+  display:inline-block;
+  background: #e35e14;
+  color: white;
+  padding: 1rem;
+  border-radius::;px;
+  text-decoration: none;
+  align-item: bottom;
+  position: absolute;
+  bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-right: 3rem;
+}
+
+#takeactionpage .arrow {
+  position: absolute;
+  right:1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+#takeactionpage .action-box:hover .arrow {
+  right: 1rem;
+}
+
+#takeactionpage #signup {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+#takeactionpage #signuptable {
+  width: 100%;
+}
+
+#takeactionpage #signup .fieldset {
+    width: 50%;
+    float: left;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+#takeactionpage #signup input, #signup select {
+    width: 100%;
+    background: transparent;
+    height: 40px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: solid 2px #ceccc9;
+    border-radius: 0px;
+    padding: 5px;
+  font-size: 1rem;
+}
+
+#takeactionpage #signup #submit-btn {
+    display: inline-block;
+    background: #e35e14;
+    color: white;
+    padding: 1rem;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+ 
+  height: 50px;
+  width: 150px;
+  font-size: 1rem;
+  border: 0;
+  float: right;
+}
+
+#takeactionpage #signup ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+#takeactionpage #signup ::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+#takeactionpage #signup :-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+#takeactionpage #signup :-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+#takeactionpage #signup  #bsd-field-submit-btn {
+  float: right;
+}
+
+#takeactionpage #signup #bsd-field-submit-btn .input {
+  float: right;
+}
+
