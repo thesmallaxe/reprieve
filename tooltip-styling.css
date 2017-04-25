@@ -1100,7 +1100,7 @@ transition: all 1s ease-in-out;
 }
 
 #takeactionpage #signup #submit-btn {
-    display: inline-block;
+ display: inline-block;
     background: #e35e14;
     color: white;
     padding: 1rem;
@@ -1108,12 +1108,12 @@ transition: all 1s ease-in-out;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.5px;
- 
-  height: 50px;
-  width: 150px;
-  font-size: 1rem;
-  border: 0;
-  float: right;
+    height: 56px;
+    width: 150px;
+    font-size: 18px;
+    border: 0;
+    float: right;
+    text-shadow: none;
 }
 
 #takeactionpage #signup ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
