@@ -948,7 +948,7 @@ h1 {
     display: table;
 }
 #takeactionpage .action-box {
-  max-width: 100%;
+  width: 100%;
   min-height: 350px;
   font-family: sans-serif;
   background-color: black;
