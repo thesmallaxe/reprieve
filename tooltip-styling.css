@@ -948,14 +948,13 @@ h1 {
     display: table;
 }
 #takeactionpage .action-box {
-  max-width: 320px;
-  min-height: 250px;
+  max-width: 100%;
+  min-height: 350px;
   font-family: sans-serif;
   background-color: black;
   color: white;
   padding: 2rem;
   display: inline-block;
-  margin-right: 1rem;
   margin-bottom: 1rem;
   position: relative;
   float: left;
@@ -967,6 +966,7 @@ transition: all 1s ease-in-out;
     border: none;
     margin-top: 0;
     margin-left: 0;
+        box-sizing: border-box;
 }
 #takeactionpage .action-box:hover {
   background-color: black;
@@ -984,16 +984,6 @@ transition: all 1s ease-in-out;
   width: 100%;
   margin-bottom: 1rem;
   min-height: 0px;
-}
-
-@media only screen and (min-width: 43.75em) {
-
-#takeactionpage .action-box.other-box {
-  margin-right: 1rem;
-    width: calc(33% - 0.75rem);
-    min-height: 300px;
-}
-  
 }
 
 #takeactionpage .action-box.other-box h1 {
@@ -1156,9 +1146,22 @@ transition: all 1s ease-in-out;
     border-bottom: none;
 }
 
+@media only screen and (min-width: 43.75em) {
+    
+    
+
 #takeactionpage .action-box {
     max-width: calc(50% - 1rem);
-    box-sizing: border-box;
     min-height: 350px;
+    margin-right: 1rem;
 }
+
+#takeactionpage .action-box.other-box {
+  margin-right: 1rem;
+  width: calc(33% - 0.75rem);
+  min-height: 300px;
+}
+  
+}
+
 
