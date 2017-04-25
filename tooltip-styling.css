@@ -989,9 +989,9 @@ transition: all 1s ease-in-out;
 @media only screen and (min-width: 43.75em) {
 
 #takeactionpage .action-box.other-box {
-  width: calc(30% - 3rem);
   margin-right: 1rem;
-  min-height: 225px;
+    width: calc(33% - 0.75rem);
+    min-height: 300px;
 }
   
 }
@@ -1145,5 +1145,19 @@ transition: all 1s ease-in-out;
 
 #takeactionpage #signup #bsd-field-submit-btn .input {
   float: right;
+}
+
+#takeactionpage .action-box h1 {
+    border-bottom: none;
+}
+
+#takeactionpage .action-box h2 {
+    border-bottom: none;
+}
+
+#takeactionpage .action-box {
+    max-width: calc(50% - 1rem);
+    box-sizing: border-box;
+    min-height: 350px;
 }
 
