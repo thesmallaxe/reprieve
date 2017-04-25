@@ -1149,6 +1149,7 @@ transition: all 1s ease-in-out;
 
 #takeactionpage .action-box h1 {
     border-bottom: none;
+    margin-bottom: 1rem;
 }
 
 #takeactionpage .action-box h2 {
