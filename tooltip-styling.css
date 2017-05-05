@@ -837,10 +837,10 @@ img.websitePie {
     float: right;
 }
 
-.section_subtitle {
+/* .section_subtitle {
     border-bottom: 5px solid #e35e14;
     display: inline-block;
-}
+} */
 
 .fundraising-box {
     /* text-align: center; */
@@ -911,28 +911,28 @@ h1 {
 }
 }
 
-h1 {
+h1 span {
         border-bottom: 5px solid #e35e14;
-    display: inline-block;
+    display: inline;
 
 }
 
-#takeactionpage h1.main {
+/* #takeactionpage h1.main {
   display: inline-block;
   margin-bottom: 1rem;
   box-sizing: border-box;
    border-bottom: 5px solid #e35e14;
 
   
-}
+} */
 
-#takeactionpage h2.main {
+/* #takeactionpage h2.main {
   clear: both;
   display: inline-block;
   margin-bottom: 1rem;
   box-sizing: border-box;
   border-bottom: 5px solid #e35e14;
-}
+} */
 #takeactionpage p {
   margin-bottom: 1rem;
 }
