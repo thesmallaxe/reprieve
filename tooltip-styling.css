@@ -1265,3 +1265,21 @@ h6 {
   font-size: 1rem;
 }
 
+a.subnav_title_base.block {
+    background: #e35e14;
+    border-bottom: 0;
+    padding: 1rem;
+}
+
+h2.subnav_title.block {
+    margin-bottom: 0;
+    text-shadow: none;
+    font-size: 18px;
+}
+
+a.subnav_element.level0 {
+    border: 1px solid #d5d7d8;
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
