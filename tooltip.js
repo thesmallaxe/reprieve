@@ -1,5 +1,7 @@
 $('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>');
 
+$(".primary h1").wrapInner("<span></span>");
+
  if (document.getElementById("wide-column")) {
 			$(".maincol.with_single").addClass("full-col");	 
 	 }
