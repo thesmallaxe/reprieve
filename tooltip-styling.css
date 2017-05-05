@@ -1283,3 +1283,8 @@ a.subnav_element.level0 {
     padding: 0.5rem;
 }
 
+.navcol .subnav_base {
+    display: block;
+    margin-bottom: 1rem;
+}
+
