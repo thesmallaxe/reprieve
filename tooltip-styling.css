@@ -1288,3 +1288,24 @@ a.subnav_element.level0 {
     margin-bottom: 1rem;
 }
 
+.sect_intro_outer .sect_intro_deats .progress_heading {
+    font-size: 1.25rem;
+}
+
+.sect_intro_outer p.sect_intro_deats_copy {
+    padding: 0;
+    margin-bottom: 1rem; 
+}
+
+.sect_intro_outer h2.sect_intro_deats_heading {
+    margin-bottom: 1rem;
+}
+
+.sect_intro_outer h2.sect_intro_deats_heading {
+    font-size: 2.5rem;
+}
+
+.sect_intro_outer h2.connected_feed_title {
+    font-size: 1.75rem;
+}
+
