@@ -210,6 +210,8 @@ $('.give-monthly .other input').change(function(){
   $(".give-monthly .other .donate-link").attr("href","https://secure.edirectdebit.com/Reprieve/Donate2/Desktop-Form-Page/?default_amt=" + var2)
 });
 
+$("#countdown-container").prependTo(".navcol");
+
 var timeInSecs;
 var ticker;
 
