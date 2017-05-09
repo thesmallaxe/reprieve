@@ -1417,3 +1417,20 @@ span#countdown {
  
 }
 
+.quick-fact-box {
+    background: #252728;
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 1rem auto;
+}
+
+.quick-fact-box h2 {
+    margin-top: 0;
+}
+
+.quick-fact-box b, .quick-fact-box strong {
+    color: #e35e14;
+    font-size: 1.25rem;
+}
+
