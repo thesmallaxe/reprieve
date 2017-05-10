@@ -151,7 +151,6 @@ $('.facebook_share').click(function(e) {
 });
 
 $('.twitter_share').click(function(e) {
-  window.open("https://twitter.com/intent/tweet?text=I%27ve%20just%20gone%20on%20the%20record%20as%20an%20opponent%20of%20the%20death%20penalty.%20Add%20your%20name%20too%3A&url=https%3A//reprieve.bsd.net/page/content/execution-countdown/");
     nextSlide('.slide2');
     initSlider();
 });
