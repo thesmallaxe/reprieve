@@ -1361,6 +1361,8 @@ a.subnav_element.level0 {
         width: auto;
         max-width: 70%;
         text-align: left;
+        padding-right: 1rem;
+
     }
 
     .appeal a {
