@@ -324,7 +324,7 @@ var initSlider = function initSlider() {
         min: 0,
         max: 3000,
         step: 1,
-        value: 1500,
+        value: 0,
         range: "min",
         create: function create() {
             handle.html('<div class="value">' + numberWithCommas($(this).slider("value")) + '</div>');
