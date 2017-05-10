@@ -143,7 +143,7 @@ $('.facebook_share').click(function(e) {
 
     var title = encodeURIComponent("I've just gone on the record as an opponent of the death penalty. Add your name too.");
     var hours = hoursSpan == "0" ? "" : hoursSpan + " hours and";
-    var desc = encodeURIComponent("An execution takes places somewhere in the world every six hours - and the next one is in " + hours + " " + minutesSpan + " minutes. Help stop an execution - add your name today >>");
+    var desc = encodeURIComponent("An execution takes places somewhere in the world every four hours – and the next one is in " + hours + " " + minutesSpan + " minutes. Help stop an execution – add your name now →");
     window.open("https://www.facebook.com/dialog/feed?app_id=1786551834927299&link=" + currentUrl + "&picture=" + shareImg + "&name=" + title + "&description=" + desc + "", "_blank", "toolbar=no,scrollbars=no,resizable=yes,width=560,height=560");
 
     nextSlide('.slide2');
