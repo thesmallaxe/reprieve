@@ -1436,3 +1436,7 @@ span#countdown {
     font-size: 1.25rem;
 }
 
+.intro_caption_align {
+    background-color: rgba(0,0,0,0.8) !important;
+}
+
