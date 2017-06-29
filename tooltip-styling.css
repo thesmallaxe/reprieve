@@ -1440,3 +1440,10 @@ span#countdown {
     background-color: rgba(0,0,0,0.8) !important;
 }
 
+body#home .sect_intro_deats {
+    background-color: rgba(0,0,0,0.75);
+}
+
+.sect_intro .progress_heading {
+    color: #e35e14;
+}
