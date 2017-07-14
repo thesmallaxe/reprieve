@@ -1,46 +1,4 @@
-$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>');
-
-$(".primary h1, .primary h2, .section_subtitle").wrapInner("<span></span>");
-
- if (document.getElementById("wide-column")) {
-			$(".maincol.with_single").addClass("full-col");	 
-	 }
-
-if (document.getElementById("mental-health")) {
-			 $(".section_header").addClass("fullwide");
-			 $(".social_base").before("<div id='before-container'></div>");
-			 $("#before").appendTo("#before-container");
-	 }
-	 
-	 if (document.getElementById("letter-background")) {
-			$(".maincol.with_single").addClass("full-col");
-		 	$(".surcore").css('display', 'none');
-		
-		 
-	 }
-
-if (document.getElementById("tshirt-image")) {
-			 $(".primary .portrait_img").addClass("tshirt-hide");
-	 }
-
- if (document.getElementById("greetings")) {
-			$(".maincol.with_single").addClass("full-col");
-		 	$(".surcore").css('display', 'none');
-			$(".primary h1").addClass("greetings-heading");
-	 }
- if (document.getElementById("card-page")) {
-$(".primary .portrait_img").addClass("greeting-stretch");
- }
-
-if (document.getElementById("lastwordsvid")) {
-			 $(".maincol.with_single").addClass("lastwords-fullwide");
-			 $("#core").addClass("lastwords-core");
-	$(".lastwords-container").addClass("render");
-       $(".help-donate").addClass("render");
-       $(".lastwordsvid").addClass("render");
-	   $(".surcore").hide();
-			 $(".primary h1").addClass("lastwords-heading");
-	 }
+// Tooltip
 
 var currentscrollpos;
 
@@ -170,7 +128,8 @@ $('.close7').on('click', function(event) {
 	$(".mobile-tooltip-7").css('display', 'none');
 	$("html, body").animate({ scrollTop: currentscrollpos }, 0);
 });
-//
+
+// Donation page
 
  if (document.getElementById("donation-container")) {
 			$(".maincol.with_single").addClass("full-col");	 
@@ -210,6 +169,8 @@ $('.give-monthly .other input').change(function(){
   $(".give-monthly .other .donate-link").attr("href","https://secure.edirectdebit.com/Reprieve/Donate2/Desktop-Form-Page/?default_amt=" + var2)
 });
 
+// Countdown function DPAW
+
 $("#countdown-container").appendTo(".navcol");
 
 var timeInSecs;
@@ -239,6 +200,8 @@ document.getElementById("countdown").innerHTML = pretty;
 }
 
 startTimer(240*60);
+
+// Twitter Intent Pop-up
 
 (function() {
   if (window.__twitterIntentHandler) return;
@@ -283,6 +246,7 @@ startTimer(240*60);
   }
   window.__twitterIntentHandler = true;
 }());
+
 
 
 
