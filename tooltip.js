@@ -1,3 +1,15 @@
+// Homepage edits
+
+@@ -1,46 +1,4 @@
+ -$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>');
+ -
+ -$(".primary h1, .primary h2, .section_subtitle").wrapInner("<span></span>");
+ -
+ - if (document.getElementById("wide-column")) {
+ -			$(".maincol.with_single").addClass("full-col");	 
+ -	 }
+ -
+	 
 // Tooltip
 
 var currentscrollpos;
@@ -248,6 +260,41 @@ startTimer(240*60);
 }());
 
 
+//Mental Health Page
+ -if (document.getElementById("mental-health")) {
+ -			 $(".section_header").addClass("fullwide");
+ -			 $(".social_base").before("<div id='before-container'></div>");
+ -			 $("#before").appendTo("#before-container");
+ -	 }
+ -	 
+ -
+// Tshirts Page
+	 
+ -if (document.getElementById("tshirt-image")) {
+ -			 $(".primary .portrait_img").addClass("tshirt-hide");
+ -	 }
+ -
+ - if (document.getElementById("greetings")) {
+ -			$(".maincol.with_single").addClass("full-col");
+ -		 	$(".surcore").css('display', 'none');
+ -			$(".primary h1").addClass("greetings-heading");
+ -	 }
+ - if (document.getElementById("card-page")) {
+ -$(".primary .portrait_img").addClass("greeting-stretch");
+ - }
+ -
+	 
+// Last Words
+	 
+ -if (document.getElementById("lastwordsvid")) {
+ -			 $(".maincol.with_single").addClass("lastwords-fullwide");
+ -			 $("#core").addClass("lastwords-core");
+ -	$(".lastwords-container").addClass("render");
+ -       $(".help-donate").addClass("render");
+ -       $(".lastwordsvid").addClass("render");
+ -	   $(".surcore").hide();
+ -			 $(".primary h1").addClass("lastwords-heading");
+ -	 }
 
 
 
