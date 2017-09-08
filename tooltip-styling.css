@@ -1446,6 +1446,10 @@ picture.primary_img.portrait_img.tshirt-hide {
     background-attachment: fixed;
     background-size: cover;
 }
+  
+  p.sect_intro_deats_copy {
+    color: white;
+}
 
 img.intro_thumb {
     visibility: hidden;
