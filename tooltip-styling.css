@@ -2,12 +2,12 @@
 
   @font-face {
     	font-family: 'HelveticaNeueLTStd-BlkCn';
-    	src: url('https://act.reprieve.org.uk/page/-/lushquiz/webfonts/HelveticaNeueLTStd-BlkCn.eot');
-    	src: url('https://act.reprieve.org.uk/page/-/lushquiz/webfonts/HelveticaNeueLTStd-BlkCn.eot?#iefix') format('embedded-opentype'),
-    		url('https://act.reprieve.org.uk/page/-/lushquiz/webfonts/HelveticaNeueLTStd-BlkCn.woff2') format('woff2'),
-    		url('https://act.reprieve.org.uk/page/-/lushquiz/webfonts/HelveticaNeueLTStd-BlkCn.woff') format('woff'),
-    		url('https://act.reprieve.org.uk/page/-/lushquiz/webfonts/HelveticaNeueLTStd-BlkCn.ttf') format('truetype'),
-    		url('https://act.reprieve.org.uk/page/-/lushquiz/webfonts/HelveticaNeueLTStd-BlkCn.svg#HelveticaNeueLTStd-BlkCn') format('svg');
+    	src: url('https://thesmallaxe.github.io/reprieve/webfonts/HelveticaNeueLTStd-BlkCn.eot');
+    	src: url('https://thesmallaxe.github.io/reprieve/webfonts/HelveticaNeueLTStd-BlkCn.eot?#iefix') format('embedded-opentype'),
+    		url('https://thesmallaxe.github.io/reprieve/webfonts/HelveticaNeueLTStd-BlkCn.woff2') format('woff2'),
+    		url('https://thesmallaxe.github.io/reprieve/webfonts/HelveticaNeueLTStd-BlkCn.woff') format('woff'),
+    		url('https://thesmallaxe.github.io/reprieve/webfonts/HelveticaNeueLTStd-BlkCn.ttf') format('truetype'),
+    		url('https://thesmallaxe.github.io/reprieve/webfonts/HelveticaNeueLTStd-BlkCn.svg#HelveticaNeueLTStd-BlkCn') format('svg');
     	font-weight: normal;
     	font-style: normal;
     }
