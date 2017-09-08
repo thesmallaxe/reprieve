@@ -1432,6 +1432,36 @@ body#home .sect_intro_deats {
 .sect_intro .progress_heading {
     color: #e35e14;
 }
+  
+   body#home .sect_intro_deats {
+    background-image: url("https://www.reprieve.org.uk/wp-content/uploads/2017/09/BinaryCodeBackground4-1-1920x1080.jpg");
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+  p.sect_intro_deats_copy {
+    color: white;
+}
+
+img.intro_thumb {
+    visibility: hidden;
+    height: 0;
+}
+
+@media only screen and (min-width: 43.75em) {
+    img.intro_thumb {
+    visibility: visible;
+    height: auto;
+}
+
+body#home .sect_intro_deats {
+    background-image: none;
+    background-size: auto;
+    background-attachment: initial;
+    background-color: rgba(31, 33, 34, 0.75);
+}
+}
 
 /* SHOP */
 picture.primary_img.portrait_img.tshirt-hide {
