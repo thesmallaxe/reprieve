@@ -1202,7 +1202,7 @@ a.subnav_element.level0 {
 }
 
 body#home .sect_intro_deats_heading {
-    color: #e35e14;
+    color: #e35e14 !important;
     font-family: "HelveticaNeueLTStd-BlkCn", "Effra","Helvetica Neue", "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
