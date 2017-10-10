@@ -192,7 +192,7 @@ $('#slide5_next').click(function(e) {
 **/
 $('.ali-al').click(function(e) {
     e.preventDefault();
-    nextSlide('.slide7');
+    nextSlide('.slide5');
 });
 
 /**
@@ -208,7 +208,7 @@ $('.andy').click(function(e) {
 **/
 $('.how-can').click(function(e) {
     e.preventDefault();
-    nextSlide('.slide8');
+    nextSlide('.slide6');
 });
 
 /**
@@ -220,7 +220,7 @@ $('#sign_petition_ali').click(function(e) {
     $('.unsigned').hide();
     $('.signed').show();
     $('.petition').html('Ali');
-    nextSlide('.slide8');
+    nextSlide('.slide6');
 });
 
 $('#sign_petition_andy').click(function(e) {
