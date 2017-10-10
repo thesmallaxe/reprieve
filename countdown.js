@@ -192,7 +192,7 @@ $('#slide5_next').click(function(e) {
 **/
 $('.ali-al').click(function(e) {
     e.preventDefault();
-    nextSlide('.slide6');
+    nextSlide('.slide7');
 });
 
 /**
