@@ -1499,3 +1499,17 @@ img.intro_thumb {
     background-color: rgba(31, 33, 34, 0.75);
   }
 }
+
+  
+  #intro .intro_caption {
+    display: none;
+}
+
+img.intro_thumb {
+    width: 100%;
+}
+
+picture.intro_thumb {
+    max-height: calc(100vh - 186px);
+    overflow-y: hidden;
+}
