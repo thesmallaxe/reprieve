@@ -97,14 +97,14 @@ $('#user_info_form').validate({
         var firstname = e.target.firstname.value;
         var lastname = e.target.lastname.value;
         var email = e.target.email.value;
-        var zip = e.target.zip.value;
+        var country = e.target.country.value;
         var emailopt = e.target.emailopt.checked;
 
         userInfo = {
             firstname: firstname,
             lastname: lastname,
             email: email,
-            zip: zip,
+            country: country,
             email_opt_in: emailopt ? 1 : 0
         };
 
@@ -115,7 +115,7 @@ $('#user_info_form').validate({
     rules: {
         firstname: "required",
         lastname: "required",
-        zip: "required",
+        country: "required",
         email: {
             required: true,
             email: true
@@ -124,7 +124,7 @@ $('#user_info_form').validate({
     messages: {
         firstname: "Please enter your first name",
         lastname: "Please enter your last name",
-        zip: "Please enter your postcode",
+        country: "Please select your country",
         email: {
             required: "Please enter your email address",
             email: "Please enter a valid email address"
@@ -296,7 +296,7 @@ var postUserData = function postUserData(data, formUrl) {
         firstname: data.firstname,
         lastname: data.lastname,
         email: data.email,
-        zip: data.zip,
+        country: data.country,
         email_opt_in: data.email_opt_in
     };
     $.post(formUrl, formData);
