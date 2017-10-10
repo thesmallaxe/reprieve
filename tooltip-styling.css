@@ -1485,6 +1485,7 @@ img.intro_thumb {
   visibility: hidden;
   height: 0;
 }
+}
 
 @media only screen and (min-width: 43.75em) {
   img.intro_thumb {
