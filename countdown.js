@@ -314,7 +314,6 @@ var nextSlide = function nextSlide(el) {
     }
     nextSlide.show();
     $.scrollTo(nextSlide, 1000, {
-        offset: -marginHeight
     });
 };
 
