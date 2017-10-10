@@ -192,7 +192,7 @@ $('#slide5_next').click(function(e) {
 **/
 $('.ali-al').click(function(e) {
     e.preventDefault();
-    nextSlide('.slide5');
+    nextSlide('.slide4');
 });
 
 /**
@@ -220,7 +220,7 @@ $('#sign_petition_ali').click(function(e) {
     $('.unsigned').hide();
     $('.signed').show();
     $('.petition').html('Ali');
-    nextSlide('.slide6');
+    nextSlide('.slide5');
 });
 
 $('#sign_petition_andy').click(function(e) {
