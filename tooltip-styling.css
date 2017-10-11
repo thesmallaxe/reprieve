@@ -1422,7 +1422,7 @@ a.intro_caption_cta {
 
 
 .intro_caption_align {
-    background-color: rgba(0,0,0,0.8) !important;
+    background-color: rgba(255,255,255,0.8) !important;
 }
 
 body#home .sect_intro_deats {
@@ -1509,3 +1509,8 @@ picture.intro_thumb {
     max-height: calc(100vh - 186px);
     overflow-y: hidden;
 }
+
+header.intro_caption {
+    top: 50%;
+}
+
