@@ -1518,3 +1518,30 @@ header.intro_caption {
     top: 50%;
 }
 
+@media only screen and (min-width: 43.75em) {
+
+body#home .sect_intro_outer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body#home .sect_intro {
+    width: auto;
+    max-width: 936px;
+}
+
+body#home p.sect_intro_deats_copy {
+    padding-top: 0;
+    color: white;
+}
+
+.sect_intro .progress_heading {
+    color: #e35e14;
+}
+
+body#home .sect_intro_deats_heading {
+    color: #e35e14 !important;
+}
+}
+
