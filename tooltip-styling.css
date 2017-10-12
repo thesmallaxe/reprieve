@@ -1277,7 +1277,7 @@ a.countdown-button {
 
 body#home .sect_intro_deats_heading {
     font-size: 2.5rem;
-    color: white;
+    color: white !important;
     margin-bottom: 1rem;
 }
 
@@ -1285,6 +1285,10 @@ body#home .sect_intro_deats_heading {
   body#home .sect_intro_deats_heading {
       font-size: 5rem;
 }
+  
+  body#home .sect_intro_deats_heading {
+    color: #e35e14;
+  }
 
 body#home p.sect_intro_deats_copy {
     padding-top: 0;
