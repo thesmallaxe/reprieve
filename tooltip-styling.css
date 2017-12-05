@@ -1550,3 +1550,25 @@ body#home .sect_intro_deats_heading {
     font-weight: bold;
 }
 
+/* Donate button for updates pages */
+
+.updateDonate a {
+    display: inline-block;
+    color: white;
+    background: #e35e14;
+    border: 3px solid #e35e14;
+    padding: 0.5rem 1rem;
+    width: auto;
+    margin: 1rem auto 0 auto;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 3px;
+    min-width: 300px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.updateDonate a:hover {
+    color: #e35e14;
+    background: transparent;
+}
