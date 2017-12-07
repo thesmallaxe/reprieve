@@ -1563,7 +1563,8 @@ body#home .sect_intro_deats_heading {
     font-size: 1.5rem;
     text-decoration: none;
     border-radius: 3px;
-    min-width: 300px;
+    min-width: 100%;
+    box-sizing: border-box;
     text-align: center;
     transition: all 0.25s ease;
 }
@@ -1572,3 +1573,11 @@ body#home .sect_intro_deats_heading {
     color: #e35e14;
     background: transparent;
 }
+
+@media only screen and (min-width: 43.75em) {
+  .updateDonate a {
+    min-width: 50%;
+  }
+}
+
+
