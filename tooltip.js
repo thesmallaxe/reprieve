@@ -1,5 +1,5 @@
 // Homepage edits
-$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://reprieve.bsd.net/page/contribute/donatenow" target="_blank" class="topnav_element secnav">Donate</a></li>');
+$('.surnav .topnav_block.secnav.last').before('<li class="topnav_block secnav"><a href="https://act.reprieve.org.uk/page/contribute/make-a-donation?source=rukhome" target="_blank" class="topnav_element secnav">Donate</a></li>');
 
 $(".primary h1, .primary h2, .section_subtitle").wrapInner("<span></span>");
 
