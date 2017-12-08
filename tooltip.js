@@ -195,6 +195,8 @@ $('.give-monthly .other input').change(function() {
 
 // Countdown function DPAW
 
+if (document.getElementById("countdown-container")) {
+  
 $("#countdown-container").appendTo(".navcol");
 
 var timeInSecs;
@@ -223,7 +225,7 @@ function tick() {
 }
 
 startTimer(240 * 60);
-
+}
 // Twitter Intent Pop-up
 
 (function() {
