@@ -99,10 +99,10 @@ $('#user_info_form').validate({
         var email = e.target.email.value;
         var country = e.target.country.value;
         var writerep = e.target.writerep.checked;
-        var speaksocial = e.target.speaksocial.checked;
-        var signpet = e.target.signpet.checked;
-        var messup = e.target.messup.checked;
-        var allies = e.target.allies.checked;
+//         var speaksocial = e.target.speaksocial.checked;
+//         var signpet = e.target.signpet.checked;
+//         var messup = e.target.messup.checked;
+//         var allies = e.target.allies.checked;
         
         var emailopt = e.target.emailopt.checked;
 
