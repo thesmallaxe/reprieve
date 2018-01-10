@@ -115,7 +115,7 @@ $('#user_info_form').validate({
             email_opt_in: emailopt ? 1 : 0
         };
 
-        postUserData(userInfo, 'https://reprieve.bsd.net/page/s/movement-close-guantanamo');
+        postUserData(userInfo, 'https://act.reprieve.org.uk/page/s/movement-close-guantanamo');
 
         nextSlide('.slide1');
     },
