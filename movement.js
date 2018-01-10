@@ -111,7 +111,7 @@ $('#user_info_form').validate({
             lastname: lastname,
             email: email,
             country: country,
-            'custom-1798_0': writerep? 1 : 0,
+            'custom-1799': writerep? 1 : 0,
             email_opt_in: emailopt ? 1 : 0
         };
 
