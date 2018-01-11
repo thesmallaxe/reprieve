@@ -427,4 +427,6 @@ if (document.getElementById("lastwordsvid")) {
 if (document.getElementById("g16")) {
 $(".section_header").addClass("fullwide");
 $(".surcore").addClass("surcore-full");
+$(".primary h1:nth-of-type(1)").addClass("fullwide-center");
+  
 }
