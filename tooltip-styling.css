@@ -1580,4 +1580,15 @@ body#home .sect_intro_deats_heading {
   }
 }
 
+.surcore.surcore-full {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 936px;
+}
+
+.nospan span {
+    border: 0;
+}
 
