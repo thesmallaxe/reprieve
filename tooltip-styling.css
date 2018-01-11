@@ -1592,3 +1592,8 @@ body#home .sect_intro_deats_heading {
     border: 0;
 }
 
+
+.primary h1:nth-of-type(1) {
+    text-align:  center;
+}
+
