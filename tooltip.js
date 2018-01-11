@@ -423,3 +423,8 @@ if (document.getElementById("lastwordsvid")) {
     $(".surcore").hide();
     $(".primary h1").addClass("lastwords-heading");
 }
+
+if (document.getElementById("g16")) {
+$(".section_header").addClass("fullwide");
+$(".surcore").addClass("surcore-full");
+}
