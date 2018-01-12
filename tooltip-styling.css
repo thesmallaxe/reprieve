@@ -1597,3 +1597,6 @@ body#home .sect_intro_deats_heading {
     text-align:  center;
 }
 
+.sect_intro_deats .connected_feed_arrow {
+    color: white;
+}
