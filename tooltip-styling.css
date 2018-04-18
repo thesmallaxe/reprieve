@@ -1638,6 +1638,15 @@ body#home .sect_intro_deats_heading {
     border-radius: 5px;
     margin-top:  1rem;
     text-align:  center;
+     border: 3px solid transparent;
+    transition: 0.2s ease all;
+}
+
+.cta-block a:hover, .cta-block a:focus {
+    border: 3px solid #e35e14;
+    color: #e35e14;
+    background:  transparent;
+    outline: none;
 }
 
 
