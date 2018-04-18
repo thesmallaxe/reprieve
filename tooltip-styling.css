@@ -1604,3 +1604,72 @@ body#home .sect_intro_deats_heading {
 .sect_intro_deats .connected_feed_arrow {
     color: white;
 }
+
+/* CTA MID-BLOCK */
+
+.cta-block {
+    background: #3c3b39;
+    padding: 1.5rem;
+    color: white;
+    border-radius:  5px;
+    margin-top:  1rem;
+    line-height:  1;
+}
+
+.cta-block h2 {
+    margin-top:  0;
+    margin-bottom:  1rem;
+    line-height:  1;
+}
+
+.cta-block h2 span {
+    border-bottom:  none;
+    color: #e35e14;
+    font-weight: bolder;
+}
+
+.cta-block a {
+    background: #e35e14;
+    color: white;
+    text-decoration:  none;
+    font-size:  1.5rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    margin-top:  1rem;
+    text-align:  center;
+}
+
+
+#cursor {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.125rem;
+    background: #e35e14;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.urgent-span {
+    font-weight:  bold;
+}
+
+.blink
+{
+  animation: blink .7s steps(2, start) infinite;
+  -webkit-animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink
+{
+  to
+  {
+      visibility: hidden;
+  }
+}
+@-webkit-keyframes blink
+{
+  to
+  {
+      visibility: hidden;
+  }
+}
