@@ -88,6 +88,9 @@ function checkCookie(variant) {
 
             modalStuff();
         }
+
+        setCookie('repPopup', true, 3);
+
     }
 }
 
@@ -131,8 +134,7 @@ function modalStuff() {
 
 
     modalOverlay.classList.remove('hide');
-    setCookie('repPopup', true, 3);
-    setCookie('gdprPopup', true, 7);
+    
 }
 
 function addGDPRPopup(graphData) {
@@ -219,6 +221,8 @@ function addGDPRPopup(graphData) {
                 };
                 
             modalStuff();
+
+            setCookie('gdprPopup', true, 7);
 
         } else {
             // already in gdpr group, show donate popup instead
