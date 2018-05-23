@@ -1220,10 +1220,6 @@ body#home .sect_intro_deats_heading {
     border-top: 1px solid #d5d7d8;
 }
 
-h3.progress_heading, .progress_bar {
-    display:  none;
-}
-
 /* COUNTDOWN */
 
 #countdown-container {
