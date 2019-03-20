@@ -1679,3 +1679,8 @@ body#home .sect_intro_deats_heading {
       visibility: hidden;
   }
 }
+
+.progress_heading, .progress_bar {
+    display: none;
+}
+
