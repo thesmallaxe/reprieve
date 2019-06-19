@@ -1702,8 +1702,8 @@ button#close-modal {
 }
 
 .modal_overlay .modal {
-    margin: 100px 1rem;
-    width: calc(100% - 2rem);
+    margin: 100px 1rem !important;
+    width: calc(100% - 2rem) !important;
 }
 
 div#bsd-field-gdpr-radios-group {
@@ -1713,7 +1713,7 @@ div#bsd-field-gdpr-radios-group {
 
 @media only screen and (min-width: 43.75em) {
     .modal_overlay .modal {
-    margin: 100px auto;
+    margin: 100px auto !important;
 }
 }
 
