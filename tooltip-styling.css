@@ -1681,13 +1681,13 @@ body#home .sect_intro_deats_heading {
 }
 
 .modal_overlay input[type="text"] {
-    width: 50%;
+    width: 50% !important;
     float: left;
     margin-bottom: 17px;
 }
 
-input#popup-firstname {
-    width: 48%;
+.modal_overlay input#popup-firstname {
+    width: 48% !important;
     margin-right: 2%;
 }
 
@@ -1704,6 +1704,11 @@ button#close-modal {
 .modal_overlay .modal {
     margin: 100px 1rem;
     width: calc(100% - 2rem);
+}
+
+div#bsd-field-gdpr-radios-group {
+    width: 100%;
+    clear: both;
 }
 
 @media only screen and (min-width: 43.75em) {
