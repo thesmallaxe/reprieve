@@ -1680,3 +1680,35 @@ body#home .sect_intro_deats_heading {
   }
 }
 
+.modal_overlay input[type="text"] {
+    width: 50%;
+    float: left;
+    margin-bottom: 17px;
+}
+
+input#popup-firstname {
+    width: 48%;
+    margin-right: 2%;
+}
+
+.modal_button_wrap .button, #modal_overlay .submit-button {
+    width: 100%;
+}
+
+button#close-modal {
+    width: 25px;
+    height: 25px;
+    font-size: 50px;
+}
+
+.modal_overlay .modal {
+    margin: 100px 1rem;
+    width: calc(100% - 2rem);
+}
+
+@media only screen and (min-width: 43.75em) {
+    .modal_overlay .modal {
+    margin: 100px auto;
+}
+}
+
